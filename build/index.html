@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">Горящие туры</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Календарь низких цен</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Поиск туров</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Рейтинг туроператоров</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="lk-wrap"><a class="favorites" href="#"></a>
+            <div class="lang"> <span class="lang__item lang__link lang__current">RU</span>
+              <div class="lang__wrap"><a class="lang__link" href="#">LV</a><a class="lang__link" href="#">EN</a></div>
+            </div>
+            <div class="user"></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="intro-section">
+          <div class="container">
+            <div class="head-wrap"><a class="logo" href="#"></a>
+              <div class="info-wrap"><a class="info-link tel-link" href="tel:67320372">67 320 372</a><a class="info-link mail-link" href="mailto:info@sofiture.lv">info@sofiture.lv</a><a class="buy-link red-btn" href="#">Купить тур в офисе</a></div>
+            </div>
+            <h1 class="main-title">Выбирайте и покупайте туры онлайн</h1>
+            <p class="intro-text">По ценам туроператоров или ниже с круглосуточной поддержкой до и после покупки</p>
+            <div class="tabs-wrap">
+              <div class="tabs js-tabs">
+                <ul class="tabs__caption js-tab-btn">
+                  <li class="tabs__item tabs__item_city active">Город вылета:  Rīga</li>
+                  <li class="tabs__item tabs__item_hot">Горячие предложения</li>
+                  <li class="tabs__item tabs__item_air">Авиа билеты</li>
+                </ul>
+                <div class="tabs__content tabs__content_city active js-tab-content">
+                  <form class="mainForm" action="#" id="" method="">
+                    <div class="mainForm__fild mainForm__fild_long">
+                      <input class="mainForm__input" type="text" placeholder="Страна, курорт или отель">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_date">
+                      <input class="mainForm__input" type="text" placeholder="Дата вылета" autocomplete="off" id="datepicker-hereNew">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_quantity calendar">
+                      <input class="mainForm__input js-quantity-input" type="text" placeholder="Кол-во ночей">
+                      <div class="number"><span class="number__title">От</span>
+                        <div class="number__wrap"><span class="number__btn minus">-</span>
+                          <input class="number__input" type="text" value="1"><span class="number__btn plus">+</span>
+                        </div><span class="number__title">До</span>
+                        <div class="number__wrap"><span class="number__btn minus">-</span>
+                          <input class="number__input" type="text" value="18"><span class="number__btn plus">+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_tourists">
+                      <input class="mainForm__input js-tourists-input" type="text" placeholder="Туристы">
+                      <div class="tourists"><span class="tourists__title">Взрослые</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="adult1" value="adult1" name="adult">
+                          <label for="adult1">1</label>
+                          <input type="radio" id="adult2" value="adult2" name="adult">
+                          <label for="adult2">2</label>
+                          <input type="radio" id="adult3" value="adult3" name="adult">
+                          <label for="adult3">3</label>
+                          <input type="radio" id="adult4" value="adult4" name="adult">
+                          <label for="adult4">4</label>
+                        </div><span class="tourists__title">Дети от 2 до 11 лет</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="child0" value="child0" name="child">
+                          <label for="child0">нет</label>
+                          <input type="radio" id="child1" value="child1" name="child">
+                          <label for="child1">1</label>
+                          <input type="radio" id="child2" value="child2" name="child">
+                          <label for="child2">2</label>
+                          <input type="radio" id="child3" value="child3" name="child">
+                          <label for="child3">3</label>
+                        </div><span class="tourists__title">Младенцы до 2 лет</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="baby0" value="baby0" name="baby">
+                          <label for="baby0">нет</label>
+                          <input type="radio" id="baby1" value="baby1" name="baby">
+                          <label for="baby1">1</label>
+                          <input type="radio" id="baby2" value="baby2" name="baby">
+                          <label for="baby2">2</label>
+                          <input type="radio" id="baby3" value="baby3" name="baby">
+                          <label for="baby3">3</label>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="mainForm__btn blue-btn" type="submit">Искать туры</button>
+                  </form>
+                </div>
+                <div class="tabs__content tabs__content_hot js-tab-content">
+                  <form class="mainForm" action="#" id="" method="">
+                    <div class="mainForm__fild mainForm__fild_date">
+                      <input class="mainForm__input" type="text" placeholder="Дата вылета">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_long">
+                      <input class="mainForm__input" type="text" placeholder="Страна, курорт или отель">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_quantity">
+                      <input class="mainForm__input" type="text" placeholder="Кол-во ночей">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_tourists">
+                      <input class="mainForm__input" type="text" placeholder="Туристы">
+                    </div>
+                    <button class="mainForm__btn blue-btn" type="submit">Искать туры</button>
+                  </form>
+                </div>
+                <div class="tabs__content tabs__content_air js-tab-content">
+                  <form class="mainForm" action="#" id="" method="">
+                    <div class="mainForm__fild mainForm__fild_date">
+                      <input class="mainForm__input" type="text" placeholder="Дата вылета">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_quantity">
+                      <input class="mainForm__input" type="text" placeholder="Кол-во ночей">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_long">
+                      <input class="mainForm__input" type="text" placeholder="Страна, курорт или отель">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_tourists">
+                      <input class="mainForm__input" type="text" placeholder="Туристы">
+                    </div>
+                    <button class="mainForm__btn blue-btn" type="submit">Искать туры</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="questions-wrap"><a class="questions-link" href="#">Частые вопросы</a></div>
+          </div>
+        </section>
+        <section class="popular-section">
+          <div class="container">
+            <h2 class="section-title">Популярные направления<span class="abs-text">Hаправления</span></h2>
+            <p class="sub-text">Captent taciti sociosqu ad litora torquent per conubia nostra</p>
+            <div class="tours-wrap">
+              <div class="tour">
+                <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                <div class="tour__img"><img src="../images/bitmap.png" alt="Image description"></div>
+                <div class="tour__info"><span class="tour__name">Греция</span>
+                  <p class="tour__text">Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики</p>
+                  <div class="tour__nav">
+                    <div class="tour__price-wrap"><span class="tour__price-text">Начиная от</span><span class="tour__price">€ 300</span></div><a class="tour__link" href="#">Посмотреть детали</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tour">
+                <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                <div class="tour__img"><img src="../images/bitmap2.png" alt="Image description"></div>
+                <div class="tour__info"><span class="tour__name">Париж</span>
+                  <p class="tour__text">Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики</p>
+                  <div class="tour__nav">
+                    <div class="tour__price-wrap"><span class="tour__price-text">Начиная от</span><span class="tour__price">€ 300</span></div><a class="tour__link" href="#">Посмотреть детали</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tour">
+                <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                <div class="tour__img"><img src="../images/bitmap3.png" alt="Image description"></div>
+                <div class="tour__info"><span class="tour__name">Италия</span>
+                  <p class="tour__text">Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики</p>
+                  <div class="tour__nav">
+                    <div class="tour__price-wrap"><span class="tour__price-text">Начиная от</span><span class="tour__price">€ 300</span></div><a class="tour__link" href="#">Посмотреть детали</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-tours">
+              <div class="tours-wrap">
+                <div class="tour">
+                  <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                  <div class="tour__img"><img src="../images/bitmap.png" alt="Image description"></div>
+                  <div class="tour__info"><span class="tour__name">Греция</span>
+                    <p class="tour__text">Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики</p>
+                    <div class="tour__nav">
+                      <div class="tour__price-wrap"><span class="tour__price-text">Начиная от</span><span class="tour__price">€ 300</span></div><a class="tour__link" href="#">Посмотреть детали</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tour">
+                  <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                  <div class="tour__img"><img src="../images/bitmap2.png" alt="Image description"></div>
+                  <div class="tour__info"><span class="tour__name">Париж</span>
+                    <p class="tour__text">Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики</p>
+                    <div class="tour__nav">
+                      <div class="tour__price-wrap"><span class="tour__price-text">Начиная от</span><span class="tour__price">€ 300</span></div><a class="tour__link" href="#">Посмотреть детали</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tour">
+                  <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                  <div class="tour__img"><img src="../images/bitmap3.png" alt="Image description"></div>
+                  <div class="tour__info"><span class="tour__name">Италия</span>
+                    <p class="tour__text">Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики</p>
+                    <div class="tour__nav">
+                      <div class="tour__price-wrap"><span class="tour__price-text">Начиная от</span><span class="tour__price">€ 300</span></div><a class="tour__link" href="#">Посмотреть детали</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><span class="tour-more">Смотреть все направления</span>
+          </div>
+        </section>
+        <section class="newsletter-section">
+          <div class="container">
+            <div class="newsletter-wrap">
+              <div class="newsletter-info">
+                <p class="newsletter-title">Подпишитесь на рассылку</p>
+                <p class="newsletter-text">И вы первыми узнаете о наших секретных акциях и конкурсах</p>
+              </div>
+              <form class="newsletter-form" action="#" id="" mathod="">
+                <input class="newsletter-form__input" type="text" value="" placeholder="Введите ваш эмайл">
+                <button class="newsletter-form__btn" type="submit">Подписаться</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="partners-section"><img class="img-abs" src="images/partner-bg.png" alt="Image description">
+          <div class="container">
+            <h3 class="sub-title sub-title_blue">Наши партнеры</h3>
+            <div class="owl-carousel carousel-partner">
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner1.png" alt="Image description"></a></div>
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner2.png" alt="Image description"></a></div>
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner3.png" alt="Image description"></a></div>
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner4.png" alt="Image description"></a></div>
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner5.png" alt="Image description"></a></div>
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner2.png" alt="Image description"></a></div>
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner3.png" alt="Image description"></a></div>
+              <div class="slide-holder"><a class="slide" href="#"><img src="images/partner4.png" alt="Image description"></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="buy-tours-section">
+          <div class="container">
+            <div class="buy-wrap">
+              <div class="img-wrap"><img src="../images/palm.jpg" alt="Image description"></div>
+              <div class="buy-info">
+                <h2 class="buy-title">Покупайте туры онлайн, пока они не закончились</h2>
+                <p class="buy-text">Так вы забронируете тур по самой низкой цене и сэкономите время. Туры быстро заканчиваются. Средняя скорость выкупа горящих туров с сайта — 60 минут. За это время вы не успеете добраться до офиса турагентства. Забронируйте тур мечты онлайн — <b> успейте поймать самую низкую цену!</b></p><span class="buy-sub-title">Гарантируем честные цены</span>
+                <p class="buy-text buy-text_img">Цены в нашем интернет-магазине такие же, как у туроператоров, или ниже — <b> вы никогда не переплачиваете</b></p>
+                <p class="buy-text buy-text_img">Нашли тур дешевле — мы вернём двойную разницу! Если на другом сайте цена на этот же тур ниже, мы снижаем для вас стоимость до цены конкурента, а вы получаете вознаграждение в размере двойной разницы!</p><a class="buy-link" href="#">Подробнее</a><span class="buy-sub-title">Круглосуточная поддержка до и после покупки тура</span>
+                <p class="buy-text buy-text_img">Всегда на связи по <a href="#">телефону  </a>и в  <a href="#">мессенджерах </a></p>
+                <p class="buy-text buy-text_img">СМС и email информирование туристов</p>
+                <p class="buy-text buy-text_img">Поддержка персонального менеджера во время путешествия</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews-section">
+          <div class="container">
+            <h2 class="section-title section-title_white">Отзывы наших клиентов</h2>
+            <p class="reviews-text">SofiTure - это не только отличный сайт для поиска туров, но и также профессиональная команда менеджеров, которая всегда прийдет к вам на помощь и будет с вам и в горе и в радости на протяжении всего вашего отдыха.</p>
+          </div>
+          <div class="slider-wrap">
+            <div class="owl-carousel carousel-clients">
+              <div class="slide-holder">
+                <div class="client">
+                  <div class="client__info">
+                    <div class="client__photo"><img src="images/client1.png" alt=""></div>
+                    <div class="client__data"><span class="client__name">Никита Иванов</span><span class="client__tour">Тур по Исландии</span>
+                      <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                  <p class="client__review">Понравилось все! Все забронировал и оплатил, сразу связались со мной письменно с информацией по туру. По моей просьбе документы выслали раньше.</p>
+                </div>
+              </div>
+              <div class="slide-holder">
+                <div class="client">
+                  <div class="client__info">
+                    <div class="client__photo"><img src="images/client2.png" alt=""></div>
+                    <div class="client__data"><span class="client__name">Алина Латышева</span><span class="client__tour">Тур по Исландии</span>
+                      <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                  <p class="client__review">Понравилась оперативность, вовремя предоставленные документы на тур, информирование о времени вылета по смс. Перед заказом тура получила консультацию.</p>
+                </div>
+              </div>
+              <div class="slide-holder">
+                <div class="client">
+                  <div class="client__info">
+                    <div class="client__photo"><img src="images/client3.png" alt=""></div>
+                    <div class="client__data"><span class="client__name">Алексей Степанов</span><span class="client__tour">Тур по Исландии</span>
+                      <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                  <p class="client__review">Отличный сайт, все предложения можно выбрать и по дате и по предложениям выбора авиакомпаний. Безопасная оплата через сайт. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="merit-section">
+          <div class="container">
+            <h2 class="section-title">Наши заслуги<span class="abs-text">Заслуги</span></h2>
+            <p class="sub-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
+            <div class="merit-wrap">
+              <div class="merit"><img src="images/merit1.png" alt=""></div>
+              <div class="merit"><img src="images/merit2.png" alt=""></div>
+              <div class="merit"><img src="images/merit3.png" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="search-tours-section">
+          <div class="container">
+            <h2 class="section-title">Поиск туров онлайн<span class="abs-text">Туры онлайн</span></h2>
+            <p class="sub-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
+            <div class="search-wrap">
+              <div class="search-img"><img src="images/sea-img.png" alt=""></div>
+              <div class="search-info">
+                <h3 class="search-title">Наши партнеры</h3>
+                <p class="search-text">Нашими партнерами являются самые крупные и надежные туроператоры, поэтому вы можете быть уверены в качестве приобретенного тура. Кроме того, на сайте Travelata.ru можно купить тур по самым лучшим ценам – мы предоставляем вам возможность отправиться в путешествие с лучшим соотношением цена/качество от любого из 120 туроператоров.</p>
+              </div>
+              <div class="search-info">
+                <h3 class="search-title">Наша компания</h3>
+                <p class="search-text">Наша компания учитывает интересы каждого клиента, и поэтому у нас можно подобрать отель для отдыха в тропических странах или на горнолыжных курортах, купить горящий тур по сниженной цене или забронировать путешествие заранее. Мы предоставляем подробную информацию о каждом отеле – на нашем сайте.</p>
+              </div>
+              <div class="search-info">
+                <h3 class="search-title">Планирование туров</h3>
+                <p class="search-text">С SofiTure вы можете планировать поездку так, как вам удобно – можете заказать туры онлайн через сайт, по телефону, а также с помощью мобильного приложения для смартфонов и планшетов. Опытные и компетентные специалисты нашей компании готовы помочь в приобретении тура 24 часа в сутки.</p>
+              </div>
+              <div class="search-info">
+                <h3 class="search-title">Выбирайте нас</h3>
+                <p class="search-text">Выбирая отдых с Travelata.ru, вы гарантированно получаете огромный выбор путешествий для отдыха, поэтому купить путевку у нас не сложнее, чем совершать покупки в любом онлайн магазине. Лучшие цены и первоклассное профессиональное обслуживание – гарантия вашего качественного отдыха.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="directions-section">
+          <div class="container">
+            <h2 class="section-title">Наши направление<span class="abs-text">Hаправления</span></h2>
+            <p class="sub-text">Популярные направлен</p>
+            <div class="country-wrap"><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ukr.svg" alt="Image description"></div><span class="country__name">Украина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/tur.svg" alt="Image description"></div><span class="country__name">Турция</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/arg.svg" alt="Image description"></div><span class="country__name">Аргентина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/prt.svg" alt="Image description"></div><span class="country__name">Португалия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/irl.svg" alt="Image description"></div><span class="country__name">Ирландия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/brz.svg" alt="Image description"></div><span class="country__name">Бразилия</span></a></div>
+            <p class="sub-text">Остальные направлени</p>
+            <div class="country-wrap"><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ukr.svg" alt="Image description"></div><span class="country__name">Украина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/tur.svg" alt="Image description"></div><span class="country__name">Турция</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/arg.svg" alt="Image description"></div><span class="country__name">Аргентина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/prt.svg" alt="Image description"></div><span class="country__name">Португалия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/irl.svg" alt="Image description"></div><span class="country__name">Ирландия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/brz.svg" alt="Image description"></div><span class="country__name">Бразилия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ukr.svg" alt="Image description"></div><span class="country__name">Украина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/tur.svg" alt="Image description"></div><span class="country__name">Турция</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/arg.svg" alt="Image description"></div><span class="country__name">Аргентина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/prt.svg" alt="Image description"></div><span class="country__name">Португалия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/irl.svg" alt="Image description"></div><span class="country__name">Ирландия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/brz.svg" alt="Image description"></div><span class="country__name">Бразилия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ukr.svg" alt="Image description"></div><span class="country__name">Украина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/tur.svg" alt="Image description"></div><span class="country__name">Турция</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/arg.svg" alt="Image description"></div><span class="country__name">Аргентина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/prt.svg" alt="Image description"></div><span class="country__name">Португалия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/irl.svg" alt="Image description"></div><span class="country__name">Ирландия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/brz.svg" alt="Image description"></div><span class="country__name">Бразилия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ukr.svg" alt="Image description"></div><span class="country__name">Украина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/tur.svg" alt="Image description"></div><span class="country__name">Турция</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/arg.svg" alt="Image description"></div><span class="country__name">Аргентина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/prt.svg" alt="Image description"></div><span class="country__name">Португалия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/irl.svg" alt="Image description"></div><span class="country__name">Ирландия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/brz.svg" alt="Image description"></div><span class="country__name">Бразилия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ukr.svg" alt="Image description"></div><span class="country__name">Украина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/tur.svg" alt="Image description"></div><span class="country__name">Турция</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/ndr.svg" alt="Image description"></div><span class="country__name">Нидерланды</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/arg.svg" alt="Image description"></div><span class="country__name">Аргентина</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/prt.svg" alt="Image description"></div><span class="country__name">Португалия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/irl.svg" alt="Image description"></div><span class="country__name">Ирландия</span></a><a class="country" href="#">
+                <div class="country__img"><img src="images/brz.svg" alt="Image description"></div><span class="country__name">Бразилия</span></a></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <nav class="nav">
+              <ul class="nav__list nav__list_column">
+                <li class="nav__title">О компании</li>
+                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Наши партнёры</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Реквизиты</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <nav class="nav">
+              <ul class="nav__list nav__list_column">
+                <li class="nav__title">Туристам</li>
+                <li class="nav__item"><a class="nav__link" href="#">Правила покупки</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Политика конфиденциальности</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Как купить тур</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Частые вопросы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Туры в рассрочку</a></li>
+              </ul>
+            </nav>
+            <div class="soc-wrap">
+              <p class="nav__title">Социальные сети</p>
+              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div><a class="blog-link" href="#">
+                <p class="nav__title nav__title_margin">Блог</p>
+                <p class="blog-text">Kavin II is the clean Corporate Joomla Template for any businesses, freelancers, small business, agences, consulting…</p></a>
+            </div>
+            <div class="logo-wrap"><a class="logo" href="#"></a>
+              <p class="blog-text">SofiTure - это туристическая компания нового поколения. Мы используем все доступные сегодня технологии, чтобы сделать выбор, оплату и бронирование Вашего путешествия максимально удобными и приятными.</p>
+              <div class="info-wrap"><a class="info-link tel-link" href="tel:67320372">67 320 372</a><a class="info-link mail-link" href="mailto:info@sofiture.lv">info@sofiture.lv</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">Copyright 2019 <a href="#">SofiTure</a>, All Right Reserved</p>
+            <div class="link-wrap"><a href="#">Горящие туры</a><a href="#">Календарь низких цен</a><a href="#">Поиск туров</a></div>
+          </div>
+        </div>
+      </footer>
+      <div class="mask"></div>
+      <div class="modal modal_small before js-modal-send" style="display: none;"><span class="modal__close"></span><span class="modal__title">Восстановление доступа</span>
+        <p class="modal__sub-title">Введите ваш электронный адрес и мы на него пришлем ссылку для смены пароля</p>
+        <form class="restoreForm" action="#" id="" method="">
+          <div class="restoreForm__wrap"><span class="restoreForm__email">Ваш эмайл</span>
+            <input class="restoreForm__input" type="text">
+            <button class="restoreForm__button blue-btn">Продолжить</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal modal_letter before js-modal-send" style="display: none;"><span class="modal__close"></span><span class="modal__title">Мы отправили вам письмо</span>
+        <p class="modal__sub-title">На почту <a class="modal__email-link" href="#">windozik@gmail.com</a> отправлено письмо со ссылкой для смены пароля.</p><a class="modal__resending" href="#">Отправить письмо еще раз?</a>
+        <div class="modal__footer">
+          <p class="modal__support">Если вы не видите наше письмо, не забудьте проверить «Спам» или <a class="modal__link" href="#">напишите в службу поддержки.</a></p>
+        </div>
+      </div>
+      <div class="modal modal_contact before js-modal-contact" style="display: none;"><span class="modal__close"></span><span class="modal__title">Связаться с нами</span>
+        <div class="modal__map-wrap">
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12307.259517024147!2d24.015624593025162!3d56.95502601511547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed01064fdaa39%3A0xdd903f76d5abc724!2sOstOrg%E2%84%A2%20baby%20shop!5e0!3m2!1sru!2sua!4v1566744683000!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <p class="modal__agree">Нажимая кнопку «Отправить» я даю <a class="modal__link" href="#">«Согласие на обработку и передачу персональных данных»</a></p>
+          </div>
+          <form class="feedbackForm" action="#">
+            <div class="feedbackForm__inputs-wrap">
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Ваше имя</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш эмайл</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш телефон</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+            </div>
+            <div class="feedbackForm__textarea-wrap"><span class="feedbackForm__title">Куда вы хотели бы поехать</span>
+              <textarea class="feedbackForm__textarea"></textarea>
+            </div>
+            <div class="feedbackForm__nav">
+              <div class="feedbackForm__capcha"><img src="images/cap.png" alt=""></div>
+              <button class="feedbackForm__btn blue-btn">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal_register js-modal-register"><span class="modal__close"></span>
+        <div class="modal__someone">
+          <div class="modal__welcome-wrap">
+            <div class="modal__logo"></div><span class="modal__title">Добро пожаловать!</span>
+            <p class="modal__sub-title">Пожалуйста, для далнейшего пользования войдите в нашу систему с вашей личной информацией</p><a class="modal__signin blue-btn" href="#">Войти</a>
+          </div>
+          <div class="modal__register-wrap"><span class="modal__register-title">Зарегистрироваться</span>
+            <div class="soc-wrap">
+              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div>
+            </div>
+            <p class="modal__sub-title">или используйте эмайл для регистрации</p>
+            <form class="feedbackForm" action="#"></form>
+            <div class="feedbackForm__inputs-wrap">
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Ваше имя</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш эмайл</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите пароль</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <input class="feedbackForm__input-checbox" type="checkbox" name="rulesService" id="rulesService">
+              <label class="feedbackForm__label" for="rulesService">C <a href="#">правилами </a> сервиса согласен</label>
+              <button class="feedbackForm__btn blue-btn">Регистрация</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_singin js-modal-singin" style="display: none;"><span class="modal__close"></span>
+        <div class="modal__someone">
+          <div class="modal__register-wrap"><span class="modal__register-title">Вход</span>
+            <div class="soc-wrap">
+              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div>
+            </div>
+            <p class="modal__sub-title">или используйте эмайл</p>
+            <form class="feedbackForm" action="#"></form>
+            <div class="feedbackForm__inputs-wrap">
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш эмайл</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите пароль</span>
+                <input class="feedbackForm__input" type="text">
+              </div><a class="feedbackForm__forgot-pass" href="#">Забыли ваш пароль?</a>
+              <button class="feedbackForm__btn blue-btn">Войти</button>
+            </div>
+          </div>
+          <div class="modal__welcome-wrap">
+            <div class="modal__logo"></div><span class="modal__title">Добрый день!</span>
+            <p class="modal__sub-title">Введите ваши персональные данные и начинайте планировать свое путешествие</p><a class="modal__signin blue-btn" href="#">Регистрация</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal js-modal-reg"></div>
+      <div class="modal js-modal-contact"></div>
+      <div class="modal js-modal"></div>
+      <div class="modal js-modal"></div>
+      <div class="modal js-modal"></div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="libs/libs.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

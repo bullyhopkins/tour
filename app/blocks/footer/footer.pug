@@ -1,0 +1,190 @@
+footer.footer
+	.footer-top
+		.container
+			nav.nav
+				ul.nav__list.nav__list_column
+					li.nav__title О компании
+					li.nav__item
+						a(href="#").nav__link О нас
+					li.nav__item
+						a(href="#").nav__link Отзывы
+					li.nav__item
+						a(href="#").nav__link Наши партнёры
+					li.nav__item
+						a(href="#").nav__link Реквизиты
+					li.nav__item
+						a(href="#").nav__link Контакты
+
+			nav.nav
+				ul.nav__list.nav__list_column
+					li.nav__title Туристам
+					li.nav__item
+						a(href="#").nav__link Правила покупки
+					li.nav__item
+						a(href="#").nav__link Политика конфиденциальности
+					li.nav__item
+						a(href="#").nav__link Как купить тур
+					li.nav__item
+						a(href="#").nav__link Частые вопросы
+					li.nav__item
+						a(href="#").nav__link Обратная связь
+					li.nav__item
+						a(href="#").nav__link Туры в рассрочку
+
+			.soc-wrap
+				p.nav__title Социальные сети
+				.soc-links
+					a(href="#").soc-link.soc-link_facebook
+					a(href="#").soc-link.soc-link_instagram
+					a(href="#").soc-link.soc-link_twitter
+					a(href="#").soc-link.soc-link_draugiem
+
+				a(href="#").blog-link
+					p.nav__title.nav__title_margin Блог
+
+					p.blog-text Kavin II is the clean Corporate Joomla Template for any businesses, freelancers, small business, agences, consulting…
+
+			.logo-wrap
+				a(href="#").logo
+				p.blog-text SofiTure - это туристическая компания нового поколения. Мы используем все доступные сегодня технологии, чтобы сделать выбор, оплату и бронирование Вашего путешествия максимально удобными и приятными.
+				.info-wrap
+					a(href="tel:67320372").info-link.tel-link 67 320 372
+					a(href="mailto:info@sofiture.lv").info-link.mail-link info@sofiture.lv
+
+	.footer-bottom
+		.container
+			p.copyright Copyright 2019 
+				a(href="#") SofiTure
+				|, All Right Reserved
+
+			.link-wrap
+				a(href="#") Горящие туры
+				a(href="#") Календарь низких цен
+				a(href="#") Поиск туров
+
+.mask
+
+.modal.modal_small.before.js-modal-send(style='display: none;')
+	span.modal__close
+	span.modal__title Восстановление доступа
+	p.modal__sub-title Введите ваш электронный адрес и мы на него пришлем ссылку для смены пароля
+	form(action="#" id="" method="").restoreForm
+		.restoreForm__wrap
+			span.restoreForm__email Ваш эмайл
+			input(type="text").restoreForm__input
+			button.restoreForm__button.blue-btn Продолжить
+
+
+.modal.modal_letter.before.js-modal-send(style='display: none;')
+	span.modal__close
+	span.modal__title Мы отправили вам письмо
+	p.modal__sub-title На почту 
+		a(href="#").modal__email-link windozik@gmail.com
+		|  отправлено письмо со ссылкой для смены пароля.
+	a(href="#").modal__resending Отправить письмо еще раз?
+	.modal__footer
+		p.modal__support Если вы не видите наше письмо, не забудьте проверить «Спам» или 
+			a(href="#").modal__link напишите в службу поддержки.
+
+.modal.modal_contact.before.js-modal-contact(style='display: none;')
+	span.modal__close
+	span.modal__title Связаться с нами
+	.modal__map-wrap
+		.map-wrap
+			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12307.259517024147!2d24.015624593025162!3d56.95502601511547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed01064fdaa39%3A0xdd903f76d5abc724!2sOstOrg%E2%84%A2%20baby%20shop!5e0!3m2!1sru!2sua!4v1566744683000!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="")
+			p.modal__agree Нажимая кнопку «Отправить» я даю 
+				a(href="#").modal__link «Согласие на обработку и передачу персональных данных»
+		form(action="#").feedbackForm
+			.feedbackForm__inputs-wrap
+				.feedbackForm__filds
+					span.feedbackForm__title Ваше имя
+					input(type="text").feedbackForm__input
+				.feedbackForm__filds
+					span.feedbackForm__title Введите ваш эмайл
+					input(type="text").feedbackForm__input
+				.feedbackForm__filds
+					span.feedbackForm__title Введите ваш телефон
+					input(type="text").feedbackForm__input
+			.feedbackForm__textarea-wrap
+				span.feedbackForm__title Куда вы хотели бы поехать
+				textarea.feedbackForm__textarea
+			.feedbackForm__nav
+				.feedbackForm__capcha
+					img(src="images/cap.png", alt="")
+				button.feedbackForm__btn.blue-btn Отправить
+.modal.modal_register.js-modal-register
+	span.modal__close
+	.modal__someone
+		.modal__welcome-wrap
+			.modal__logo
+			span.modal__title Добро пожаловать!
+			p.modal__sub-title Пожалуйста, для далнейшего пользования войдите в нашу систему с вашей личной информацией
+			a(href="#").modal__signin.blue-btn Войти
+		.modal__register-wrap
+			span.modal__register-title Зарегистрироваться
+			.soc-wrap
+				.soc-links
+					a(href="#").soc-link.soc-link_facebook
+					a(href="#").soc-link.soc-link_instagram
+					a(href="#").soc-link.soc-link_twitter
+					a(href="#").soc-link.soc-link_draugiem
+			p.modal__sub-title или используйте эмайл для регистрации
+			form(action="#").feedbackForm
+			.feedbackForm__inputs-wrap
+				.feedbackForm__filds
+					span.feedbackForm__title Ваше имя
+					input(type="text").feedbackForm__input
+				.feedbackForm__filds
+					span.feedbackForm__title Введите ваш эмайл
+					input(type="text").feedbackForm__input
+				.feedbackForm__filds
+					span.feedbackForm__title Введите пароль
+					input(type="text").feedbackForm__input
+				input(type="checkbox" name="rulesService" id="rulesService").feedbackForm__input-checbox
+				label(for="rulesService").feedbackForm__label C 
+					a(href="#") правилами 
+					|  сервиса согласен
+				button.feedbackForm__btn.blue-btn Регистрация
+.modal.modal_singin.js-modal-singin(style='display: none;')
+	span.modal__close
+	.modal__someone
+		.modal__register-wrap
+			span.modal__register-title Вход
+			.soc-wrap
+				.soc-links
+					a(href="#").soc-link.soc-link_facebook
+					a(href="#").soc-link.soc-link_instagram
+					a(href="#").soc-link.soc-link_twitter
+					a(href="#").soc-link.soc-link_draugiem
+			p.modal__sub-title или используйте эмайл
+			form(action="#").feedbackForm
+			.feedbackForm__inputs-wrap
+				.feedbackForm__filds
+					span.feedbackForm__title Введите ваш эмайл
+					input(type="text").feedbackForm__input
+				.feedbackForm__filds
+					span.feedbackForm__title Введите пароль
+					input(type="text").feedbackForm__input
+				a(href="#").feedbackForm__forgot-pass Забыли ваш пароль?
+				button.feedbackForm__btn.blue-btn Войти
+		.modal__welcome-wrap
+			.modal__logo
+			span.modal__title Добрый день!
+			p.modal__sub-title Введите ваши персональные данные и начинайте планировать свое путешествие
+			a(href="#").modal__signin.blue-btn Регистрация
+		
+							
+
+
+
+
+
+
+
+
+
+.modal.js-modal-reg
+.modal.js-modal-contact
+.modal.js-modal
+.modal.js-modal
+.modal.js-modal

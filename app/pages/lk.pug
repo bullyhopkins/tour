@@ -1,0 +1,57 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header-lk
+	
+block content
+	main.main
+		include ../components/intro-section-blue/intro-section-blue
+
+		section.lk-section
+			.container
+				.lk-wrap
+					.lk-sidebar
+						a(href="favorites.html").lk-link.lk-link_favorites Фавориты
+							span.lk-link__count 5
+						a(href="lk.html").lk-link.lk-link_settings.active Настройки
+
+					.lk-content
+						.lk-box
+							.lk-box__head
+								span.lk-box__title Мои контактные данные
+								a(href="lk-settings.html").lk-box__change Изменить
+							.lk-box__data-wrap
+								.lk-box__data
+									span.lk-box__gray Имя
+									span.lk-box__black Александр
+								.lk-box__data
+									span.lk-box__gray Фамилия
+									span.lk-box__black Григорьев
+								.lk-box__data
+									span.lk-box__gray Почта
+									span.lk-box__black aleks@gmail.com
+								.lk-box__data
+									span.lk-box__gray Телефон
+									span.lk-box__black 22187783
+								.lk-box__data
+									span.lk-box__gray Дата рождения
+									span.lk-box__black 18.06.1984
+
+						.lk-box
+							.lk-box__head
+								span.lk-box__title Настройка email-рассылки
+							form(action="#" id="" method="").order-form
+								input(type="checkbox" name="rules" id="rules").order-form__input-checbox
+								label(for="rules").order-form__label Получать рассылку Sofiture на почту
+									
+						.lk-box
+							.lk-box__head
+								span.lk-box__title Пароль от личного кабинета
+								a(href="lk-settings.html").lk-box__change Изменить
+
+
+block footer
+	include ../blocks/footer/footer

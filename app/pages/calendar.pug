@@ -1,0 +1,408 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section(style='background-image: url(images/intro-bg.png);').intro-section.intro-section_height
+			.container
+				.head-wrap.head-wrap_padding
+					a(href="#").logo
+					.info-wrap
+						a(href="tel:67320372").info-link.tel-link 67 320 372
+						a(href="mailto:info@sofiture.lv").info-link.mail-link info@sofiture.lv
+						a(href="#").buy-link.red-btn Купить тур в офисе
+				h2.intro-title Календарь низких цен
+				.questions-wrap
+					a(href="#").questions-link.scroll-link Частые вопросы
+
+		section.directions-section
+			.container
+				h2.section-title Наши направление
+					span.abs-text Hаправления
+				p.sub-text Популярные направления
+
+				.country-wrap
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+
+				p.sub-text Остальные направления
+
+				.country-wrap
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+		
+		section.calendar-section
+			.container
+				.calendar-wrap
+					.calendar
+						.calendar__img
+							img(src="../images/turkish.png", alt="")
+							h3.calendar__county Турция
+						.calendar__nav
+							form(action="#" id="" method="").tourForm
+								.tourForm__wrap
+									.tourForm__field
+										span Город вылета:
+										.select
+											select(name="city")
+												option(value="") Рига
+												option(value="") Рига
+												option(value="") Рига
+											span
+									.tourForm__field
+										span Класс отеля:
+										.select
+											select(name="hotel")
+												option(value="") Любой
+												option(value="") Любой
+									.tourForm__field
+										span Курорт:
+										.select
+											select(name="resort")
+												option(value="") Все
+												option(value="") Не все
+							span.calendar__more.red-btn Подробнее
+						.calendar__table.tourTable
+							.tourTable__head
+								span Месяц
+								span На 3 ночи
+								span На 7 ночей
+								span На 11 ночей
+								span На 14 ночей
+							.tourTable__line
+								span Июнь
+								span € 300
+								span € 900
+								span € 1300
+								span € 2300
+								
+							.tourTable__line
+								span Июль
+								span € 200
+								span € 500
+								span € 1200
+								span € 2200
+								
+							.tourTable__line.tourTable__line_green
+								span Август
+								span € 100
+								span € 425
+								span € 1000
+								span € 2000
+
+						.calendar__table.hidden.tourTable
+							.tourTable__line
+								span Июнь
+								span € 300
+								span € 900
+								span € 1300
+								span € 2300
+								
+							.tourTable__line
+								span Июль
+								span € 200
+								span € 500
+								span € 1200
+								span € 2200
+								
+							.tourTable__line.tourTable__line_green
+								span Август
+								span € 100
+								span € 425
+								span € 1000
+								span € 2000
+
+						.calendar__bottom
+							span.calendar__year-btn Показать весь год
+							span.calendar__price *Цены указаны в расчете на одного взрослого
+					
+					.calendar
+						.calendar__img
+							img(src="../images/greece.png", alt="")
+							h3.calendar__county Греция
+						.calendar__nav
+							form(action="#" id="" method="").tourForm
+								.tourForm__wrap
+									.tourForm__field
+										span Город вылета:
+										.select
+											select(name="city")
+												option(value="") Рига
+												option(value="") Рига
+												option(value="") Рига
+											span
+									.tourForm__field
+										span Класс отеля:
+										.select
+											select(name="hotel")
+												option(value="") Любой
+												option(value="") Любой
+									.tourForm__field
+										span Курорт:
+										.select
+											select(name="resort")
+												option(value="") Все
+												option(value="") Не все
+							span.calendar__more.red-btn Подробнее
+						.calendar__table.tourTable
+							.tourTable__head
+								span Месяц
+								span На 3 ночи
+								span На 7 ночей
+								span На 11 ночей
+								span На 14 ночей
+							.tourTable__line
+								span Июнь
+								span € 300
+								span € 900
+								span € 1300
+								span € 2300
+								
+							.tourTable__line
+								span Июль
+								span € 200
+								span € 500
+								span € 1200
+								span € 2200
+								
+							.tourTable__line.tourTable__line_green
+								span Август
+								span € 100
+								span € 425
+								span € 1000
+								span € 2000
+						.calendar__bottom
+							span.calendar__year-btn Показать весь год
+							span.calendar__price *Цены указаны в расчете на одного взрослого
+
+					.calendar
+						.calendar__img
+							img(src="../images/cyprus.png", alt="")
+							h3.calendar__county Кипр
+						.calendar__nav
+							form(action="#" id="" method="").tourForm
+								.tourForm__wrap
+									.tourForm__field
+										span Город вылета:
+										.select
+											select(name="city")
+												option(value="") Рига
+												option(value="") Рига
+												option(value="") Рига
+											span
+									.tourForm__field
+										span Класс отеля:
+										.select
+											select(name="hotel")
+												option(value="") Любой
+												option(value="") Любой
+									.tourForm__field
+										span Курорт:
+										.select
+											select(name="resort")
+												option(value="") Все
+												option(value="") Не все
+							span.calendar__more.red-btn Подробнее
+					
+					.calendar
+						.calendar__img
+							img(src="../images/tunisia.png", alt="")
+							h3.calendar__county Тунис
+						.calendar__nav
+							form(action="#" id="" method="").tourForm
+								.tourForm__wrap
+									.tourForm__field
+										span Город вылета:
+										.select
+											select(name="city")
+												option(value="") Рига
+												option(value="") Рига
+												option(value="") Рига
+											span
+									.tourForm__field
+										span Класс отеля:
+										.select
+											select(name="hotel")
+												option(value="") Любой
+												option(value="") Любой
+									.tourForm__field
+										span Курорт:
+										.select
+											select(name="resort")
+												option(value="") Все
+												option(value="") Не все
+							span.calendar__more.red-btn Подробнее
+					
+					.calendar
+						.calendar__img
+							img(src="../images/thailand.png", alt="")
+							h3.calendar__county Тайланд
+						.calendar__nav
+							form(action="#" id="" method="").tourForm
+								.tourForm__wrap
+									.tourForm__field
+										span Город вылета:
+										.select
+											select(name="city")
+												option(value="") Рига
+												option(value="") Рига
+												option(value="") Рига
+											span
+									.tourForm__field
+										span Класс отеля:
+										.select
+											select(name="hotel")
+												option(value="") Любой
+												option(value="") Любой
+									.tourForm__field
+										span Курорт:
+										.select
+											select(name="resort")
+												option(value="") Все
+												option(value="") Не все
+							span.calendar__more.red-btn Подробнее
+					
+					.calendar
+						.calendar__img
+							img(src="../images/india.png", alt="")
+							h3.calendar__county Индия
+						.calendar__nav
+							form(action="#" id="" method="").tourForm
+								.tourForm__wrap
+									.tourForm__field
+										span Город вылета:
+										.select
+											select(name="city")
+												option(value="") Рига
+												option(value="") Рига
+												option(value="") Рига
+											span
+									.tourForm__field
+										span Класс отеля:
+										.select
+											select(name="hotel")
+												option(value="") Любой
+												option(value="") Любой
+									.tourForm__field
+										span Курорт:
+										.select
+											select(name="resort")
+												option(value="") Все
+												option(value="") Не все
+							span.calendar__more.red-btn Подробнее
+					
+					.calendar
+							.calendar__img
+								img(src="../images/spain.png", alt="")
+								h3.calendar__county Испания
+							.calendar__nav
+								form(action="#" id="" method="").tourForm
+									.tourForm__wrap
+										.tourForm__field
+											span Город вылета:
+											.select
+												select(name="city")
+													option(value="") Рига
+													option(value="") Рига
+													option(value="") Рига
+												span
+										.tourForm__field
+											span Класс отеля:
+											.select
+												select(name="hotel")
+													option(value="") Любой
+													option(value="") Любой
+										.tourForm__field
+											span Курорт:
+											.select
+												select(name="resort")
+													option(value="") Все
+													option(value="") Не все
+								span.calendar__more.red-btn Подробнее													
+		
+		include ../blocks/loader/loader
+
+
+block footer
+	include ../blocks/footer/footer

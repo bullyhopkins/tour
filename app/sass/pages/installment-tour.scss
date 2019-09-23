@@ -1,0 +1,94 @@
+.installment-section {
+	padding: 60px 0;
+	
+	&_bg {
+		background-image: url('../images/partner-bg.png');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: contain;
+	}
+
+	.pay-latter{
+		margin-bottom: 100px;
+	}
+
+	.advantages-wrap {
+		display: flex;
+		justify-content: center;
+		margin: 0 -18px;
+	}
+
+	.advantages {
+		width: 368px;
+		height: 266px;
+		border-radius: 5px;
+		box-shadow: 0 0 20px 0 rgba(197, 197, 197, 0.5);
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 15px;
+
+		&__img-wrap {
+			width: 70px;
+			height: 79px;
+			overflow: hidden;
+			margin-bottom: 28px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__title {
+			font-size: 16px;
+			font-weight: 500;
+			color: #3b93d9;
+			margin-bottom: 29px;
+		}
+
+		&__text {
+			font-size: 12px;
+			line-height: 1.58;
+			text-align: center;
+			color: #333333;
+			padding: 0 46px;
+		}
+	}
+
+	.instal-title {
+		font-size: 26px;
+		line-height: 1.62;
+		color: #3a9ae7;
+		margin-bottom: 15px;
+	}
+
+	.description {
+		font-size: 14px;
+		line-height: 1.86;
+		color: #333333;
+		margin-bottom: 30px;
+	}
+
+	.instal-list {
+		display: block;
+		font-size: 14px;
+		line-height: 1.86;
+		font-weight: 500;
+		color: #333333;
+		margin-bottom: 20px;
+	}
+
+	.instal-paragraph {
+		font-size: 14px;
+		line-height: 1.86;
+		font-weight: normal;
+		color: #333333;
+		list-style-type: disc;
+	}
+	.list {
+		margin-bottom: 20px;
+	}
+}

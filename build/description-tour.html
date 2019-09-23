@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">Горящие туры</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Календарь низких цен</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Поиск туров</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Рейтинг туроператоров</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="lk-wrap"><a class="favorites" href="#"></a>
+            <div class="lang"> <span class="lang__item lang__link lang__current">RU</span>
+              <div class="lang__wrap"><a class="lang__link" href="#">LV</a><a class="lang__link" href="#">EN</a></div>
+            </div>
+            <div class="user"></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="intro-section intro-section_padding">
+          <div class="container">
+            <div class="head-wrap"><a class="logo" href="#"></a>
+              <div class="info-wrap"><a class="info-link tel-link" href="tel:67320372">67 320 372</a><a class="info-link mail-link" href="mailto:info@sofiture.lv">info@sofiture.lv</a><a class="buy-link red-btn" href="#">Купить тур в офисе</a></div>
+            </div>
+            <div class="tabs-wrap">
+              <div class="tabs js-tabs">
+                <ul class="tabs__caption js-tab-btn">
+                  <li class="tabs__item tabs__item_city active">Город вылета:  Rīga</li>
+                  <li class="tabs__item tabs__item_hot">Горячие предложения</li>
+                  <li class="tabs__item tabs__item_air">Авиа билеты</li>
+                </ul>
+                <div class="tabs__content tabs__content_city active js-tab-content">
+                  <form class="mainForm" action="#" id="" method="">
+                    <div class="mainForm__fild mainForm__fild_long">
+                      <input class="mainForm__input" type="text" placeholder="Страна, курорт или отель">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_date">
+                      <input class="mainForm__input" type="text" placeholder="Дата вылета" autocomplete="off" id="datepicker-hereNew">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_quantity calendar">
+                      <input class="mainForm__input js-quantity-input" type="text" placeholder="Кол-во ночей">
+                      <div class="number"><span class="number__title">От</span>
+                        <div class="number__wrap"><span class="number__btn minus">-</span>
+                          <input class="number__input" type="text" value="1"><span class="number__btn plus">+</span>
+                        </div><span class="number__title">До</span>
+                        <div class="number__wrap"><span class="number__btn minus">-</span>
+                          <input class="number__input" type="text" value="18"><span class="number__btn plus">+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_tourists">
+                      <input class="mainForm__input js-tourists-input" type="text" placeholder="Туристы">
+                      <div class="tourists"><span class="tourists__title">Взрослые</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="adult1" value="adult1" name="adult">
+                          <label for="adult1">1</label>
+                          <input type="radio" id="adult2" value="adult2" name="adult">
+                          <label for="adult2">2</label>
+                          <input type="radio" id="adult3" value="adult3" name="adult">
+                          <label for="adult3">3</label>
+                          <input type="radio" id="adult4" value="adult4" name="adult">
+                          <label for="adult4">4</label>
+                        </div><span class="tourists__title">Дети от 2 до 11 лет</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="child0" value="child0" name="child">
+                          <label for="child0">нет</label>
+                          <input type="radio" id="child1" value="child1" name="child">
+                          <label for="child1">1</label>
+                          <input type="radio" id="child2" value="child2" name="child">
+                          <label for="child2">2</label>
+                          <input type="radio" id="child3" value="child3" name="child">
+                          <label for="child3">3</label>
+                        </div><span class="tourists__title">Младенцы до 2 лет</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="baby0" value="baby0" name="baby">
+                          <label for="baby0">нет</label>
+                          <input type="radio" id="baby1" value="baby1" name="baby">
+                          <label for="baby1">1</label>
+                          <input type="radio" id="baby2" value="baby2" name="baby">
+                          <label for="baby2">2</label>
+                          <input type="radio" id="baby3" value="baby3" name="baby">
+                          <label for="baby3">3</label>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="mainForm__btn blue-btn" type="submit">Искать туры</button>
+                  </form>
+                </div>
+                <div class="tabs__content tabs__content_hot js-tab-content">
+                  <form class="mainForm" action="#" id="" method="">
+                    <div class="mainForm__fild mainForm__fild_date">
+                      <input class="mainForm__input" type="text" placeholder="Дата вылета">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_long">
+                      <input class="mainForm__input" type="text" placeholder="Страна, курорт или отель">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_quantity">
+                      <input class="mainForm__input" type="text" placeholder="Кол-во ночей">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_tourists">
+                      <input class="mainForm__input" type="text" placeholder="Туристы">
+                    </div>
+                    <button class="mainForm__btn blue-btn" type="submit">Искать туры</button>
+                  </form>
+                </div>
+                <div class="tabs__content tabs__content_air js-tab-content">
+                  <form class="mainForm" action="#" id="" method="">
+                    <div class="mainForm__fild mainForm__fild_date">
+                      <input class="mainForm__input" type="text" placeholder="Дата вылета">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_quantity">
+                      <input class="mainForm__input" type="text" placeholder="Кол-во ночей">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_long">
+                      <input class="mainForm__input" type="text" placeholder="Страна, курорт или отель">
+                    </div>
+                    <div class="mainForm__fild mainForm__fild_tourists">
+                      <input class="mainForm__input" type="text" placeholder="Туристы">
+                    </div>
+                    <button class="mainForm__btn blue-btn" type="submit">Искать туры</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="questions-wrap"><a class="questions-link" href="#">Частые вопросы</a></div>
+          </div>
+        </section>
+        <section class="hotel-description-section">
+          <div class="container">
+            <div class="description-wrap">
+              <div class="description-slider">
+                <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                <div class="owl-carousel owl-1" id="owl-1">
+                  <div class="item"><img src="images/art1.jpg" alt=""></div>
+                  <div class="item"><img src="images/art2.jpg" alt=""></div>
+                  <div class="item"><img src="images/favorite6.png" alt=""></div>
+                  <div class="item"><img src="images/art1.jpg" alt=""></div>
+                </div>
+                <div class="owl-carousel owl-2" id="owl-2">
+                  <div class="item"><img src="images/art1.jpg" alt=""></div>
+                  <div class="item"><img src="images/art2.jpg" alt=""></div>
+                  <div class="item"><img src="images/favorite6.png" alt=""></div>
+                  <div class="item"><img src="images/art1.jpg" alt=""></div>
+                </div><a class="link-tour" href="#">Отправить ссылку на тур</a>
+              </div>
+              <div class="description-info">
+                <div class="hotel-name">
+                  <h3 class="info-title">Ambassador Tre Rose</h3>
+                  <div class="raiting raiting_big"><span></span><span></span><span></span><span></span><span></span></div>
+                </div>
+                <div class="country-map"><span class="country-city">Italy, Venecia</span><a class="show-map" href="#">Посмотреть подробную карту</a></div>
+                <p class="description-text"> 
+                  <mark>Ambassador Tre Rose</mark>– уютный и небольшой, окутанный атмосферой непринужденности, в которой каждый гость почувствует…<a class="details-link" href="#">Читать далее</a>
+                </p>
+                <div class="conditions-wrap">
+                  <div class="condition">
+                    <div class="condition__img"><img src="../images/wifi.svg" alt=""></div><span class="condition__name">Интернет</span>
+                  </div>
+                  <div class="condition">
+                    <div class="condition__img"><img src="../images/food.svg" alt=""></div><span class="condition__name">Все включено</span>
+                  </div>
+                  <div class="condition">
+                    <div class="condition__img"><img src="../images/bar.svg" alt=""></div><span class="condition__name">Бар</span>
+                  </div>
+                  <div class="condition"><span class="condition__distance">200 M</span><span class="condition__name">Близко к пляжу</span></div>
+                  <div class="condition">
+                    <div class="condition__img"><img src="../images/pool.svg" alt=""></div><span class="condition__name">Бассейн</span>
+                  </div>
+                  <div class="condition">
+                    <div class="condition__img"><img src="../images/conditioner.svg" alt=""></div><span class="condition__name">Кондиционер</span>
+                  </div>
+                  <div class="condition">
+                    <div class="condition__img"><img src="../images/pebbles.svg" alt=""></div><span class="condition__name">Галька</span>
+                  </div>
+                  <div class="condition">
+                    <div class="condition__img"><img src="../images/baby.svg" alt=""></div><span class="condition__name">Отдых с детьми</span>
+                  </div>
+                </div>
+                <div class="details-tout">
+                  <div class="details"><span class="details-title">Детали тура</span><span class="data-tour">18.06.2019 - 02.07.2019</span>
+                    <div class="small-details">
+                      <div class="img-details"><img src="images/people.svg" alt=""></div><span class="sub-details">2 взрослых</span>
+                    </div>
+                    <div class="small-details">
+                      <div class="img-details"><img src="images/plane.svg" alt=""></div><span class="sub-details">Вылет из Риги</span>
+                    </div>
+                  </div>
+                  <div class="for-two"><span class="details-title">За двоих</span><span class="big-price">2260 €</span><span class="smal-price">Вкл. топл. сбор 200 €</span><a class="order-tour blue-btn" href="#">Заказать тур</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tab-tours-section">
+          <div class="container">
+            <h3 class="info-title">Туры в Sea Beach Resort & Aqua Park 4*</h3>
+            <form class="toursForm">
+              <div class="toursForm__wrap"><span class="toursForm__city">Город вылета</span>
+                <div class="citySelect citySelect_blue">
+                  <select class="citySelect__select" name="">
+                    <option class="citySelect__option" value="">Riga</option>
+                    <option class="citySelect__option" value="">Riga</option>
+                    <option class="citySelect__option" value="">Riga</option>
+                  </select>
+                </div>
+                <div class="toursForm__foodSelect"><span class="toursForm__select">Все типы питания</span>
+                  <div class="toursForm__foodWrap">
+                    <input class="toursForm__input" type="checkbox" id="ro" name="ro" value="ro">
+                    <label class="toursForm__label" for="ro">RO - Без питания</label>
+                    <input class="toursForm__input" type="checkbox" id="hb" name="hb" value="hb">
+                    <label class="toursForm__label" for="hb">HB - Завтрак+ужин</label>
+                    <input class="toursForm__input" type="checkbox" id="fb" name="fb" value="fb">
+                    <label class="toursForm__label" for="fb">FB - Завтрак, обед, ужин</label>
+                    <input class="toursForm__input" type="checkbox" id="bb" name="bb" value="bb">
+                    <label class="toursForm__label" for="bb">BB - Завтрак</label>
+                    <input class="toursForm__input" type="checkbox" id="ai" name="ai" value="ai">
+                    <label class="toursForm__label" for="ai">AI - Всё включено</label>
+                    <input class="toursForm__input" type="checkbox" id="uai" name="uai" value="uai">
+                    <label class="toursForm__label" for="uai">UAI - Ультра все включено</label>
+                    <input class="toursForm__input" type="checkbox" id="all" name="all" value="all">
+                    <label class="toursForm__label" for="all">Любой тип питания</label>
+                  </div>
+                </div>
+                <div class="toursFilter">
+                  <button class="toursFilter__filterBtn toursFilter__filterBtn_green" type="">Низкая</button><span>-</span>
+                  <button class="toursFilter__filterBtn toursFilter__filterBtn_red" type="">Высокая</button>
+                </div>
+              </div>
+            </form>
+            <div class="tabsTours js-tabs">
+              <ul class="tabsTours__list js-tab-btn">
+                <li class="tabsTours__item active"><span class="tabsTours__data">18 июля, вс</span><span class="tabsTours__data">от
+                    <spab class="tabsTours__price tabsTours__price_red">325 €</spab></span></li>
+                <li class="tabsTours__item"><span class="tabsTours__data">19 июля, пн</span><span class="tabsTours__data">от
+                    <spab class="tabsTours__price tabsTours__price_green">325 €</spab></span></li>
+                <li class="tabsTours__item"><span class="tabsTours__data">20 июля, вт</span><span class="tabsTours__data">от
+                    <spab class="tabsTours__price tabsTours__price_orange">325 €</spab></span></li>
+                <li class="tabsTours__item"><span class="tabsTours__data">21 июля, ср</span><span class="tabsTours__data">от
+                    <spab class="tabsTours__price tabsTours__price_red">325 €</spab></span></li>
+                <li class="tabsTours__item"><span class="tabsTours__data">22 июля, чт</span><span class="tabsTours__data">от
+                    <spab class="tabsTours__price tabsTours__price_red">325 €</spab></span></li>
+                <li class="tabsTours__item"><span class="tabsTours__data">23 июля, пт</span><span class="tabsTours__data">от
+                    <spab class="tabsTours__price tabsTours__price_red">325 €</spab></span></li>
+              </ul>
+              <div class="tabsTours__content js-tab-content active">
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner1.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер с видом на море</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner2.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер с видом на море</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner4.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner5.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner3.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner2.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner3.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур												</span></a>
+                </div>
+              </div>
+              <div class="tabsTours__content js-tab-content">
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner1.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер с видом на море</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+              </div>
+              <div class="tabsTours__content js-tab-content">
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner2.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер с видом на море</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+              </div>
+              <div class="tabsTours__content js-tab-content">
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner4.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+              </div>
+              <div class="tabsTours__content js-tab-content">
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner2.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур</span></a>
+                </div>
+              </div>
+              <div class="tabsTours__content js-tab-content">
+                <div class="tourCard">
+                  <div class="tourCard__img-wrap"><img src="images/partner3.png" alt=""></div>
+                  <div class="tourCard__room"><a class="tourCard__room-link" href="#">Стандартный номер</a><span class="tourCard__details">Все включено, 2 взрослых</span></div>
+                  <div class="tourCard__info-wrap">
+                    <div class="tourCard__info">
+                      <div class="tourCard__img"><img src="images/plane.svg" alt=""></div><span class="tourCard__depart-data">21 июня, ср</span>
+                      <div class="tourCard__img"><img src="images/plane-back.svg" alt=""></div><span class="tourCard__depart-data">1 июля, ср</span>
+                    </div><span class="tourCard__details">На 12 ночей, <a class="tourCard__avia-link" href="#">уточнить авиакомпанию</a></span>
+                  </div><a class="tourCard__main-link blue-btn" href="#"><span>150 €</span><span>Заказать тур												</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pay-tour-section">
+          <div class="container">
+            <div class="pay-tour-wrap" style="background-image: url(images/pay-tour.jpg);">
+              <div class="pay-tour-info">
+                <h4 class="pay-tour-title">Оплачивайте 50% сейчас, остальное потом!</h4>
+                <p class="pay-tour-text">Бронируйте тур заранее — платите только 10% стоимости. Услуга предоставляется бесплатно.</p><a class="pay-tour-link blue-btn" href="#">УЗНАТЬ ПОДРОБНЕЕ</a>
+              </div>
+              <div class="owl-carousel pay-slider">
+                <div class="item"><img src="images/palm.jpg" alt="">
+                  <p>Бронируйте тур заранее — Отдых в Греции</p>
+                </div>
+                <div class="item"><img src="images/sea-img.png" alt="">
+                  <p>Бронируйте тур заранее — Отдых в Египте</p>
+                </div>
+                <div class="item"><img src="images/palm.jpg" alt="">
+                  <p>Бронируйте тур заранее — Отдых в Греции</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sea-beach-section">
+          <div class="container">
+            <h3 class="info-title">Подробнее об отеле Sea Beach Resort & Aqua Park 4*</h3>
+            <p class="info-details">В курортном районе Набк Бэй, который находится в северо-восточной части знаменитого Шарм-Эль-Шейха (21,5 км), расположился роскошный отель Sea Beach Resort & Aqua Park (ех. Dessole Sea Beach Resort & Aqua Park; Tropicana Sea Beach). Инфраструктура этого отельного комплекса включает в себя жилую зону, представленную несколькими небольшими корпусами (3 этажа), и развлекательную зону, в которую помимо прочего входит собственный аквапарк в 17 разных горок. Расстояние до Международного аэропорта Шарм-эль-Шейх (Sharm el-Sheikh International Airport) - 12 км, до центра города - 22 км. Примечание: Администрация отеля оставляет за собой право вносить любые изменения в концепцию отеля, в том числе о наборе платных/бесплатных услуг без предварительного уведомления. Мы просим предварительно уточнять интересующую Вас информацию.</p>
+            <div class="images-wrap">
+              <div class="img-wrap"><img src="../images/sea-beach1.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach2.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach3.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach4.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach5.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach6.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach7.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach8.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach9.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach10.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach11.png" alt=""></div>
+              <div class="img-wrap"><img src="../images/sea-beach12.png" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="hotel-services-section">
+          <div class="container">
+            <h3 class="info-title">Услуги, предоставляемые отелем</h3>
+            <div class="services-wrap">
+              <div class="service">
+                <div class="service__img"><img src="images/infrastructure.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Инфраструктура отеля</span>
+                  <p class="service__text">Магазин сувениров, Магазины в отеле, Пункт обмена валюты, Сад, Бар, Ресторан, Снек-бар, Лобби бар, Открытый бассейн, Аквапарк, Интернет-кафе, Джакузи, Камера хранения багажа, Дайвинг-центр, Парковка, Водные горки, Бар у бассейна, Сейф на ресепшн (нет данных о стоимости)</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/convenience.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Удобства в номерах</span>
+                  <p class="service__text">Балкон, Душ, Мини-бар (платно), Сейф (бесплатно), Телевизор, Телефон, Фен, Кондиционер (бесплатно), Терраса, Ванна, Чайник, Интернет в номере (бесплатно), Холодильник</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/services.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Услуги в отеле</span>
+                  <p class="service__text">Круглосуточная стойка регистрации, Банкомат, Обслуживание в номерах, Аренда автомобиля, Трансфер, Прачечная, Химчистка, Глажка одежды, Заказ экскурсий, Шезлонги и зонтики у бассейна, Интернет/Wi-Fi на территории (бесплатно)</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/beach.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Пляж</span>
+                  <p class="service__text">Шезлонги и зонтики на пляже (бесплатно), Пляжные полотенца (бесплатно), Частный пляж, Песчаный</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/children.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Услуги для детей</span>
+                  <p class="service__text">Детская площадка, Детский бассейн, Детский клуб, Няня (платно), Детская анимация, Игровая комната, Кроватка (бесплатно)</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/sports.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Спорт</span>
+                  <p class="service__text">Водные виды спорта, Волейбол, Настольный теннис, Теннисный корт, Футбол, Дайвинг, Ныряние с маской и трубкой, Тренажерный зал, Виндсерфинг, Фитнес-центр</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/beauty.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Красота и здоровье</span>
+                  <p class="service__text">Вызов доктора (платно), Массаж, Парикмахерская, Салон красоты, Спа и оздоровительный центр, Паровая баня (хаммам), Сауна, Терраса для загара</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/numbers.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Удобства в номерах</span>
+                  <p class="service__text">Дартс, Анимация, Бильярд (платно)</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/menus.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Специальное меню</span>
+                  <p class="service__text">Шведский стол, Детское меню</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/special.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Специальные номера</span>
+                  <p class="service__text">Семейные номера, Для некурящих</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/business.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Бизнес-услуги</span>
+                  <p class="service__text">Переговорная, Ксерокс, Факс</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/accommodation.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Размещение</span>
+                  <p class="service__text">До аэропорта - 12км., До пляжа - 100м., До центра города - 22км.</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/getbeach.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Как добраться до пляжа</span>
+                  <p class="service__text">Пешая доступность</p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__img"><img src="images/position.svg" alt=""></div>
+                <div class="service__info"><span class="service__name">Положение относительно пляжа</span>
+                  <p class="service__text">1-я линия, пляж через дорогу</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hotel-reviews-section">
+          <div class="container">
+            <h3 class="info-title">Отзывы о Sea Beach Resort & Aqua Park 4*</h3>
+            <div class="rating-wrap">
+              <div class="rating">
+                <h3 class="rating__title">Рейтинг отеля:</h3>
+                <div class="rating__content">
+                  <div class="rating__assessment"><span class="rating__value">4,5</span></div>
+                  <div class="rating__sub-rating">
+                    <div class="rating__line">
+                      <div class="rating__img"><img src="../images/placing.svg" alt=""></div><span class="rating__info">Размещение -</span><span class="rating__count">4,5</span>
+                    </div>
+                    <div class="rating__line">
+                      <div class="rating__img"><img src="../images/service.svg" alt=""></div><span class="rating__info">Сервис -</span><span class="rating__count">4,5</span>
+                    </div>
+                    <div class="rating__line">
+                      <div class="rating__img"><img src="../images/rating-food.svg" alt=""></div><span class="rating__info">Питание -</span><span class="rating__count">4,5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rating">
+                <h3 class="rating__title">Отзывы и рекомендации:</h3>
+                <div class="rating__content">
+                  <div class="rating__assessment rating__assessment_revirws"><span class="rating__value rating__value_revirws">2280</span></div>
+                  <div class="rating__sub-rating">
+                    <div class="rating__line">
+                      <div class="rating__img"><img src="../images/good.svg" alt=""></div><span class="rating__info">Хороших -</span><span class="rating__count">80%</span>
+                    </div>
+                    <div class="rating__line">
+                      <div class="rating__img"><img src="../images/normal.svg" alt=""></div><span class="rating__info">Средних -</span><span class="rating__count">7%</span>
+                    </div>
+                    <div class="rating__line">
+                      <div class="rating__img"><img src="../images/bad.svg" alt=""></div><span class="rating__info">Плохих -</span><span class="rating__count">13%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="info-title"> Всего отзывов об отеле – <span class="reviews-count">2280</span></h3>
+            <div class="reviews-wrap">
+              <div class="review">
+                <div class="review__photo"><img src="images/review1.png" alt=""></div>
+                <div class="review__info">
+                  <div class="review__data"><span class="review__name">James Olesen</span>
+                    <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div><span class="review__day">2 days ago</span>
+                  </div>
+                  <p class="review__text">Размещение. Итак, приехали мы в этот отель в 8 утра. Заселение, сказали в 14 часов. Завтрак у них не положен. Где-то в 11,30 позвали на рецепшн и предложили заселить нас пораньше за "бесплатный" презент. Мы согласились, в результате заселили нас в общей сложности где-то через час. За шоколадку. Деньги мы не давали. Номер попался хороший ( 3511), просторный, ванная комната тоже была большая.</p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="review__photo"><img src="images/review2.png" alt=""></div>
+                <div class="review__info">
+                  <div class="review__data"><span class="review__name">James Olesen</span>
+                    <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div><span class="review__day">2 days ago</span>
+                  </div>
+                  <p class="review__text">Отдыхали в этом отеле в период с 19.06.2019 по 30.06.2019. Нас было 2 взрослых и ребенок 5 лет. В целом нам отдых очень понравился. Для ребенка развлечений очень много аквапарк, 4 бассейна, мультики вечером, мороженое, танцы и замечательный детский аниматор Элина, которая стала как вторая мама для нашего ребенка, который был готов вместо аквапарка и моря идти в детский клуб к ней.</p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="review__photo"><img src="images/review1.png" alt=""></div>
+                <div class="review__info">
+                  <div class="review__data"><span class="review__name">James Olesen</span>
+                    <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div><span class="review__day">2 days ago</span>
+                  </div>
+                  <p class="review__text">Отдыхали с семьёй в период с 21 по 28 июня 2019. Прилетели мы 21 числа, вечером, в 21.30 были в отеле. Сразу нас отправили на ужин, а потом заселили в номер. Номер приличный, с видом на море. Территория отеля большая и чистая. Персонал приветливый. Пляж песчаный, вход в море с понтона. Глубина не большая. Были отливы, приливы. Во время отлива не хватало глубины для купания. Анимация очень хорошая!</p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="review__photo"><img src="images/review2.png" alt=""></div>
+                <div class="review__info">
+                  <div class="review__data"><span class="review__name">James Olesen</span>
+                    <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div><span class="review__day">2 days ago</span>
+                  </div>
+                  <p class="review__text">Отдыхали в этом отеле в период с 19.06.2019 по 30.06.2019. Нас было 2 взрослых и ребенок 5 лет. В целом нам отдых очень понравился. Для ребенка развлечений очень много аквапарк, 4 бассейна, мультики вечером, мороженое, танцы и замечательный детский аниматор Элина, которая стала как вторая мама для нашего ребенка, который был готов вместо аквапарка и моря идти в детский клуб к ней.</p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="review__photo"><img src="images/review1.png" alt=""></div>
+                <div class="review__info">
+                  <div class="review__data"><span class="review__name">James Olesen</span>
+                    <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div><span class="review__day">2 days ago</span>
+                  </div>
+                  <p class="review__text">Отдыхали с семьёй в период с 21 по 28 июня 2019. Прилетели мы 21 числа, вечером, в 21.30 были в отеле. Сразу нас отправили на ужин, а потом заселили в номер. Номер приличный, с видом на море. Территория отеля большая и чистая. Персонал приветливый. Пляж песчаный, вход в море с понтона. Глубина не большая. Были отливы, приливы. Во время отлива не хватало глубины для купания. Анимация очень хорошая!						</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="manager-section">
+          <div class="container">
+            <div class="manager-wrap">
+              <div class="manager-content">
+                <h3 class="manager-title">Ваш персональный менеджер</h3>
+                <p class="manager-text">Бесплатно поможет сделать правильный выбор и ответит на любые вопросы по туру</p><a class="manager-btn blue-btn" href="#">Написать менеджеру</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="map-section">
+          <div class="container">
+            <h3 class="info-title"> Ориентиры поблизости отеля Sea Beach Resort & Aqua Park 4*</h3>
+            <div class="map-wrap">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12307.259517024147!2d24.015624593025162!3d56.95502601511547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed01064fdaa39%3A0xdd903f76d5abc724!2sOstOrg%E2%84%A2%20baby%20shop!5e0!3m2!1sru!2sua!4v1566744683000!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <div class="hotel">
+                <div class="like-wrap"><a class="favorites" href="#"></a></div>
+                <div class="hotel__img"><img src="images/hotel.png" alt=""></div>
+                <div class="hotel__info"><span class="hotel__name">Stella hotel</span>
+                  <div class="raiting"><span></span><span></span><span></span><span></span><span></span></div><span class="hotel__place">Italy, Venecia</span><a class="hotel__link blue-btn" href="#">Туры от 220 €</a>
+                </div>
+              </div><span class="map-btn map-btn_open blue-btn">Развернуть карту</span><span class="map-btn map-btn_hide blue-btn">Скрыть карту</span>
+            </div>
+            <div class="landmarks-wrap">
+              <div class="landmarks"><span class="landmarks__title">Ближайшие достопримечательности</span>
+                <div class="landmarks__line"><span class="landmarks__name">Бухта Набк-Бей</span><span class="landmarks__distance">0,3км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">La Strada Mall</span><span class="landmarks__distance">0,7км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Hard Rock Cafe Nabq Bay</span><span class="landmarks__distance">1,2км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Курорт Порто-Шарм</span><span class="landmarks__distance">2,0км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Пляжный клуб Pataya</span><span class="landmarks__distance">3,3км</span></div>
+              </div>
+              <div class="landmarks"><span class="landmarks__title">Пляжи в окрестностях</span>
+                <div class="landmarks__line"><span class="landmarks__name">Nabq Bay Beach</span><span class="landmarks__distance">500м</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Royal Albatros Moderna Beach</span><span class="landmarks__distance">700м</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Steigenberger Alcazar Beach</span><span class="landmarks__distance">800м</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Mousa Bay Beach</span><span class="landmarks__distance">1,5км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Tantura Bay Beach</span><span class="landmarks__distance">1,7км</span></div>
+              </div>
+              <div class="landmarks"><span class="landmarks__title">Рестораны, магазины и рынки</span>
+                <div class="landmarks__line"><span class="landmarks__name">Бухта Набк-Бей</span><span class="landmarks__distance">0,3км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">La Strada Mall</span><span class="landmarks__distance">0,7км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Hard Rock Cafe Nabq Bay</span><span class="landmarks__distance">1,2км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Курорт Порто-Шарм</span><span class="landmarks__distance">2,0км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Пляжный клуб Pataya</span><span class="landmarks__distance">3,3км</span></div>
+              </div>
+              <div class="landmarks"><span class="landmarks__title">Самые популярные достопримечательности </span>
+                <div class="landmarks__line"><span class="landmarks__name">Nabq Bay Beach</span><span class="landmarks__distance">500м</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Royal Albatros Moderna Beach</span><span class="landmarks__distance">700м</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Steigenberger Alcazar Beach</span><span class="landmarks__distance">800м</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Mousa Bay Beach</span><span class="landmarks__distance">1,5км</span></div>
+                <div class="landmarks__line"><span class="landmarks__name">Tantura Bay Beach</span><span class="landmarks__distance">1,7км</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <nav class="nav">
+              <ul class="nav__list nav__list_column">
+                <li class="nav__title">О компании</li>
+                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Наши партнёры</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Реквизиты</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <nav class="nav">
+              <ul class="nav__list nav__list_column">
+                <li class="nav__title">Туристам</li>
+                <li class="nav__item"><a class="nav__link" href="#">Правила покупки</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Политика конфиденциальности</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Как купить тур</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Частые вопросы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Туры в рассрочку</a></li>
+              </ul>
+            </nav>
+            <div class="soc-wrap">
+              <p class="nav__title">Социальные сети</p>
+              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div><a class="blog-link" href="#">
+                <p class="nav__title nav__title_margin">Блог</p>
+                <p class="blog-text">Kavin II is the clean Corporate Joomla Template for any businesses, freelancers, small business, agences, consulting…</p></a>
+            </div>
+            <div class="logo-wrap"><a class="logo" href="#"></a>
+              <p class="blog-text">SofiTure - это туристическая компания нового поколения. Мы используем все доступные сегодня технологии, чтобы сделать выбор, оплату и бронирование Вашего путешествия максимально удобными и приятными.</p>
+              <div class="info-wrap"><a class="info-link tel-link" href="tel:67320372">67 320 372</a><a class="info-link mail-link" href="mailto:info@sofiture.lv">info@sofiture.lv</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">Copyright 2019 <a href="#">SofiTure</a>, All Right Reserved</p>
+            <div class="link-wrap"><a href="#">Горящие туры</a><a href="#">Календарь низких цен</a><a href="#">Поиск туров</a></div>
+          </div>
+        </div>
+      </footer>
+      <div class="mask"></div>
+      <div class="modal modal_small before js-modal-send" style="display: none;"><span class="modal__close"></span><span class="modal__title">Восстановление доступа</span>
+        <p class="modal__sub-title">Введите ваш электронный адрес и мы на него пришлем ссылку для смены пароля</p>
+        <form class="restoreForm" action="#" id="" method="">
+          <div class="restoreForm__wrap"><span class="restoreForm__email">Ваш эмайл</span>
+            <input class="restoreForm__input" type="text">
+            <button class="restoreForm__button blue-btn">Продолжить</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal modal_letter before js-modal-send" style="display: none;"><span class="modal__close"></span><span class="modal__title">Мы отправили вам письмо</span>
+        <p class="modal__sub-title">На почту <a class="modal__email-link" href="#">windozik@gmail.com</a> отправлено письмо со ссылкой для смены пароля.</p><a class="modal__resending" href="#">Отправить письмо еще раз?</a>
+        <div class="modal__footer">
+          <p class="modal__support">Если вы не видите наше письмо, не забудьте проверить «Спам» или <a class="modal__link" href="#">напишите в службу поддержки.</a></p>
+        </div>
+      </div>
+      <div class="modal modal_contact before js-modal-contact" style="display: none;"><span class="modal__close"></span><span class="modal__title">Связаться с нами</span>
+        <div class="modal__map-wrap">
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12307.259517024147!2d24.015624593025162!3d56.95502601511547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed01064fdaa39%3A0xdd903f76d5abc724!2sOstOrg%E2%84%A2%20baby%20shop!5e0!3m2!1sru!2sua!4v1566744683000!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <p class="modal__agree">Нажимая кнопку «Отправить» я даю <a class="modal__link" href="#">«Согласие на обработку и передачу персональных данных»</a></p>
+          </div>
+          <form class="feedbackForm" action="#">
+            <div class="feedbackForm__inputs-wrap">
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Ваше имя</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш эмайл</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш телефон</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+            </div>
+            <div class="feedbackForm__textarea-wrap"><span class="feedbackForm__title">Куда вы хотели бы поехать</span>
+              <textarea class="feedbackForm__textarea"></textarea>
+            </div>
+            <div class="feedbackForm__nav">
+              <div class="feedbackForm__capcha"><img src="images/cap.png" alt=""></div>
+              <button class="feedbackForm__btn blue-btn">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal_register js-modal-register"><span class="modal__close"></span>
+        <div class="modal__someone">
+          <div class="modal__welcome-wrap">
+            <div class="modal__logo"></div><span class="modal__title">Добро пожаловать!</span>
+            <p class="modal__sub-title">Пожалуйста, для далнейшего пользования войдите в нашу систему с вашей личной информацией</p><a class="modal__signin blue-btn" href="#">Войти</a>
+          </div>
+          <div class="modal__register-wrap"><span class="modal__register-title">Зарегистрироваться</span>
+            <div class="soc-wrap">
+              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div>
+            </div>
+            <p class="modal__sub-title">или используйте эмайл для регистрации</p>
+            <form class="feedbackForm" action="#"></form>
+            <div class="feedbackForm__inputs-wrap">
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Ваше имя</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш эмайл</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите пароль</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <input class="feedbackForm__input-checbox" type="checkbox" name="rulesService" id="rulesService">
+              <label class="feedbackForm__label" for="rulesService">C <a href="#">правилами </a> сервиса согласен</label>
+              <button class="feedbackForm__btn blue-btn">Регистрация</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_singin js-modal-singin" style="display: none;"><span class="modal__close"></span>
+        <div class="modal__someone">
+          <div class="modal__register-wrap"><span class="modal__register-title">Вход</span>
+            <div class="soc-wrap">
+              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div>
+            </div>
+            <p class="modal__sub-title">или используйте эмайл</p>
+            <form class="feedbackForm" action="#"></form>
+            <div class="feedbackForm__inputs-wrap">
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш эмайл</span>
+                <input class="feedbackForm__input" type="text">
+              </div>
+              <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите пароль</span>
+                <input class="feedbackForm__input" type="text">
+              </div><a class="feedbackForm__forgot-pass" href="#">Забыли ваш пароль?</a>
+              <button class="feedbackForm__btn blue-btn">Войти</button>
+            </div>
+          </div>
+          <div class="modal__welcome-wrap">
+            <div class="modal__logo"></div><span class="modal__title">Добрый день!</span>
+            <p class="modal__sub-title">Введите ваши персональные данные и начинайте планировать свое путешествие</p><a class="modal__signin blue-btn" href="#">Регистрация</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal js-modal-reg"></div>
+      <div class="modal js-modal-contact"></div>
+      <div class="modal js-modal"></div>
+      <div class="modal js-modal"></div>
+      <div class="modal js-modal"></div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="libs/libs.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

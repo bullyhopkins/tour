@@ -1,0 +1,271 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section.intro-section.intro-section_height
+			.container
+				.head-wrap
+					a(href="#").logo
+					.info-wrap
+						a(href="tel:67320372").info-link.tel-link 67 320 372
+						a(href="mailto:info@sofiture.lv").info-link.mail-link info@sofiture.lv
+						a(href="#").buy-link.red-btn Купить тур в офисе
+				h2.intro-title О компании SofiTure
+				ul.links
+					li.links__item
+						a(href="#why").links__link.scroll-link Почему SofiTure?
+					li.links__item
+						a(href="#buy").links__link.scroll-link Как купить тур?
+					li.links__item
+						a(href="#reviews").links__link.scroll-link Отзывы клиентов
+					li.links__item
+						a(href="#agents").links__link.scroll-link Наши агенты
+					li.links__item
+						a(href="#requisites").links__link.scroll-link Наши Реквизиты
+				.questions-wrap
+					a(href="#").questions-link.scroll-link Частые вопросы
+
+		section.about-section#why
+			.container
+				h2.section-title Преимущества SOFITURE
+					span.abs-text Преимущества
+				p.sub-text Мы создали сервис, благодаря которому вы можете сэкономить свои ценные ресурсы. Закажите готовый тур онлайн. Все необходимые детали путешествия мы сообщим вам по телефону, а документы пришлем на email.
+
+				.advantages-wrap
+					.advantage
+						.advantage__img
+							img(src="images/aboutus1.svg", alt="Image description")
+						span.advantage__title Сравнивайте цены туроператоров в режиме онлайн
+						p.advantage__text Как только нажмете «Поиск» на сайте — наша система в режиме реального времени проверит предложения от всех туроператоров​ и​ предложит список лучших предложений. Вы сможете выбрать самый привлекательный тур.
+
+					.advantage
+						.advantage__img
+							img(src="images/aboutus2.svg", alt="Image description")
+						span.advantage__title Гарантия лучшей цены
+						p.advantage__text Если вы найдете готовый тур дешевле, чем у нас, при одинаковых условиях бронирования, мы предложим его вам по той же или более выгодной цене.
+
+					.advantage
+						.advantage__img
+							img(src="images/aboutus3.svg", alt="Image description")
+						span.advantage__title Рассрочка
+						p.advantage__text Вам понравился тур, но до зарплаты еще далеко? И на это у нас есть ответ — выберите удобный способ оплаты, просто свяжитись с нашим офисом.
+
+					.advantage
+						.advantage__img
+							img(src="images/aboutus4.svg", alt="Image description")
+						span.advantage__title 100% гарантия отдыха
+						p.advantage__text Чтобы вы чувствовали себя спокойно и уверенно на отдыхе — предлагаем несколько уникальных страховых программы.
+
+					.advantage
+						.advantage__img
+							img(src="images/aboutus5.svg", alt="Image description")
+						span.advantage__title Все оформляем онлайн. Не нужно никуда ехать
+						p.advantage__text Все вопросы решаются по почте и телефону. И оплата, и даже договор!
+
+					.advantage
+						.advantage__img
+							img(src="images/aboutus6.svg", alt="Image description")
+						span.advantage__title Работаем 24/7
+						p.advantage__text Наши менеджеры по туризму всегда на связи. Они будут сопровождать вас от первого звонка-заявки для подбора тура до вашего возвращения из отпуска.
+
+		section.how-buy-section#buy
+			.container
+				h2.section-title Как купить тур
+					span.abs-text Купить
+				p.sub-text Мы создали сервис, благодаря которому вы можете сэкономить свои ценные ресурсы. Закажите готовый тур онлайн. Все необходимые детали путешествия мы сообщим вам по телефону, а документы пришлем на email.
+				.how-buy-wrap
+					.buy-tabs-wrap
+						.buy-tabs.js-tabs
+							ul.buy-tabs__list.js-tab-btn
+								li.buy-tabs__item.active
+								li.buy-tabs__item
+								li.buy-tabs__item
+								li.buy-tabs__item
+								li.buy-tabs__item
+								li.buy-tabs__item
+								li.buy-tabs__item
+
+							.buy-tabs__content.js-tab-content.active
+								span.buy-tabs__step Шаг 1
+								span.buy-tabs__title Выбор тура
+								p.buy-tabs__text Выбирайте тур на сайте. Определиться с выбором направления или отеля вам поможет наше интуитивно понятное меню с удобной системой поиска и сортировки. Наш сайт предоставляет информацию от 120 туроператоров и позволяет выбрать наиболее подходящий вариант тура.
+
+
+							.buy-tabs__content.js-tab-content
+								span.buy-tabs__step Шаг 2
+								span.buy-tabs__title Выбор тура 2
+								p.buy-tabs__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus explicabo sunt consequuntur ipsa totam dolor, et repudiandae, ratione molestias doloremque eum dolorum vel autem asperiores illum rerum quis dolorem consectetur.
+
+							.buy-tabs__content.js-tab-content
+								span.buy-tabs__step Шаг 3
+								span.buy-tabs__title Выбор тура 3
+								p.buy-tabs__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat voluptates dolore at dolores rem aut ratione dignissimos quibusdam quasi, optio, aperiam necessitatibus suscipit porro veritatis id illum, aspernatur quas facilis!
+
+							.buy-tabs__content.js-tab-content
+								span.buy-tabs__step Шаг 4
+								span.buy-tabs__title Выбор тура 4
+								p.buy-tabs__text Выбирайте тур на сайте. Определиться с выбором направления или отеля вам поможет наше интуитивно понятное меню с удобной системой поиска и сортировки. Наш сайт предоставляет информацию от 120 туроператоров и позволяет выбрать наиболее подходящий вариант тура.
+
+							.buy-tabs__content.js-tab-content
+								span.buy-tabs__step Шаг 5
+								span.buy-tabs__title Выбор тура
+								p.buy-tabs__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dignissimos labore quasi veritatis, incidunt repellat dicta rerum est aperiam, totam, omnis fugit, dolores error modi voluptate earum similique ea magnam!
+
+							.buy-tabs__content.js-tab-content
+								span.buy-tabs__step Шаг 6
+								span.buy-tabs__title Выбор тура
+								p.buy-tabs__text Выбирайте тур на сайте. Определиться с выбором направления или отеля вам поможет наше интуитивно понятное меню с удобной системой поиска и сортировки. Наш сайт предоставляет информацию от 120 туроператоров и позволяет выбрать наиболее подходящий вариант тура.
+
+							.buy-tabs__content.js-tab-content
+								span.buy-tabs__step Шаг 7
+								span.buy-tabs__title Выбор тура
+								p.buy-tabs__text Выбирайте тур на сайте. Определиться с выбором направления или отеля вам поможет наше интуитивно понятное меню с удобной системой поиска и сортировки. Наш сайт предоставляет информацию от 120 туроператоров и позволяет выбрать наиболее подходящий вариант тура.
+
+					.img-wrap
+						img(src="images/how-img.png", alt="")
+
+		section.reviews-section.reviews-section_blue-bg#reviews
+			.container
+				h2.section-title.section-title_white Отзывы наших клиентов
+				p.reviews-text SofiTure - это не только отличный сайт для поиска туров, но и также профессиональная команда менеджеров, которая всегда прийдет к вам на помощь и будет с вам и в горе и в радости на протяжении всего вашего отдыха.
+
+			.slider-wrap
+				.owl-carousel.carousel-clients
+					.slide-holder
+						.client
+							.client__info
+								.client__photo
+									img(src="images/client1.png", alt="")
+								.client__data
+									span.client__name Никита Иванов
+									span.client__tour Тур по Исландии
+									.raiting
+										span
+										span
+										span
+										span
+										span
+
+							p.client__review Понравилось все! Все забронировал и оплатил, сразу связались со мной письменно с информацией по туру. По моей просьбе документы выслали раньше.
+
+					.slide-holder
+						.client
+							.client__info
+								.client__photo
+									img(src="images/client2.png", alt="")
+								.client__data
+									span.client__name Алина Латышева
+									span.client__tour Тур по Исландии
+									.raiting
+										span
+										span
+										span
+										span
+										span
+
+							p.client__review Понравилась оперативность, вовремя предоставленные документы на тур, информирование о времени вылета по смс. Перед заказом тура получила консультацию.
+
+					.slide-holder
+						.client
+							.client__info
+								.client__photo
+									img(src="images/client3.png", alt="")
+								.client__data
+									span.client__name Алексей Степанов
+									span.client__tour Тур по Исландии
+									.raiting
+										span
+										span
+										span
+										span
+										span
+
+							p.client__review Отличный сайт, все предложения можно выбрать и по дате и по предложениям выбора авиакомпаний. Безопасная оплата через сайт. 
+		
+		section.agents-section#agents
+			.container
+				h2.section-title Наши агенты
+					span.abs-text.abs-text_gray агенты
+				p.sub-text Мы надеемся, что наша качественная работа и персональный подход к каждому клиенту станут залогом долгосрочного сотрудничества с нами!
+
+				.owl-carousel.carousel-agents
+					.agent
+						img(src="images/agent.jpg", alt="")
+						.agent-info
+							span.agent-name Алина Латышева
+							span.agent-id 67320314, 26555570
+							a(href="mailto:alina@sofiture.lv").agent-mail alina@sofiture.lv
+
+					.agent
+						img(src="images/agent.jpg", alt="")
+						.agent-info
+							span.agent-name Алина Латышева
+							span.agent-id 67320314, 26555570
+							a(href="mailto:alina@sofiture.lv").agent-mail alina@sofiture.lv
+
+					.agent
+						img(src="images/agent.jpg", alt="")
+						.agent-info
+							span.agent-name Алина Латышева
+							span.agent-id 67320314, 26555570
+							a(href="mailto:alina@sofiture.lv").agent-mail alina@sofiture.lv
+
+					.agent
+						img(src="images/agent.jpg", alt="")
+						.agent-info
+							span.agent-name Алина Латышева
+							span.agent-id 67320314, 26555570
+							a(href="mailto:alina@sofiture.lv").agent-mail alina@sofiture.lv
+
+					.agent
+						img(src="images/agent.jpg", alt="")
+						.agent-info
+							span.agent-name Алина Латышева
+							span.agent-id 67320314, 26555570
+							a(href="mailto:alina@sofiture.lv").agent-mail alina@sofiture.lv
+
+					.agent
+						img(src="images/agent.jpg", alt="")
+						.agent-info
+							span.agent-name Алина Латышева
+							span.agent-id 67320314, 26555570
+							a(href="mailto:alina@sofiture.lv").agent-mail alina@sofiture.lv
+		
+		section.requisites-section#requisites
+			.container
+				h2.section-title Наши реквизиты
+					span.abs-text реквизиты
+				p.sub-text Мы надеемся, что наша качественная работа и персональный подход к каждому клиенту станут залогом долгосрочного сотрудничества с нами!
+				
+				.requisites-wrap
+					.requisites
+						.requisites__line 
+							span.requisites__info Номер счета:
+							span.requisites__data LV89HABA0001403033200
+						.requisites__line 
+							span.requisites__info Рег. номер:
+							span.requisites__data 40003240524
+						.requisites__line 
+							span.requisites__info Код:
+							span.requisites__data LV40003240524
+						.requisites__line 
+							span.requisites__info Эмайл:
+							span.requisites__data info@swedbank.lv
+						.requisites__line 
+							span.requisites__info Адрес:
+							span.requisites__data Баласта дамбис 15, Рига, LV-1048
+						.requisites__line 
+							span.requisites__info Телефон:
+							span.requisites__data 67 444 444
+
+
+
+
+block footer
+	include ../blocks/footer/footer

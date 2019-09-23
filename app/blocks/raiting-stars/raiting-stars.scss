@@ -1,0 +1,51 @@
+.star-rating {
+	display: inline-block;
+}
+
+.star-rating input[type=radio] {
+	display: none;
+}
+
+.star-rating label {
+	color: #ffb334;
+	font-size: 18px;
+	padding: 0;
+	transition: all .3s ease-in-out;
+}
+
+// .star-rating label:hover,
+// .star-rating label:hover ~ label,
+// .star-rating input[type=radio]:checked ~ label {
+//     color: #f2b600
+// }
+
+
+.raiting {
+	display: flex;
+	&_big {
+		span {
+			width: 18px !important;
+			height: 18px !important;
+			margin-right: 6px !important;
+		}
+	}
+
+	&_middle {
+		span {
+			width: 14px !important;
+			height: 14px !important;
+			margin-right: 5px !important;
+		}
+	}
+	span {
+		width: 10px;
+		height: 10px;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath fill='%23FFB334' fill-rule='evenodd' d='M9 0c.258 0 .492.067.703.2.21.133.368.314.474.544l2.037 4.373 4.69.708a1.316 1.316 0 0 1 1.036.89c.07.229.079.461.026.697a1.292 1.292 0 0 1-.342.626l-3.425 3.539.79 4.917c.047.242.02.478-.079.708-.1.23-.249.417-.448.562-.117.085-.24.145-.369.182a1.419 1.419 0 0 1-.702.018 1.154 1.154 0 0 1-.316-.127L9 15.569l-4.092 2.268a.931.931 0 0 1-.299.127 1.409 1.409 0 0 1-.711-.018 1.19 1.19 0 0 1-.36-.182 1.344 1.344 0 0 1-.448-.562c-.1-.23-.126-.466-.08-.708l.791-4.917L.376 8.038a1.292 1.292 0 0 1-.342-.626 1.347 1.347 0 0 1 .026-.698 1.39 1.39 0 0 1 .404-.59c.188-.163.398-.263.632-.3l4.69-.707L7.823.744c.106-.23.264-.411.474-.544C8.508.067 8.742 0 9 0z'/%3E%3C/svg%3E%0A");
+		@include bg-img-center;
+		margin-right: 3px;
+	}
+
+	span.gray {
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='%23D4D4D4' fill-rule='evenodd' d='M7 0c.2 0 .382.052.546.155a.966.966 0 0 1 .37.424l1.584 3.4 3.647.551a1.024 1.024 0 0 1 .806.692c.055.179.062.36.02.543-.04.184-.13.346-.266.487l-2.664 2.752.615 3.825a.917.917 0 0 1-.061.55 1.045 1.045 0 0 1-.349.438.908.908 0 0 1-.286.14 1.104 1.104 0 0 1-.547.015.897.897 0 0 1-.246-.099L7 12.109l-3.183 1.764a.724.724 0 0 1-.232.099 1.096 1.096 0 0 1-.553-.014.925.925 0 0 1-.28-.141 1.045 1.045 0 0 1-.349-.438.917.917 0 0 1-.061-.55l.615-3.825L.293 6.252a1.005 1.005 0 0 1-.267-.487 1.047 1.047 0 0 1 .02-.543c.065-.179.17-.332.315-.459a.96.96 0 0 1 .492-.233L4.5 3.98 6.085.579a.966.966 0 0 1 .369-.424C6.618.052 6.8 0 7 0z'/%3E%3C/svg%3E%0A");
+	} 
+}

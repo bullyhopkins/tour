@@ -1,0 +1,254 @@
+.about-section {
+	padding: 100px 0 200px;
+	background-image: url('../images/partner-bg.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: contain;
+	
+	.advantages-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -18px;
+	}
+
+	.advantage {
+		width: 368px;
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 28px 25px;
+		margin: 0 15px 30px;
+		border-radius: 5px;
+		box-shadow: 0 0 20px 0 rgba(197, 197, 197, 0.5);
+
+		&__img {
+			width: 70px;
+			height: 79px;
+			overflow: hidden;
+			margin: 0 0 28px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__title {
+			text-align: center;
+			font-size: 16px;
+			font-weight: 500;
+			color: #3b93d9;
+			min-height: 63px;
+		}
+
+		&__text {
+			font-size: 12px;
+			line-height: 1.58;
+			text-align: center;
+			color: #333333;
+		}
+	}
+}
+
+.how-buy-section {
+	padding: 65px 0 130px;
+
+	.how-buy-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.buy-tabs-wrap {
+		max-width: 591px;
+		height: 356px;
+		width: 100%;
+		box-shadow: 0 0 20px 0 rgba(197, 197, 197, 0.5);
+		border: solid 2px #deedf9;
+		background-color: #ffffff;
+		margin: -118px 100px 0 0;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #e0effb;
+			z-index: -1;
+			bottom: -20px;
+			right: -20px;
+			box-shadow: 0 0 20px 0 rgba(197, 197, 197, 0.5);
+		}
+	}
+
+	.buy-tabs {
+		padding: 45px 41px 72px;
+		&__list {
+			display: flex;
+			margin-bottom: 19px;
+		}
+		&__item {
+			width: 10px;
+			height: 10px;
+			border: solid 1px #c0c0c0;
+			margin-right: 8px;
+			border-radius: 50%;
+			&.active {
+				background-color: #4094d6;
+				border: solid 1px #4094d6;
+			}
+		}
+		&__content {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+
+		&__step {
+			font-size: 12px;
+			font-weight: 500;
+			color: #8a8987;
+			margin-bottom: 31px;
+			display: block;
+		}
+
+		&__title {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 2.1;
+			color: #333333;
+			margin-bottom: 17px;
+			display: block;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 1.86;
+			color: #333333;
+		}
+	}
+
+	.img-wrap {
+		width: 350px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.agents-section {
+	padding: 100px 0 56px;
+	background-color: #f8f8f8;
+
+	.agent {
+		width: 243px;
+		height: 344px;
+		opacity: 0.41;
+		overflow: hidden;
+		margin: 0 22px;
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.agent-info {
+		display: none;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		padding: 12px 30px;
+		background-color: #4094d6;
+		font-size: 12px;
+		color: #ffffff;
+		font-weight: 500;
+		white-space: nowrap;
+
+		.agent-name {
+			font-size: 16px;
+			margin-bottom: 8px;
+		}
+		.agent-mail {
+			color: #ffffff;
+		}
+	}
+
+	.owl-item {
+		margin-top: 30px;
+	}
+
+	.owl-item.center {
+		margin-top: 0;
+		.agent {
+			width: 285px;
+			height: 402px;
+			opacity: 1;
+			margin: 0;
+		}
+		.agent-info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.owl-dots {
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		.owl-dot {
+			width: 10px;
+			height: 10px;
+			border: solid 1px #c0c0c0;
+			margin-right: 8px;
+			border-radius: 50%;
+			&.active {
+				background-color: #4094d6;
+				border: solid 1px #4094d6;
+			}
+		}
+	}
+}
+
+.requisites-section {
+	padding: 113px 0 119px;
+
+	.requisites-wrap {
+		display: flex;
+		justify-content: center;
+	}
+
+	.requisites {
+		margin-left: 35px;
+		&__line {
+			display: flex;
+		}
+
+		&__info {
+			min-width: 102px;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 2.56;
+			color: #8a8987;
+			margin-right: 46px;
+		}
+
+		&__data {
+			font-size: 16px;
+			line-height: 2.56;
+			color: #333333;
+		}
+	}
+}

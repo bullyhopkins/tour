@@ -1,0 +1,54 @@
+.blue-btn {
+	width: 233px;
+	height: 43px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 16px 0;
+	background-image: linear-gradient(to bottom, #4ba7f0, #3c8dcd);
+	cursor: pointer;
+	&:hover {
+		background-image: linear-gradient(to bottom, #4ba7f0, #4ba7f0);
+	}
+}
+
+.red-btn {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
+	background-color: #dd4343;
+	cursor: pointer;
+	padding: 16px 5px;
+	
+	&:hover {
+		background-color: rgba(221, 67, 67, 0.8);
+	}
+}
+
+.questions-link {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	color: #ffffff;
+	position: relative;
+	padding-left: 38px;
+	text-transform: uppercase;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 27px;
+		height: 27px;
+		top: 45%;
+		left: 0;
+		transform: translateY(-50%);
+		@include bg-img-center;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='28' viewBox='0 0 27 28'%3E%3Cpath fill='%23FFF' fill-rule='evenodd' d='M15.188 20.094a.81.81 0 0 1 .593.25.81.81 0 0 1 .25.593.81.81 0 0 1-.25.594.81.81 0 0 1-.594.25h-3.374a.81.81 0 0 1-.594-.25.81.81 0 0 1-.25-.593.81.81 0 0 1 .25-.594.81.81 0 0 1 .594-.25h.843v-6.75h-.844a.81.81 0 0 1-.593-.25.81.81 0 0 1-.25-.594.81.81 0 0 1 .25-.593.81.81 0 0 1 .594-.25H13.5a.81.81 0 0 1 .593.25.81.81 0 0 1 .25.593v7.594h.845zM13.5 9.969a1.63 1.63 0 0 1-1.2-.488 1.63 1.63 0 0 1-.488-1.2c0-.474.163-.874.488-1.2a1.63 1.63 0 0 1 1.2-.487c.475 0 .875.162 1.2.488.325.325.488.725.488 1.2 0 .474-.163.874-.488 1.199a1.63 1.63 0 0 1-1.2.488zm0-9.281c1.863 0 3.617.351 5.26 1.054a13.547 13.547 0 0 1 4.298 2.887 13.547 13.547 0 0 1 2.887 4.298c.703 1.644 1.055 3.397 1.055 5.26 0 1.864-.352 3.617-1.055 5.26a13.547 13.547 0 0 1-2.887 4.299 13.547 13.547 0 0 1-4.298 2.887c-1.643.703-3.397 1.055-5.26 1.055s-3.617-.352-5.26-1.055a13.547 13.547 0 0 1-4.298-2.887 13.547 13.547 0 0 1-2.887-4.298C.352 17.804 0 16.05 0 14.188c0-1.864.352-3.617 1.055-5.26a13.547 13.547 0 0 1 2.887-4.299A13.547 13.547 0 0 1 8.24 1.742C9.883 1.04 11.637.688 13.5.688zm0 25.338c1.635 0 3.168-.312 4.601-.936a11.921 11.921 0 0 0 3.744-2.544 12.197 12.197 0 0 0 2.531-3.757c.624-1.433.936-2.967.936-4.602 0-1.634-.312-3.168-.936-4.6a12.034 12.034 0 0 0-2.53-3.745A12.034 12.034 0 0 0 18.1 3.311c-1.433-.624-2.966-.936-4.601-.936-1.635 0-3.168.312-4.601.936a12.034 12.034 0 0 0-3.744 2.531 12.034 12.034 0 0 0-2.531 3.744c-.624 1.433-.937 2.967-.937 4.601 0 1.635.313 3.169.937 4.602a12.197 12.197 0 0 0 2.53 3.757A11.921 11.921 0 0 0 8.9 25.09c1.433.624 2.966.936 4.601.936z'/%3E%3C/svg%3E%0A");
+	}
+}

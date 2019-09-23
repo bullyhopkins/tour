@@ -1,0 +1,154 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section(style='background-image: url(images/blog-bg.png);').blog-intro-section
+			.container
+				include ../components/head-wrap/head-wrap
+				h1.blog-title Достопримечательности Гонконга
+				p.blog-info Гонконг стал жить одновременно по западным и азиатским законам. Атмосфера, нравы и порядки - такого нигде кроме Гонконга не найти.
+				.blog-nav
+					a(href="#").blue-btn Читать далее
+					a(href="#").questions-link Частые вопросы
+
+		section.links-section
+			.container
+				nav.nav-blog
+					ul.nav-blog__list
+						li.nav-blog__item
+							a(href="#").nav-blog__link Куда поехать?
+						li.nav-blog__item
+							a(href="#").nav-blog__link Когда поехать?
+						li.nav-blog__item
+							a(href="#").nav-blog__link Путешествуйте выгодно
+						li.nav-blog__item
+							a(href="#").nav-blog__link Отдых с нами
+						li.nav-blog__item
+							a(href="#").nav-blog__link О SofiTure.lv
+
+		section(style='background-image: url(images/articles-bg.png);').popular-articles-section
+			.container
+				h2.article-title Самые популярные статьи
+
+				.articles-wrap
+
+					.article
+						.article__img
+							img(src="images/articles1.png", alt="")
+						.article__info
+							h3.article__title Лучшие экскурсионные направления. Часть 2. Азия.
+							p.article__text Самая насыщенная программа, пожалуй, в Таиланде. Каждый остров по-своему уникален и красив.
+							a.article__link.red-btn Посмотреть детали
+
+					.article
+						.article__img
+							img(src="images/articles2.png", alt="")
+						.article__info
+							h3.article__title Лучшие экскурсионные направления. Часть 1. Европа.
+							p.article__text Желаете получить от отдыха всё: познакомиться с культурой страны, насладиться программой.
+							a.article__link.red-btn Посмотреть детали
+
+					.article
+						.article__img
+							img(src="images/bitmap.png", alt="")
+						.article__info
+							h3.article__title Куда поехать отдыхать одному?
+							p.article__text Хотите узнать человека? Отправьтесь с ним в путешествие! Это известная многим истина.
+							a.article__link.red-btn Посмотреть детали
+		
+		section.articles-section
+			.container
+				h2.section-title Все статьи
+					span.abs-text статьи
+
+				.articles-content.articles-content_margin
+					.articles-wrap
+						.article.article_row
+							.article__img
+								img(src="images/articles1.png", alt="")
+							.article__info
+								h3.article__title Лучшие экскурсионные направления. Часть 2. Азия.
+								p.article__text Самая насыщенная программа, пожалуй, в Таиланде. Каждый остров по-своему уникален и красив.
+								a.article__link.red-btn Посмотреть детали
+
+						.article.article_row
+							.article__img
+								img(src="images/articles2.png", alt="")
+							.article__info
+								h3.article__title Лучшие экскурсионные направления. Часть 1. Европа.
+								p.article__text Желаете получить от отдыха всё: познакомиться с культурой страны, насладиться программой.
+								a.article__link.red-btn Посмотреть детали
+
+						.article.article_row
+							.article__img
+								img(src="images/bitmap.png", alt="")
+							.article__info
+								h3.article__title Куда поехать отдыхать одному?
+								p.article__text Хотите узнать человека? Отправьтесь с ним в путешествие! Это известная многим истина.
+								a.article__link.red-btn Посмотреть детали
+
+						.article.article_row
+							.article__img
+								img(src="images/articles1.png", alt="")
+							.article__info
+								h3.article__title Лучшие экскурсионные направления. Часть 2. Азия.
+								p.article__text Самая насыщенная программа, пожалуй, в Таиланде. Каждый остров по-своему уникален и красив.
+								a.article__link.red-btn Посмотреть детали
+
+						.article.article_row
+							.article__img
+								img(src="images/articles2.png", alt="")
+							.article__info
+								h3.article__title Лучшие экскурсионные направления. Часть 1. Европа.
+								p.article__text Желаете получить от отдыха всё: познакомиться с культурой страны, насладиться программой.
+								a.article__link.red-btn Посмотреть детали
+
+						.article.article_row
+							.article__img
+								img(src="images/bitmap.png", alt="")
+							.article__info
+								h3.article__title Куда поехать отдыхать одному?
+								p.article__text Хотите узнать человека? Отправьтесь с ним в путешествие! Это известная многим истина.
+								a.article__link.red-btn Посмотреть детали
+
+					.blog-sidebar
+
+						.find-tours
+							form(action="#" id="" method="").mainForm.mainForm_column
+								.mainForm__city-select
+									span Город вылета
+									.mainForm__select-wrap
+										select(name="" id="").mainForm__select
+											option(value="") Riga
+											option(value="") Riga
+											option(value="") Riga
+								.mainForm__fild.mainForm__fild_long
+									input(type="text" placeholder="Страна, курорт или отель").mainForm__input
+								.mainForm__fild.mainForm__fild_date
+									input(type="text" placeholder="Дата вылета").mainForm__input
+								.mainForm__fild.mainForm__fild_quantity
+									input(type="text" placeholder="Кол-во ночей").mainForm__input
+								.mainForm__fild.mainForm__fild_tourists
+									input(type="text" placeholder="Туристы").mainForm__input
+								button(type="submit").mainForm__btn.red-btn Искать туры
+
+						.find-wrap
+							h3.find-title Подпишитесь на нашу рассылку
+							p.text-center Чтобы получать подборки туров по выгодным ценам и быть в курсе акций и конкурсов
+							form(action="#" id="" method="").mail-form
+								.mail-form__fild
+									input(type="text" placeholder="Введите ваш емайл").mail-form__input
+
+						.find-wrap
+							h3.find-title Поиск туров онлайн
+							p Наша компания всегда готова прийти на помощь в планировании вашего путешествия. Мы поможем подобрать тур, произвести его бронирование и оплатить в режиме онлайн быстро и без проблем. Для вас поиск туров облегчится еще тем, что мы работаем с большим количеством туристических операторов, которые предлагают множество вариантов отдыха. Вне зависимости от того, планируете ли вы путешествие на пляжные или горнолыжные курорты, хотите поехать в экзотические страны за новыми впечатлениями или осмотреть мировые достопримечательности, у нас вы подберете себе наилучший вариант тура по самым выгодным ценам. На нашем сайте есть описания всех мировых отелей с отзывами реальных туристов, поэтому вы всегда будете знать, что вам предложит тот или иной курорт. Консультанты нашего сайта помогут вам в любое время дня и ночи и смогут ответить на любые ваши вопросы по телефону или электронной почте. Теперь поиск туров и дальнейшее путешествие будет приносить только радость.
+			
+				include ../blocks/loader/loader
+block footer
+	include ../blocks/footer/footer

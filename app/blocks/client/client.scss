@@ -1,0 +1,47 @@
+.client {
+	width: 368px;
+	border-radius: 5px;
+	box-shadow: 0 0 20px 0 rgba(197, 197, 197, 0.5);
+	background-color: #ffffff;
+	padding: 35px 32px 31px;
+	&__info {
+		display: flex;
+		align-items: center;
+		margin-bottom: 24px;
+	}
+	&__photo {
+		width: 83px;
+		height: 83px;
+		margin-right: 26px;
+		position: relative;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 115%;
+			height: 115%;
+		}
+	}
+	&__data {
+		display: flex;
+		flex-direction: column;
+	}
+	&__name {
+		font-size: 20px;
+		font-weight: 500;
+		color: #4094d6;
+		margin-bottom: 6px;
+	}
+	&__tour {
+		font-size: 12px;
+		font-weight: 500;
+		color: #8a8987;
+		margin-bottom: 12px;
+	}
+	&__review {
+		font-size: 14px;
+		line-height: 1.86;
+		color: #333333;
+	}
+}

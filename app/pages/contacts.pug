@@ -1,0 +1,102 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section(style='background-image: url(images/intro-bg-sky.png);').intro-section.intro-section_height
+			.container
+				.head-wrap.head-wrap_padding
+					a(href="#").logo
+					.info-wrap
+						a(href="tel:67320372").info-link.tel-link 67 320 372
+						a(href="mailto:info@sofiture.lv").info-link.mail-link info@sofiture.lv
+						a(href="#").buy-link.red-btn Купить тур в офисе
+				h2.intro-title Контакты
+				.questions-wrap
+					a(href="#").questions-link.scroll-link Частые вопросы
+
+
+		section.contacts-info-section
+			.container
+				.contacts
+					.contact
+						.contact__img-wrap
+							img(src="images/contacts1.svg", alt="")
+						span.contact__title Адрес
+						span.contacs__sub-title  Tērbatas iela 73, Centra rajons, 
+						span.contact__sub-title Rīga, LV-1001
+					.contact
+						.contact__img-wrap
+							img(src="images/contacts2.svg", alt="")
+						span.contact__title Эмайл
+						span.contacs__sub-title  info@sofiture.lv
+						span.contact__sub-title Monday to Friday 9am
+					.contact
+						.contact__img-wrap
+							img(src="images/contacts3.svg", alt="")
+						span.contact__title Телефон
+						span.contacs__sub-title  67320314,  26555570
+						span.contact__sub-title Monday to Friday 9am - 7pm
+		section.contacts-section
+			.container
+				.map-connection
+					.map-wrap
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12307.259517024147!2d24.015624593025162!3d56.95502601511547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed01064fdaa39%3A0xdd903f76d5abc724!2sOstOrg%E2%84%A2%20baby%20shop!5e0!3m2!1sru!2sua!4v1566744683000!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="")
+					.connection
+						h2.feedback-title Связаться с нами
+						p.sub-text Ex quem dicta delicata usu, zril vocibus maiestatis in qui.
+						.feedback-wrap
+						form(action="#").feedbackForm
+							.feedbackForm__inputs-wrap
+								.feedbackForm__filds
+									span.feedbackForm__title Ваше имя
+									input(type="text").feedbackForm__input
+								.feedbackForm__filds
+									span.feedbackForm__title Введите ваш эмайл
+									input(type="text").feedbackForm__input
+								.feedbackForm__filds
+									span.feedbackForm__title Введите ваш телефон
+									input(type="text").feedbackForm__input
+							.feedbackForm__textarea-wrap
+								span.feedbackForm__title Сообщение
+								textarea.feedbackForm__textarea
+							.feedbackForm__nav
+								.feedbackForm__capcha
+									img(src="images/cap.png", alt="")
+								button.feedbackForm__btn.blue-btn Отправить
+		section.requisites-section#requisites
+			.container
+				h2.section-title Наши реквизиты
+					span.abs-text реквизиты
+				p.sub-text Мы надеемся, что наша качественная работа и персональный подход к каждому клиенту станут залогом долгосрочного сотрудничества с нами!
+				
+				.requisites-wrap
+					.requisites
+						.requisites__line 
+							span.requisites__info Номер счета:
+							span.requisites__data LV89HABA0001403033200
+						.requisites__line 
+							span.requisites__info Рег. номер:
+							span.requisites__data 40003240524
+						.requisites__line 
+							span.requisites__info Код:
+							span.requisites__data LV40003240524
+						.requisites__line 
+							span.requisites__info Эмайл:
+							span.requisites__data info@swedbank.lv
+						.requisites__line 
+							span.requisites__info Адрес:
+							span.requisites__data Баласта дамбис 15, Рига, LV-1048
+						.requisites__line 
+							span.requisites__info Телефон:
+							span.requisites__data 67 444 444						
+
+
+
+block footer
+	include ../blocks/footer/footer

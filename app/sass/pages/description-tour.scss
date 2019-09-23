@@ -1,0 +1,811 @@
+.hotel-description-section {
+	padding-top: 80px;
+
+	.description-wrap {
+		display: flex;
+		margin-bottom: 30px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+	.description-slider {
+		width: 587px;
+		height: 500px;
+		margin-right: 52px;
+
+		.like-wrap {
+			position: absolute;
+			top: 15px;
+			right: 25px;
+			z-index: 10;
+		}
+
+		.owl-1 {
+			margin-bottom: 15px;
+			.item {
+				width: 582px;
+				height: 398px;
+				overflow: hidden;
+			}
+		}
+
+		.owl-2 {
+			margin-bottom: 15px;
+			.item {
+				width: 182px;
+				height: 105px;
+				overflow: hidden;
+			}
+		}
+
+		.item {
+			cursor: pointer;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.link-tour {
+			font-size: 14px;
+			line-height: 1;
+			color: #4aa5ed;
+			position: relative;
+			padding-left: 25px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 48%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 15px;
+				height: 15px;
+				@include bg-img-center;
+				background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='15px' height='16px' viewBox='0 0 15 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3E04BF0192-FA2A-4696-9D88-3ABE728184BA%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='02-SofiTure-Opisanie-tura' transform='translate(-141.000000, -1067.000000)' fill='%2349A3EA'%3E%3Cpath d='M153.65625,1078.25 C154.300784,1078.25 154.852537,1078.47949 155.311523,1078.93848 C155.77051,1079.39746 156,1079.94922 156,1080.59375 C156,1081.23828 155.77051,1081.79004 155.311523,1082.24902 C154.852537,1082.70801 154.300784,1082.9375 153.65625,1082.9375 C153.011716,1082.9375 152.459963,1082.70801 152.000977,1082.24902 C151.54199,1081.79004 151.3125,1081.23828 151.3125,1080.59375 C151.3125,1080.49609 151.317383,1080.40332 151.327148,1080.31543 C151.336914,1080.22754 151.356445,1080.13965 151.385742,1080.05176 L145.174805,1076.8877 C144.95996,1077.16113 144.693849,1077.37842 144.376465,1077.53955 C144.05908,1077.70068 143.714846,1077.78125 143.34375,1077.78125 C142.699216,1077.78125 142.147463,1077.55176 141.688477,1077.09277 C141.22949,1076.63379 141,1076.08203 141,1075.4375 C141,1074.79297 141.22949,1074.24121 141.688477,1073.78223 C142.147463,1073.32324 142.699216,1073.09375 143.34375,1073.09375 C143.685549,1073.09375 144.00537,1073.16211 144.303223,1073.29883 C144.601076,1073.43555 144.857421,1073.62598 145.072266,1073.87012 L151.371094,1070.80859 C151.351562,1070.7207 151.336914,1070.63281 151.327148,1070.54492 C151.317383,1070.45703 151.3125,1070.36914 151.3125,1070.28125 C151.3125,1069.63672 151.54199,1069.08496 152.000977,1068.62598 C152.459963,1068.16699 153.011716,1067.9375 153.65625,1067.9375 C154.300784,1067.9375 154.852537,1068.16699 155.311523,1068.62598 C155.77051,1069.08496 156,1069.63672 156,1070.28125 C156,1070.92578 155.77051,1071.47754 155.311523,1071.93652 C154.852537,1072.39551 154.300784,1072.625 153.65625,1072.625 C153.265623,1072.625 152.90674,1072.53711 152.57959,1072.36133 C152.25244,1072.18555 151.981446,1071.95117 151.766602,1071.6582 L145.555664,1074.67578 C145.594727,1074.79297 145.626465,1074.91504 145.650879,1075.04199 C145.675293,1075.16895 145.6875,1075.30078 145.6875,1075.4375 C145.6875,1075.54492 145.680176,1075.6499 145.665527,1075.75244 C145.650879,1075.85498 145.628906,1075.95508 145.599609,1076.05273 L151.78125,1079.20215 C151.986329,1078.90918 152.25244,1078.67725 152.57959,1078.50635 C152.90674,1078.33545 153.265623,1078.25 153.65625,1078.25 Z M153.65625,1068.875 C153.265623,1068.875 152.933595,1069.01172 152.660156,1069.28516 C152.386717,1069.5586 152.25,1069.89062 152.25,1070.28125 C152.25,1070.67188 152.386717,1071.0039 152.660156,1071.27734 C152.933595,1071.55078 153.265623,1071.6875 153.65625,1071.6875 C154.046877,1071.6875 154.378905,1071.55078 154.652344,1071.27734 C154.925783,1071.0039 155.0625,1070.67188 155.0625,1070.28125 C155.0625,1069.89062 154.925783,1069.5586 154.652344,1069.28516 C154.378905,1069.01172 154.046877,1068.875 153.65625,1068.875 Z M143.34375,1076.84375 C143.734377,1076.84375 144.066405,1076.70703 144.339844,1076.43359 C144.613283,1076.16015 144.75,1075.82813 144.75,1075.4375 C144.75,1075.04687 144.613283,1074.71485 144.339844,1074.44141 C144.066405,1074.16797 143.734377,1074.03125 143.34375,1074.03125 C142.953123,1074.03125 142.621095,1074.16797 142.347656,1074.44141 C142.074217,1074.71485 141.9375,1075.04687 141.9375,1075.4375 C141.9375,1075.82813 142.074217,1076.16015 142.347656,1076.43359 C142.621095,1076.70703 142.953123,1076.84375 143.34375,1076.84375 Z M153.65625,1082 C154.046877,1082 154.378905,1081.86328 154.652344,1081.58984 C154.925783,1081.3164 155.0625,1080.98438 155.0625,1080.59375 C155.0625,1080.20312 154.925783,1079.8711 154.652344,1079.59766 C154.378905,1079.32422 154.046877,1079.1875 153.65625,1079.1875 C153.265623,1079.1875 152.933595,1079.32422 152.660156,1079.59766 C152.386717,1079.8711 152.25,1080.20312 152.25,1080.59375 C152.25,1080.98438 152.386717,1081.3164 152.660156,1081.58984 C152.933595,1081.86328 153.265623,1082 153.65625,1082 Z' id='share---simple-line-icons'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+			}
+		}
+	}
+
+	.description-info {
+		width: 532px;
+	}
+
+	.hotel-name {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		.info-title {
+			margin-bottom: 0;
+		}
+
+		.raiting_big {
+			margin-left: 13px;
+		}
+	}
+
+	.country-map {
+		display: flex;
+		align-items: center;
+		margin-bottom: 19px;
+	}
+
+	.country-city {
+		font-size: 16px;
+		color: #333333;
+		margin: 0 13px 0 16px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: -15px;
+			transform: translateY(-50%);
+			width: 9.7px;
+			height: 14.6px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16'%3E%3Cpath fill='%23CDCDCD' fill-rule='evenodd' d='M7.286 5.5a2.433 2.433 0 0 0-2.429-2.429A2.433 2.433 0 0 0 2.43 5.5a2.433 2.433 0 0 0 2.428 2.429A2.433 2.433 0 0 0 7.286 5.5zm2.428 0c0 .579-.066 1.176-.313 1.698l-3.453 7.343a1.21 1.21 0 0 1-1.09.673c-.456 0-.893-.256-1.082-.673L.313 7.198C.066 6.676 0 6.078 0 5.5A4.854 4.854 0 0 1 4.857.643 4.854 4.854 0 0 1 9.714 5.5z'/%3E%3C/svg%3E%0A");
+		}
+	}
+
+	.show-map {
+		font-size: 14px;
+		color: #4aa5ed;
+		text-decoration: underline;
+	}
+
+	.description-text {
+		font-size: 14px;
+		line-height: 1.86;
+		color: #333333;
+	}
+
+	mark {
+		font-weight: 500;
+	}
+
+	.details-link {
+		font-size: 14px;
+		color: #333333;
+		font-weight: 500;
+	}
+
+	.conditions-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		border-bottom: 1px solid #d8d8d8;
+		padding: 40px 0 15px;
+		margin-bottom: 30px;
+	}
+
+	.condition {
+		max-width: 105px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 25px;
+		cursor: pointer;
+
+		&__img {
+			width: 33px;
+			height: 32px;
+			display: flex;
+			justify-content: center; 
+			align-items: center;
+			margin-bottom: 5px;
+		}
+
+		&__name {
+			font-size: 14px;
+			color: #333333;
+			text-align: center;
+		}
+
+		&__distance {
+			height: 32px;
+			font-size: 25px;
+			color: #4aa5ed;
+			margin-bottom: 5px;
+		}
+	}
+
+	.details-tout {
+		display: flex;
+	}
+
+	.details {
+		display: flex;
+		flex-direction: column;
+		margin-right: 80px;
+	}
+
+	.for-two {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.small-details {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	.img-details {
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.big-price {
+		font-size: 45px;
+		color: #dd4343;
+	}
+
+	.smal-price {
+		font-size: 16px;
+		color: #dd4343;
+		margin-bottom: 15px;
+	}
+
+	.order-tour {
+		max-width: 194px;
+		text-transform: none;
+	}
+
+	.details-title {
+		font-size: 20px;
+		font-weight: 500;
+		color: #333333;
+		margin-bottom: 10px;
+	}
+
+	.data-tour {
+		font-size: 23px;
+		color: #4aa5ed;
+		margin-bottom: 15px;
+	}
+
+	.sub-details {
+		font-size: 14px;
+		font-weight: 500;
+		color: #333333;
+	}
+}
+
+.pay-tour-section {
+	padding-bottom: 125px;
+
+	.pay-tour-wrap {
+		min-height: 356px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+		border-radius: 10px;
+		padding: 55px 60px;
+		display: flex;
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	background: rgba(16, 16, 16, .5);
+		// }
+	}
+
+	.pay-tour-info {
+		max-width: 457px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-right: 75px;
+	}
+
+	.pay-tour-title {
+		font-size: 35px;
+		line-height: 1.2;
+		color: #ffffff;
+		margin-bottom: 27px;
+	}
+
+	.pay-tour-text {
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 1.73;
+		color: #ffffff;
+		margin-bottom: 36px;
+	}
+}
+
+.sea-beach-section {
+
+	.info-details {
+		font-size: 14px;
+		line-height: 1.86;
+		color: #333333;
+		margin-bottom: 28px;
+	}
+
+	.images-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -10px 53px;
+		padding-bottom: 50px;
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+	.img-wrap {
+		width: 183px;
+		height: 105px;
+		overflow: hidden;
+		margin: 0 7px 14px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}	
+}
+
+.hotel-services-section {
+
+	.services-wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-bottom: 25px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+	.service {
+		display: flex;
+		align-items: flex-start;
+		width: 556px;
+		margin-bottom: 35px;
+		&__img {
+			width: 90px;
+			height: 90px;
+			margin-right: 20px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&__info {
+			width: calc(100% - 90px);
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__name {
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 1.91;
+			color: #333333;
+			margin-bottom: 6px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 1.86;
+			color: #333333;
+		}
+	}
+}
+
+.hotel-reviews-section {
+	.rating-wrap {
+		display: flex;
+		margin-bottom: 52px;
+	}
+
+	.rating {
+
+		margin-right: 90px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&__content {
+			display: flex;
+		}
+
+		&__assessment {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 70px;
+			height: 76px;
+			@include bg-img-center;
+			margin-right: 19px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='84' height='90' viewBox='0 0 84 90'%3E%3Cdefs%3E%3Cpath id='b' d='M42.486 1.997l20 11.518A15 15 0 0 1 70 26.514v22.972a15 15 0 0 1-7.514 12.999l-20 11.518a15 15 0 0 1-14.972 0l-20-11.518A15 15 0 0 1 0 49.486V26.514a15 15 0 0 1 7.514-12.999l20-11.518a15 15 0 0 1 14.972 0z'/%3E%3Cfilter id='a' width='124.3%25' height='122.4%25' x='-12.1%25' y='-11.2%25' filterUnits='objectBoundingBox'%3E%3CfeMorphology in='SourceAlpha' operator='dilate' radius='2.5' result='shadowSpreadOuter1'/%3E%3CfeOffset in='shadowSpreadOuter1' result='shadowOffsetOuter1'/%3E%3CfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3E%3CfeComposite in='shadowBlurOuter1' in2='SourceAlpha' operator='out' result='shadowBlurOuter1'/%3E%3CfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0.488919005 0 0 0 0 0.488919005 0 0 0 0 0.488919005 0 0 0 0.5 0'/%3E%3C/filter%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(7 7)'%3E%3Cuse fill='%23000' filter='url(%23a)' xlink:href='%23b'/%3E%3Cuse fill='%23FFB334' stroke='%23FBEEE0' stroke-width='5' xlink:href='%23b'/%3E%3C/g%3E = %3C/g%3E%3C/svg%3E%0A");
+			&_revirws {
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='84' height='89' viewBox='0 0 84 89'%3E%3Cdefs%3E%3Cpath id='b' d='M42.51 2.36l20 11.57A15 15 0 0 1 70 26.912v23.189a15 15 0 0 1-7.49 12.984l-20 11.57a15 15 0 0 1-15.02 0l-20-11.57A15 15 0 0 1 0 50.102V26.913A15 15 0 0 1 7.49 13.93l20-11.569a15 15 0 0 1 15.02 0z'/%3E%3Cfilter id='a' width='124.3%25' height='121.5%25' x='-12.1%25' y='-10.8%25' filterUnits='objectBoundingBox'%3E%3CfeMorphology in='SourceAlpha' operator='dilate' radius='2.5' result='shadowSpreadOuter1'/%3E%3CfeOffset in='shadowSpreadOuter1' result='shadowOffsetOuter1'/%3E%3CfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='2'/%3E%3CfeComposite in='shadowBlurOuter1' in2='SourceAlpha' operator='out' result='shadowBlurOuter1'/%3E%3CfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 0.488919005 0 0 0 0 0.488919005 0 0 0 0 0.488919005 0 0 0 0.5 0'/%3E%3C/filter%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(7 6)'%3E%3Cuse fill='%23000' filter='url(%23a)' xlink:href='%23b'/%3E%3Cuse fill='%234094D6' stroke='%23E0EFFB' stroke-width='5' xlink:href='%23b'/%3E%3C/g%3E%3Cg fill='%23FFF' fill-rule='nonzero'%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+			}
+		}
+
+		.rating__title {
+			font-size: 20px;
+			font-weight: 500;
+			color: #333333;
+			margin-bottom: 20px;
+		}
+
+
+		&__value {
+			font-size: 25px;
+			font-weight: 500;
+			color: #fff;
+			&_revirws {
+				font-size: 17px;
+			}
+		}
+
+		&__sub-rating {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+		}
+
+		&__line {
+			display: flex;
+		}
+
+		&__img {
+			margin-right: 8px;
+			width: 15px;
+			height: 15px;
+			@include bg-img-center;
+		}
+
+		&__info {
+			font-size: 14px;
+			color: #333333;
+		}
+
+		&__count {
+			font-size: 14px;
+			color: #333333;
+			font-weight: 700;
+		}
+	}
+
+	.reviews-count {
+		font-size: 36px;
+		line-height: 1.17;
+		color: #4094d6;
+	}
+}
+
+.manager-section {
+	padding: 20px 0 55px;
+	.manager-wrap {
+		background-image: url('../images/manager.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		padding: 55px 20px 74px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .5);
+			z-index: 1;
+		}
+	}
+	.manager-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	.manager-title {
+		font-size: 35px;
+		font-weight: 400;
+		line-height: 1.2;
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 35px;
+	}
+
+	.manager-text {
+		max-width: 350px;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 1.73;
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 53px;
+	}
+}
+
+.map-section {
+	padding: 0 0 100px;
+
+	.map-wrap {
+		height: 101px;
+		margin-bottom: 60px;
+		&.active {
+			height: 604px;
+		}
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .05);
+			z-index: 1;
+		}
+	}
+
+	.map-btn {
+		position: absolute;
+		left: 29px;
+		bottom: 26px;
+		z-index: 2;
+		padding-left: 20px;
+		&_open {
+			&:before {
+				left: 38px;
+			}
+		}
+		&_hide {
+			display: none;
+			&:before {
+				left: 55px;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 12px;
+			height: 16px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23FFF' fill-rule='evenodd' d='M5.898 7.25a.27.27 0 0 1-.078.18l-2.593 2.593 1.125 1.125a.497.497 0 0 1 .148.352c0 .273-.227.5-.5.5H.5a.504.504 0 0 1-.5-.5V8c0-.273.227-.5.5-.5.133 0 .258.055.352.148l1.125 1.125L4.57 6.18a.27.27 0 0 1 .18-.078.27.27 0 0 1 .18.078l.89.89a.27.27 0 0 1 .078.18zM12 .5V4c0 .273-.227.5-.5.5a.497.497 0 0 1-.352-.148l-1.125-1.125L7.43 5.82a.27.27 0 0 1-.18.078.27.27 0 0 1-.18-.078l-.89-.89a.27.27 0 0 1-.078-.18.27.27 0 0 1 .078-.18l2.593-2.593L7.648.852A.497.497 0 0 1 7.5.5c0-.273.227-.5.5-.5h3.5c.273 0 .5.227.5.5z'/%3E%3C/svg%3E%0A");
+			@include bg-img-center;
+		}
+	}
+
+	.hotel {
+		display: none;
+		position: absolute;
+		top: 40px;
+		left: 37px;
+		z-index: 1;
+		width: 269px;
+		background-color: #fff;
+		z-index: 2;
+		box-shadow: 0 2px 15px 0 rgba(162, 162, 162, 0.5);
+		&__img {
+			width: 100%;
+			height: 184px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__info {
+			padding: 20px 20px 25px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__name {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1;
+			color: #333333;
+			margin-bottom: 10px;
+		}
+
+		.raiting {
+			margin-bottom: 13px;
+		}
+
+		&__place {
+			font-size: 16px;
+			color: #333333;
+			padding-left: 20px;
+			margin-bottom: 28px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 45%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 12px;
+				height: 16px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16'%3E%3Cpath fill='%23CDCDCD' fill-rule='evenodd' d='M7.286 5.5a2.433 2.433 0 0 0-2.429-2.429A2.433 2.433 0 0 0 2.43 5.5a2.433 2.433 0 0 0 2.428 2.429A2.433 2.433 0 0 0 7.286 5.5zm2.428 0c0 .579-.066 1.176-.313 1.698l-3.453 7.343a1.21 1.21 0 0 1-1.09.673c-.456 0-.893-.256-1.082-.673L.313 7.198C.066 6.676 0 6.078 0 5.5A4.854 4.854 0 0 1 4.857.643 4.854 4.854 0 0 1 9.714 5.5z'/%3E%3C/svg%3E%0A");
+				@include bg-img-center;
+			}
+		}
+
+		&__link {
+			text-transform: none;
+			width: 230px;
+			height: 46px;
+		}
+	}
+
+	.landmarks-wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.landmarks {
+		max-width: 535px;
+		width: 100%;
+		margin-bottom: 50px;
+
+		&__title {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 2.1;
+			color: #333333;
+			display: block;
+		}
+
+		&__line {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 18px;
+			line-height: 2.33;
+			color: #333333;
+			padding: 15px 0;
+			border-bottom: 1px solid #d8d8d8;
+		}
+
+		&__name {
+
+		}
+
+		&__distance {
+
+		}
+	}
+}
+
+.tab-tours-section {
+	padding: 0 0 70px;
+}
+
+.tourCard {
+	border: 1px solid #d8d8d8;
+	border-top: none;
+	padding: 24px 29px;
+	background-color: rgba(64, 148, 214, 0.1);
+	display: flex;
+	align-items: center;
+	&__img-wrap {
+		width: 139px;
+		height: 54px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 50px;
+		img {
+			width: auto;
+			height: auto;
+		}
+	}
+
+	&__room {
+		width: 290px;
+		display: flex;
+		flex-direction: column;
+		margin-right: 70px;
+	}
+
+	&__room-link {
+		font-size: 16px;
+		font-weight: 500;
+		color: #4297db;
+		text-decoration: underline;
+		margin-bottom: 7px;
+	}
+
+	&__details {
+		font-size: 14px;
+		color: #333333;
+	}
+
+	&__info-wrap {
+
+	}
+
+	&__info {
+		display: flex;
+		margin-bottom: 7px;
+	}
+
+	&__img {
+		margin-right: 8px;
+		width: 15px;
+		height: 15px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__depart-data {
+		margin-right: 7px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #333333;
+	}
+
+	&__avia-link {
+		font-size: 14px;
+		color: #4094d6;
+	}
+
+	&__main-link {
+		margin-left: auto;
+		width: 195px;
+		text-transform: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 27px 0;
+	}
+}
+
+.tabsTours {
+	
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		max-width: 195px;
+		width: 100%;
+		border: 1px solid #d8d8d8;
+		border-right: none;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 16px 0;
+		position: relative;
+		cursor: pointer;
+
+		&:last-child {
+			border-right: 1px solid #d8d8d8;
+		}
+
+		&.active,
+		&:hover {
+			background-color: rgba(64, 148, 214, 0.1);
+			&:before {
+				position: absolute;
+				content: '';
+				width: 193px;
+				height: 23px;
+				top: -1px;
+				left: 0;
+				@include bg-img-center;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='195' height='23' viewBox='0 0 195 23'%3E%3Cpath fill='%234094D6' fill-rule='evenodd' d='M0 0v7.945c11.465 4.302 41.805 5.377 91.018 3.226C140.23 9.021 174.89 12.963 195 23V0H0z'/%3E%3C/svg%3E%0A");
+			}
+		}
+	}
+
+	&__data {
+		margin-bottom: 10px;
+		font-size: 16px;
+		color: #333333;
+	}
+
+	&__price {
+		font-size: 16px;
+		font-weight: 700;
+		&_red {
+			color: #dd4343;
+		}
+
+		&_green {
+			color: #46cb69;
+		}
+
+		&_orange {
+			color: #ffb334;
+		}
+	}
+
+	&__content {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}

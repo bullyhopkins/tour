@@ -1,0 +1,94 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section(style='background-image: url(images/intro-bg.png);').intro-section.intro-section_height
+			.container
+				.head-wrap.head-wrap_padding
+					a(href="#").logo
+					.info-wrap
+						a(href="tel:67320372").info-link.tel-link 67 320 372
+						a(href="mailto:info@sofiture.lv").info-link.mail-link info@sofiture.lv
+						a(href="#").buy-link.red-btn Купить тур в офисе
+				h2.intro-title Туры в рассрочку
+
+		section.installment-section.installment-section_bg
+			.container
+				.pay-latter
+					h2.section-title Тур сейчас оплата потом
+						span.abs-text Оплата потом
+					p.sub-text У нас для вас новая услуга от Sofiture.lv. Все туры на сайте можно купить онлайн в кредит до 12 месяцев!
+
+					.advantages-wrap
+
+						.advantages
+							.advantages__img
+								img(src="../images/advan1.svg", alt="")
+							span.advantages__title 30 дней без процентов.
+							span.advantages__text При оплате покупки в течении 30 дней, проценты не начисляются.
+
+						.advantages
+							.advantages__img
+								img(src="../images/advan2.svg", alt="")
+							span.advantages__title Выгодно
+							span.advantages__text После первого месяца ежемесячный процент составляет от 1,9% до 3,6%.
+
+						.advantages
+							.advantages__img
+								img(src="../images/advan3.svg", alt="")
+							span.advantages__title Удобно оформлять
+							span.advantages__text Оформление полностью онлайн, не более 20 минут.
+
+		section.installment-section
+			.container
+				.procedure
+					h2.section-title Порядок действий
+						span.abs-text Порядок
+					p.sub-text У нас для вас новая услуга от Sofiture.lv. Все туры на сайте можно купить онлайн в кредит до 12 месяцев!
+					.advantages-wrap
+						.advantages
+							.advantages__img
+								img(src="../images/actions1.svg", alt="")
+							span.advantages__title Выберите тур на нашем сайте
+							span.advantages__text Более 50 000 туров в одном клике от вас.
+						.advantages
+							.advantages__img
+								img(src="../images/actions2.svg", alt="")
+							span.advantages__title Понравился тур? Оставляйте заявку!
+							span.advantages__text Укажите в комментариях что вас интересует услуга рассрочки.
+						.advantages
+							.advantages__img
+								img(src="../images/actions3.svg", alt="")
+							span.advantages__title Ждите звонка
+							span.advantages__text Наш менеджер свяжется с вами и поможет оформить кредит.
+
+		include ../components/pay-slider/pay-slider
+
+		section.installment-section
+			.container
+				.text-installment
+					h2.instal-title Туры в рассрочку
+					p.description На нашем сайте вы можете купить тур в рассрочку без переплаты. Тур в рассрочку — это кредит на отдых без процентов на определенный период.
+					p.description Когда хочется по-настоящему отдохнуть, а финансовое положение не позволяет в полной мере насладиться отпуском за границей, можно не откладывать восстановление сил до лучших времен. Туристическая компания Travelata совместно с сервисом PayLate, предлагает воспользоваться услугой «Тур сейчас — оплата потом». Это уникальное предложение позволяет приобрести туры в рассрочку без переплаты, чтобы отправиться в путешествие вашей мечты уже сейчас.
+					span.instal-list  Что вы получаете, покупая туры в кредит и растрочку:
+					ul.list
+						li.instal-paragraph Отдых в рассрочку на срок до 12 месяцев
+						li.instal-paragraph 30 дней беспроцентного кредита
+						li.instal-paragraph Низкую процентную ставку: от 1.9 до 3,6% в месяц
+						li.instal-paragraph Займ на сумму от 3  000 до 250  000 рублей, на который вы сможете приобрести любой тур на ваш выбор
+					span.instal-list Как купить отдых в кредит без процента на сайте-агрегаторе Travelata:
+					ul.list
+						li.instal-paragraph Выберите туристический пакет, который идеально подходит для ваших планов на отдых
+						li.instal-paragraph Заполните форму, позволяющую купить тур в рассрочку в системе PayLate
+						li.instal-paragraph Дождитесь подтверждения смс и ответьте на него
+						li.instal-paragraph Ждите звонка от менеджера компании Травелата, которые свяжутся с вами для уточнения деталей бронирования
+					p.description Всего 20 минут отделяет вас от отпуска, который вы можете провести в кредит и без переплаты.			
+
+block footer
+	include ../blocks/footer/footer

@@ -1,0 +1,486 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.intro-section
+			.container
+				include ../components/head-wrap/head-wrap
+
+				h1.main-title Выбирайте и покупайте туры онлайн
+
+				p.intro-text По ценам туроператоров или ниже с круглосуточной поддержкой до и после покупки
+
+				include ../components/main-form/main-form
+
+		section.popular-section
+			.container
+				h2.section-title Популярные направления
+					span.abs-text Hаправления
+				p.sub-text Captent taciti sociosqu ad litora torquent per conubia nostra
+				
+				.tours-wrap
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap.png", alt="Image description")
+						.tour__info
+							span.tour__name Греция
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap2.png", alt="Image description")
+						.tour__info
+							span.tour__name Париж
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap3.png", alt="Image description")
+						.tour__info
+							span.tour__name Италия
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+				.hidden-tours
+					.tours-wrap
+						.tour
+							.like-wrap
+								a(href="#").favorites
+							.tour__img
+								img(src="../images/bitmap.png", alt="Image description")
+							.tour__info
+								span.tour__name Греция
+								p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+								.tour__nav
+									.tour__price-wrap
+										span.tour__price-text Начиная от
+										span.tour__price € 300
+									a(href="#").tour__link Посмотреть детали
+
+						.tour
+							.like-wrap
+								a(href="#").favorites
+							.tour__img
+								img(src="../images/bitmap2.png", alt="Image description")
+							.tour__info
+								span.tour__name Париж
+								p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+								.tour__nav
+									.tour__price-wrap
+										span.tour__price-text Начиная от
+										span.tour__price € 300
+									a(href="#").tour__link Посмотреть детали
+
+						.tour
+							.like-wrap
+								a(href="#").favorites
+							.tour__img
+								img(src="../images/bitmap3.png", alt="Image description")
+							.tour__info
+								span.tour__name Италия
+								p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+								.tour__nav
+									.tour__price-wrap
+										span.tour__price-text Начиная от
+										span.tour__price € 300
+									a(href="#").tour__link Посмотреть детали
+
+				span.tour-more Смотреть все направления
+
+		section.newsletter-section
+			.container
+				.newsletter-wrap
+					.newsletter-info
+						p.newsletter-title Подпишитесь на рассылку
+						p.newsletter-text И вы первыми узнаете о наших секретных акциях и конкурсах
+					
+					form(action="#" id="" mathod="").newsletter-form
+						input(type="text" value="" placeholder="Введите ваш эмайл").newsletter-form__input
+						button(type="submit").newsletter-form__btn Подписаться
+		
+		section.partners-section
+			img(src="images/partner-bg.png", alt="Image description").img-abs
+			.container
+				h3.sub-title.sub-title_blue Наши партнеры
+				.owl-carousel.carousel-partner
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner1.png", alt="Image description")
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner2.png", alt="Image description")
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner3.png", alt="Image description")
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner4.png", alt="Image description")
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner5.png", alt="Image description")
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner2.png", alt="Image description")
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner3.png", alt="Image description")
+					.slide-holder
+						a(href="#").slide
+							img(src="images/partner4.png", alt="Image description")
+		
+		section.buy-tours-section
+			.container
+				.buy-wrap
+					.img-wrap
+						img(src="../images/palm.jpg", alt="Image description")
+					.buy-info
+						h2.buy-title Покупайте туры онлайн, пока они не закончились
+						p.buy-text Так вы забронируете тур по самой низкой цене и сэкономите время. Туры быстро заканчиваются. Средняя скорость выкупа горящих туров с сайта — 60 минут. За это время вы не успеете добраться до офиса турагентства. Забронируйте тур мечты онлайн — <b> успейте поймать самую низкую цену!</b>
+
+						span.buy-sub-title Гарантируем честные цены
+
+						p.buy-text.buy-text_img Цены в нашем интернет-магазине такие же, как у туроператоров, или ниже — <b> вы никогда не переплачиваете</b>
+
+						p.buy-text.buy-text_img Нашли тур дешевле — мы вернём двойную разницу! Если на другом сайте цена на этот же тур ниже, мы снижаем для вас стоимость до цены конкурента, а вы получаете вознаграждение в размере двойной разницы!
+
+						a(href="#").buy-link Подробнее
+
+						span.buy-sub-title Круглосуточная поддержка до и после покупки тура
+
+						p.buy-text.buy-text_img Всегда на связи по 
+							a(href="#") телефону  
+							|и в  
+							a(href="#") мессенджерах 
+
+						p.buy-text.buy-text_img СМС и email информирование туристов
+
+						p.buy-text.buy-text_img Поддержка персонального менеджера во время путешествия
+		
+		section.reviews-section
+			.container
+				h2.section-title.section-title_white Отзывы наших клиентов
+				p.reviews-text SofiTure - это не только отличный сайт для поиска туров, но и также профессиональная команда менеджеров, которая всегда прийдет к вам на помощь и будет с вам и в горе и в радости на протяжении всего вашего отдыха.
+
+			.slider-wrap
+				.owl-carousel.carousel-clients
+					.slide-holder
+						.client
+							.client__info
+								.client__photo
+									img(src="images/client1.png", alt="")
+								.client__data
+									span.client__name Никита Иванов
+									span.client__tour Тур по Исландии
+									.raiting
+										span
+										span
+										span
+										span
+										span
+
+							p.client__review Понравилось все! Все забронировал и оплатил, сразу связались со мной письменно с информацией по туру. По моей просьбе документы выслали раньше.
+
+					.slide-holder
+						.client
+							.client__info
+								.client__photo
+									img(src="images/client2.png", alt="")
+								.client__data
+									span.client__name Алина Латышева
+									span.client__tour Тур по Исландии
+									.raiting
+										span
+										span
+										span
+										span
+										span
+
+							p.client__review Понравилась оперативность, вовремя предоставленные документы на тур, информирование о времени вылета по смс. Перед заказом тура получила консультацию.
+
+					.slide-holder
+						.client
+							.client__info
+								.client__photo
+									img(src="images/client3.png", alt="")
+								.client__data
+									span.client__name Алексей Степанов
+									span.client__tour Тур по Исландии
+									.raiting
+										span
+										span
+										span
+										span
+										span
+
+							p.client__review Отличный сайт, все предложения можно выбрать и по дате и по предложениям выбора авиакомпаний. Безопасная оплата через сайт. 
+
+		section.merit-section
+			.container
+				h2.section-title Наши заслуги
+					span.abs-text Заслуги
+				p.sub-text Class aptent taciti sociosqu ad litora torquent per conubia nostra
+				.merit-wrap
+					.merit
+						img(src="images/merit1.png", alt="")
+					.merit
+						img(src="images/merit2.png", alt="")
+					.merit
+						img(src="images/merit3.png", alt="")
+
+		section.search-tours-section
+			.container
+				h2.section-title Поиск туров онлайн
+					span.abs-text Туры онлайн
+				p.sub-text Class aptent taciti sociosqu ad litora torquent per conubia nostra
+
+				.search-wrap
+					.search-img
+						img(src="images/sea-img.png", alt="")
+					.search-info
+						h3.search-title Наши партнеры
+						p.search-text Нашими партнерами являются самые крупные и надежные туроператоры, поэтому вы можете быть уверены в качестве приобретенного тура. Кроме того, на сайте Travelata.ru можно купить тур по самым лучшим ценам – мы предоставляем вам возможность отправиться в путешествие с лучшим соотношением цена/качество от любого из 120 туроператоров.
+
+					.search-info
+						h3.search-title Наша компания
+						p.search-text Наша компания учитывает интересы каждого клиента, и поэтому у нас можно подобрать отель для отдыха в тропических странах или на горнолыжных курортах, купить горящий тур по сниженной цене или забронировать путешествие заранее. Мы предоставляем подробную информацию о каждом отеле – на нашем сайте.
+
+					.search-info
+						h3.search-title Планирование туров
+						p.search-text С SofiTure вы можете планировать поездку так, как вам удобно – можете заказать туры онлайн через сайт, по телефону, а также с помощью мобильного приложения для смартфонов и планшетов. Опытные и компетентные специалисты нашей компании готовы помочь в приобретении тура 24 часа в сутки.
+
+					.search-info
+						h3.search-title Выбирайте нас
+						p.search-text Выбирая отдых с Travelata.ru, вы гарантированно получаете огромный выбор путешествий для отдыха, поэтому купить путевку у нас не сложнее, чем совершать покупки в любом онлайн магазине. Лучшие цены и первоклассное профессиональное обслуживание – гарантия вашего качественного отдыха.
+
+		section.directions-section
+			.container
+				h2.section-title Наши направление
+					span.abs-text Hаправления
+				p.sub-text Популярные направлен
+
+				.country-wrap
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+
+				p.sub-text Остальные направлени
+
+				.country-wrap
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/ukr.svg", alt="Image description")
+						span.country__name Украина
+					a(href="#").country
+						.country__img
+							img(src="images/tur.svg", alt="Image description")
+						span.country__name Турция
+					a(href="#").country
+						.country__img
+							img(src="images/ndr.svg", alt="Image description")
+						span.country__name Нидерланды
+					a(href="#").country
+						.country__img
+							img(src="images/arg.svg", alt="Image description")
+						span.country__name Аргентина
+					a(href="#").country
+						.country__img
+							img(src="images/prt.svg", alt="Image description")
+						span.country__name Португалия
+					a(href="#").country
+						.country__img
+							img(src="images/irl.svg", alt="Image description")
+						span.country__name Ирландия
+					a(href="#").country
+						.country__img
+							img(src="images/brz.svg", alt="Image description")
+						span.country__name Бразилия
+		
+block footer
+	include ../blocks/footer/footer

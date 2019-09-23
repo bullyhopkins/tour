@@ -1,0 +1,300 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.intro-section
+			.container
+				include ../components/head-wrap/head-wrap
+
+				include ../components/main-form/main-form
+
+		section.popular-section
+			.container
+				h2.section-title Горящие туры из Риги
+					span.abs-text Горящие туры
+				p.sub-text.sub-text_margin Популярные направления
+				
+				.tours-wrap
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap.png", alt="Image description")
+						.tour__info
+							span.tour__name Греция
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap2.png", alt="Image description")
+						.tour__info
+							span.tour__name Париж
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap3.png", alt="Image description")
+						.tour__info
+							span.tour__name Италия
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+					
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap.png", alt="Image description")
+						.tour__info
+							span.tour__name Греция
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap2.png", alt="Image description")
+						.tour__info
+							span.tour__name Париж
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+					.tour
+						.like-wrap
+							a(href="#").favorites
+						.tour__img
+							img(src="../images/bitmap3.png", alt="Image description")
+						.tour__info
+							span.tour__name Италия
+							p.tour__text Афины, Закинф, Корфу, Кос, Пелопоннес, Родос, Санторини, Халкидики
+							.tour__nav
+								.tour__price-wrap
+									span.tour__price-text Начиная от
+									span.tour__price € 300
+								a(href="#").tour__link Посмотреть детали
+
+		section.other-directions-section
+			.container
+				h2.section-title ОСТАЛЬНЫЕ НАПРАВЛЕНИЯ
+					span.abs-text НАПРАВЛЕНИЯ
+				.directions-wrap
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/ndr.svg", alt="Image description")
+							span.country__name Нидерланды
+						span.direction__start Начиная от:
+						span.direction__price € 220
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/ukr.svg", alt="Image description")
+							span.country__name Украина
+						span.direction__start Начиная от:
+						span.direction__price € 330
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/tur.svg", alt="Image description")
+							span.country__name Турция
+						span.direction__start Начиная от:
+						span.direction__price € 1250
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/arg.svg", alt="Image description")
+							span.country__name Аргентина
+						span.direction__start Начиная от:
+						span.direction__price € 450
+
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/prt.svg", alt="Image description")
+							span.country__name Португалия
+						span.direction__start Начиная от:
+						span.direction__price € 850
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/irl.svg", alt="Image description")
+							span.country__name Ирландия
+						span.direction__start Начиная от:
+						span.direction__price € 460
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/brz.svg", alt="Image description")
+							span.country__name Бразилия
+						span.direction__start Начиная от:
+						span.direction__price € 220
+
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/ndr.svg", alt="Image description")
+							span.country__name Нидерланды
+						span.direction__start Начиная от:
+						span.direction__price € 220
+
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/ukr.svg", alt="Image description")
+							span.country__name Украина
+						span.direction__start Начиная от:
+						span.direction__price € 330
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/tur.svg", alt="Image description")
+							span.country__name Турция
+						span.direction__start Начиная от:
+						span.direction__price € 1250
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/arg.svg", alt="Image description")
+							span.country__name Аргентина
+						span.direction__start Начиная от:
+						span.direction__price € 450
+
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/prt.svg", alt="Image description")
+							span.country__name Португалия
+						span.direction__start Начиная от:
+						span.direction__price € 850
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/irl.svg", alt="Image description")
+							span.country__name Ирландия
+						span.direction__start Начиная от:
+						span.direction__price € 460
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/brz.svg", alt="Image description")
+							span.country__name Бразилия
+						span.direction__start Начиная от:
+						span.direction__price € 220
+
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/ndr.svg", alt="Image description")
+							span.country__name Нидерланды
+						span.direction__start Начиная от:
+						span.direction__price € 220
+
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/tur.svg", alt="Image description")
+							span.country__name Турция
+						span.direction__start Начиная от:
+						span.direction__price € 1250
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/arg.svg", alt="Image description")
+							span.country__name Аргентина
+						span.direction__start Начиная от:
+						span.direction__price € 450
+
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/prt.svg", alt="Image description")
+							span.country__name Португалия
+						span.direction__start Начиная от:
+						span.direction__price € 850
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/irl.svg", alt="Image description")
+							span.country__name Ирландия
+						span.direction__start Начиная от:
+						span.direction__price € 460
+				
+					a(href="#").direction
+						.country
+							.country__img
+								img(src="images/brz.svg", alt="Image description")
+							span.country__name Бразилия
+						span.direction__start Начиная от:
+						span.direction__price € 220
+
+		section.buy-tours-section
+			.container
+				.buy-wrap
+					.img-wrap
+						img(src="../images/yacht.jpg", alt="Image description")
+					.buy-info.buy-info_hot
+						h2.buy-title Поиск горящих путевок 2019
+						p.buy-text Что такое горящие туры? Распространено мнение, что это путевки, по которым кто-то не смог отправиться на отдых. Однако, такая трактовка не верна. Для начала разберемся, из чего складывается стоимость пакета, который вы покупаете в турагентстве:
+
+						p.buy-text.buy-text_img Проживание в номере отеля;
+
+						p.buy-text.buy-text_img Авиаперелет;
+
+						p.buy-text.buy-text_img Трансфер до места размещения;
+
+						p.buy-text.buy-text_img Страхование жизни и здоровья путешественников.
+
+						p.buy-text При этом цена билетов на самолет, трансфера и страховки — величина постоянная. Акций и скидок на эти пункты практически не бывает. Где же туроператор может сэкономить? На размещении отдыхающих в отеле!
+
+						p.buy-text Число купивших пакетный отдых туристов меньше, чем выкупленных мест в самолете? До вылета осталось всего несколько дней? В этом случае туроператор снижает стоимость проживания в отеле. Делается это, чтобы максимально заполнить места на рейсе (регулярный или чартер). Таким образом, снижается стоимость горящего тура.
+
+						p.buy-text Другое название горячих туров — спецпредложения. Можно сказать, что все путевки, которые туроператоры продают за несколько дней до вылета, являются горящими. В любом случае, владельцу турфирмы выгоднее продать отдых дешевле, чем не продать его вообще.
+
+						p.buy-text 
+							b Мы поддерживаем актуальную базу дешевых путевок, для бронирования и поиска самого выгодного отдыха в 2019 году.
+		
+block footer
+	include ../blocks/footer/footer

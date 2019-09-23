@@ -1,0 +1,75 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header-lk
+	
+block content
+	main.main
+		include ../components/intro-section-blue/intro-section-blue
+
+		section.lk-section
+			.container
+				.lk-wrap
+					.lk-sidebar
+						a(href="favorites.html").lk-link.lk-link_favorites Фавориты
+							span.lk-link__count 5
+						a(href="lk.html").lk-link.lk-link_settings.active Настройки
+
+					.lk-content
+						.lk-box
+							.lk-box__head
+								span.lk-box__title Мои контактные данные
+
+							form(action="#" id="" method="").data-form
+								.data-form__wrap
+									.data-form__filds
+										span.data-form__text Имя
+										input(type="text").data-form__input
+									.data-form__filds
+										span.data-form__text Фамилия
+										input(type="text").data-form__input
+									.data-form__filds
+										span.data-form__text Почта
+										input(type="text").data-form__input
+									.data-form__filds
+										span.data-form__text Телефон
+										input(type="text").data-form__input
+									.data-form__filds
+										span.data-form__text Дата рождения
+										input(type="text").data-form__input
+								.data-form__buttons
+									a(href="#").data-form__cancel Отменить
+									button(type="submit").data-form__btn.red-btn Сохранить
+
+						.lk-box
+							.lk-box__head
+								span.lk-box__title Настройка email-рассылки
+							form(action="#" id="" method="").order-form
+								input(type="checkbox" name="rules" id="rules").order-form__input-checbox
+								label(for="rules").order-form__label Получать рассылку Sofiture на почту
+
+						.lk-box
+							.lk-box__head
+								span.lk-box__title Пароль
+
+							form(action="#" id="" method="").data-form
+								.data-form__wrap.data-form__wrap_password
+									.data-form__filds
+										span.data-form__text Старый пароль
+										input(type="text").data-form__input
+									.data-form__filds
+										span.data-form__text Новый пароль
+										input(type="text").data-form__input
+									.data-form__filds
+										span.data-form__text Повторите пароль
+										input(type="text").data-form__input
+								.data-form__buttons
+									a(href="#").data-form__cancel Отменить
+									button(type="submit").data-form__btn.data-form__btn_password.red-btn Изменить пароль
+
+
+block footer
+	include ../blocks/footer/footer

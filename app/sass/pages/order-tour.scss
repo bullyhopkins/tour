@@ -1,0 +1,30 @@
+.order-section {
+	padding: 42px 0 50px;
+
+	.time-data {
+		background-color: rgba(221, 67, 67, 0.8);
+		text-align: center;
+		border-radius: 5px;
+		padding: 20px 0 21px;
+		margin-bottom: 15px;
+		p {
+			text-align: center;
+			font-size: 21px;
+			font-weight: 500;
+			line-height: 0.67;
+			color: #ffffff;
+		}
+	}
+	
+	.order-wrap {
+		background-color: rgba(64, 148, 214, 0.1);
+		padding: 38px 10px 33px 48px;
+	}
+
+	.contact-data {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 27px 0;
+	}
+}

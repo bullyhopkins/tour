@@ -1,0 +1,40 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section.intro-section.intro-section_padding
+			.container
+				include ../components/head-wrap/head-wrap
+				include ../components/main-form/main-form
+
+		section.partners-section
+			img(src="images/partner-bg.png", alt="Image description").img-abs
+			.container
+				h2.section-title Наши партнеры
+					span.abs-text партнеры
+				p.reviews-text SofiTure - это не только отличный сайт для поиска туров, но и также профессиональная команда менеджеров, которая всегда прийдет к вам на помощь и будет с вам и в горе и в радости на протяжении всего вашего отдыха.
+				.partners-wrap
+					a(href="#").partner
+						.img-wrap
+							img(src="images/partner1.png", alt="Image description")
+					a(href="#").partner
+						.img-wrap
+							img(src="images/partner2.png", alt="Image description")
+					a(href="#").partner
+						.img-wrap
+							img(src="images/partner3.png", alt="Image description")
+					a(href="#").partner
+						.img-wrap
+							img(src="images/partner4.png", alt="Image description")
+					a(href="#").partner
+						.img-wrap
+							img(src="images/partner5.png", alt="Image description")
+		
+block footer
+	include ../blocks/footer/footer

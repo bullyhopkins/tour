@@ -1,0 +1,655 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section.intro-section.intro-section_padding
+			.container
+				include ../components/head-wrap/head-wrap
+				include ../components/main-form/main-form
+
+		section.search-tour-section
+			.container
+				h2.section-title Поиск туров
+					span.abs-text Поиск
+				p.sub-text Все цены указаны при размещении 2 взрослых на 8 ночей
+
+				form(action="#" id="" method="").findForm
+					.toursFilter
+							button(type="").toursFilter__filterBtn.toursFilter__filterBtn_green Низкая
+							span -
+							button(type="").toursFilter__filterBtn.toursFilter__filterBtn_red Высокая
+
+					.owl-carousel.card-slider
+						.slide
+							.tabsTours
+								ul.tabsTours__list
+									li.tabsTours__item
+										span.tabsTours__data 18 июля, вс
+										span.tabsTours__data от
+											spab.tabsTours__price.tabsTours__price_red 325 €
+						.slide
+							.tabsTours
+								ul.tabsTours__list
+									li.tabsTours__item
+										span.tabsTours__data 18 июля, вс
+										span.tabsTours__data от
+											spab.tabsTours__price.tabsTours__price_red 325 €
+						.slide
+							.tabsTours
+								ul.tabsTours__list
+									li.tabsTours__item
+										span.tabsTours__data 18 июля, вс
+										span.tabsTours__data от
+											spab.tabsTours__price.tabsTours__price_orange 325 €
+						.slide
+							.tabsTours
+								ul.tabsTours__list
+									li.tabsTours__item
+										span.tabsTours__data 18 июля, вс
+										span.tabsTours__data от
+											spab.tabsTours__price.tabsTours__price_red 325 €
+						.slide
+							.tabsTours
+								ul.tabsTours__list
+									li.tabsTours__item
+										span.tabsTours__data 18 июля, вс
+										span.tabsTours__data от
+											spab.tabsTours__price.tabsTours__price_green 325 €
+						.slide
+							.tabsTours
+								ul.tabsTours__list
+									li.tabsTours__item
+										span.tabsTours__data 18 июля, вс
+										span.tabsTours__data от
+											spab.tabsTours__price.tabsTours__price_red 325 €
+					
+					.findForm__wrap
+						.findForm__input-wrap
+							input(type="text" placeholder="Поиск отеля").findForm__input
+							button(type="submit").findForm__btn
+						
+						.findForm__result
+							span Результатов: 
+							span 172
+							span , 
+							span фильтр: 
+							span Самый дешевый
+
+						.findForm__sort
+							span Сортировать по
+							.findForm__selectWrap
+								select(name="" id="")
+									option(value="") Сначала самые дешевые
+									option(value="") Сначала самые дешевые
+									option(value="") Сначала самые дешевые
+
+				.search-container
+					.search-wrap
+						.search-sidebar
+							form(action="#").searchForm 
+								.range-slider-wrap
+									h3.condition-name Бюджет
+									.range-slider
+										input(type="text" value="").js-range-slider
+									.extra-controls.form-inline
+										.form-group
+											div.form-group-col
+												input(type="text" value="0").js-input-from.form-control
+												span €
+												span - 
+											div.form-group-col
+												input(type="text" value="0").js-input-to.form-control
+												span €
+									span.range-text Цена за: 2 взрослых, не включая топливный сбор
+
+
+								h3.condition-name Класс отеля
+
+								.searchForm__checkbox
+									input(type="checkbox" name="stars5" id="stars5").searchForm__input-checbox
+									label(for="stars5").searchForm__label
+									.raiting.raiting_middle.raiting.raiting_middle_middle
+										span
+										span
+										span
+										span
+										span
+									span.searchForm__stars 5 звезд
+									span.searchForm__quantity 1
+								.searchForm__checkbox
+									input(type="checkbox" name="stars4" id="stars4").searchForm__input-checbox
+									label(for="stars4").searchForm__label
+									.raiting.raiting_middle.raiting.raiting_middle_middle
+										span
+										span
+										span
+										span
+										span.gray
+									span.searchForm__stars 4 звезд
+									span.searchForm__quantity 35
+								.searchForm__checkbox
+									input(type="checkbox" name="stars3" id="stars3").searchForm__input-checbox
+									label(for="stars3").searchForm__label
+									.raiting.raiting_middle.raiting.raiting_middle_middle
+										span
+										span
+										span
+										span.gray
+										span.gray
+									span.searchForm__stars 3 звезд
+									span.searchForm__quantity 68
+								.searchForm__checkbox
+									input(type="checkbox" name="stars2" id="stars2").searchForm__input-checbox
+									label(for="stars2").searchForm__label
+									.raiting.raiting_middle.raiting.raiting_middle_middle
+										span
+										span
+										span.gray
+										span.gray
+										span.gray
+									span.searchForm__stars 1 - 2 звезды
+									span.searchForm__quantity 84
+								.searchForm__checkbox
+									input(type="checkbox" name="other" id="other").searchForm__input-checbox
+									label(for="other").searchForm__label
+									span.searchForm__stars Любой
+									span.searchForm__quantity 223
+
+								h3.condition-name Питание
+
+								.searchForm__checkbox
+									input(type="checkbox" name="uia" id="uia").searchForm__input-checbox
+									label(for="uia").searchForm__label
+									.searchForm__img
+										img(src="../images/uai.svg", alt="")
+									span.searchForm__stars Ультра все включено
+									a(href="#").searchForm__link-info
+									span.searchForm__quantity 1
+								.searchForm__checkbox
+									input(type="checkbox" name="ui" id="ui").searchForm__input-checbox
+									label(for="ui").searchForm__label
+									.searchForm__img
+										img(src="../images/ai.svg", alt="")
+									span.searchForm__stars Все включено
+									a(href="#").searchForm__link-info
+									span.searchForm__quantity 35
+								.searchForm__checkbox
+									input(type="checkbox" name="bb" id="bb").searchForm__input-checbox
+									label(for="bb").searchForm__label
+									.searchForm__img
+										img(src="../images/bb.svg", alt="")
+									span.searchForm__stars Завтрак
+									span.searchForm__quantity 68
+								.searchForm__checkbox
+									input(type="checkbox" name="fb" id="fb").searchForm__input-checbox
+									label(for="fb").searchForm__label
+									.searchForm__img
+										img(src="../images/fb.svg", alt="")
+									span.searchForm__stars Завтрак, обед, ужин
+									span.searchForm__quantity 84
+								.searchForm__checkbox
+									input(type="checkbox" name="hb" id="hb").searchForm__input-checbox
+									label(for="hb").searchForm__label
+									.searchForm__img
+										img(src="../images/hb.svg", alt="")
+									span.searchForm__stars Завтрак+ужин
+									span.searchForm__quantity 223
+								.searchForm__checkbox
+									input(type="checkbox" name="ro" id="ro").searchForm__input-checbox
+									label(for="ro").searchForm__label
+									.searchForm__img
+										img(src="../images/ro.svg", alt="")
+									span.searchForm__stars Без питания
+									span.searchForm__quantity 84
+								.searchForm__checkbox
+									input(type="checkbox" name="other-food" id="other-food").searchForm__input-checbox
+									label(for="other-food").searchForm__label
+									span.searchForm__stars Любое
+									span.searchForm__quantity 223
+
+								h3.condition-name Оценка по отзывам
+
+								.searchForm__checkbox
+									input(type="checkbox" name="asses5" id="asses5").searchForm__input-checbox
+									label(for="asses5").searchForm__label
+									.searchForm__img
+										img(src="../images/asses5.svg", alt="")
+									span.searchForm__stars Отлично
+									span.searchForm__quantity 1090
+								.searchForm__checkbox
+									input(type="checkbox" name="asses4" id="asses4").searchForm__input-checbox
+									label(for="asses4").searchForm__label
+									.searchForm__img
+										img(src="../images/asses4.svg", alt="")
+									span.searchForm__stars Очень хорошо
+									span.searchForm__quantity 35
+								.searchForm__checkbox
+									input(type="checkbox" name="asses3" id="asses3").searchForm__input-checbox
+									label(for="asses3").searchForm__label
+									.searchForm__img
+										img(src="../images/asses3.svg", alt="")
+									span.searchForm__stars Хорошо
+									span.searchForm__quantity 68
+								.searchForm__checkbox
+									input(type="checkbox" name="asses0" id="asses0").searchForm__input-checbox
+									label(for="asses0").searchForm__label
+									.searchForm__img
+										img(src="../images/asses0.svg", alt="")
+									span.searchForm__stars Удовлетворительно
+									span.searchForm__quantity 84
+								.searchForm__checkbox
+									input(type="checkbox" name="all-asses" id="all-asses").searchForm__input-checbox
+									label(for="all-asses").searchForm__label
+									span.searchForm__stars Все оценки
+									span.searchForm__quantity 1289
+
+								h3.condition-name Туроператоры
+
+								.searchForm__checkbox
+									input(type="checkbox" name="Mouzenidis" id="Mouzenidis").searchForm__input-checbox
+									label(for="Mouzenidis").searchForm__label
+									span.searchForm__stars Mouzenidis travel
+									span.searchForm__quantity 1
+								.searchForm__checkbox
+									input(type="checkbox" name="Tez" id="Tez").searchForm__input-checbox
+									label(for="Tez").searchForm__label
+									span.searchForm__stars Tez Tour
+									span.searchForm__quantity 35
+								.searchForm__checkbox
+									input(type="checkbox" name="Itaka" id="Itaka").searchForm__input-checbox
+									label(for="Itaka").searchForm__label
+									span.searchForm__stars Itaka
+									span.searchForm__quantity 68
+								.searchForm__checkbox
+									input(type="checkbox" name="Kidy" id="Kidy").searchForm__input-checbox
+									label(for="Kidy").searchForm__label
+									span.searchForm__stars Kidy tour
+									span.searchForm__quantity 84
+								.searchForm__checkbox
+									input(type="checkbox" name="Tui" id="Tui").searchForm__input-checbox
+									label(for="Tui").searchForm__label
+									span.searchForm__stars Tui group
+									span.searchForm__quantity 223	
+								.searchForm__checkbox
+									input(type="checkbox" name="other-operator" id="other-operator").searchForm__input-checbox
+									label(for="other-operator").searchForm__label
+									span.searchForm__stars Любой
+									span.searchForm__quantity 84
+
+
+
+
+
+						.find-wrap
+							h3.find-title Подпишитесь на нашу рассылку
+							p.text-center Чтобы получать подборки туров по выгодным ценам и быть в курсе акций и конкурсов
+							form(action="#" id="" method="").mail-form
+								.mail-form__fild
+									input(type="text" placeholder="Введите ваш емайл").mail-form__input
+									button(type="submit").mail-form__btn
+						.find-wrap
+							h3.find-title Поиск туров онлайн
+							p Наша компания всегда готова прийти на помощь в планировании вашего путешествия. Мы поможем подобрать тур, произвести его бронирование и оплатить в режиме онлайн быстро и без проблем. Для вас поиск туров облегчится еще тем, что мы работаем с большим количеством туристических операторов, которые предлагают множество вариантов отдыха. Вне зависимости от того, планируете ли вы путешествие на пляжные или горнолыжные курорты, хотите поехать в экзотические страны за новыми впечатлениями или осмотреть мировые достопримечательности, у нас вы подберете себе наилучший вариант тура по самым выгодным ценам. На нашем сайте есть описания всех мировых отелей с отзывами реальных туристов, поэтому вы всегда будете знать, что вам предложит тот или иной курорт. Консультанты нашего сайта помогут вам в любое время дня и ночи и смогут ответить на любые ваши вопросы по телефону или электронной почте. Теперь поиск туров и дальнейшее путешествие будет приносить только радость.
+					.hotels-wrap
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite1.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite2.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite3.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite4.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite5.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite6.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite7.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782
+						a(href="#").favorite
+							.favorite__img-wrap
+								img(src="images/favorite8.png", alt="")
+							.favorite__info
+								.favorite__name
+									span.favorite__name-hotel Ambassador Tre Rose
+									.raiting.raiting_middle
+										span
+										span
+										span
+										span
+										span
+								.favorite__country
+									span.favorite__country-city Italy, Venecia
+									span.favorite__distance 300 метров до пляжа
+								.favorite__conditions
+									span.favorite__assessment 4,5
+										span.favorite__sub-assessment /5
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/mount.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/water.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/like.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/family.svg", alt="")
+									.favorite__icon
+										.favorite__icon-info
+											span.favorite__icon-text Есть кондиционер
+										img(src="images/condition.svg", alt="")
+								.favorite__to-get
+									.favorite__bg-wrap
+										img(src="images/fb.svg", alt="")
+									span.favorite__plane.get 8 км
+									span.favorite__city.get 3 км
+									span.favorite__price €782																					
+		
+
+block footer
+	include ../blocks/footer/footer

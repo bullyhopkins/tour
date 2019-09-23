@@ -1,0 +1,770 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section.intro-section.intro-section_padding
+			.container
+				include ../components/head-wrap/head-wrap
+				include ../components/main-form/main-form
+		
+		section.hotel-description-section
+			.container
+
+				.description-wrap
+					.description-slider
+						.like-wrap
+								a(href="#").favorites
+						.owl-carousel.owl-1#owl-1
+							.item
+								img(src="images/art1.jpg", alt="")
+							.item
+								img(src="images/art2.jpg", alt="")
+							.item
+								img(src="images/favorite6.png", alt="")
+							.item
+								img(src="images/art1.jpg", alt="")
+						.owl-carousel.owl-2#owl-2
+							.item
+								img(src="images/art1.jpg", alt="")
+							.item
+								img(src="images/art2.jpg", alt="")
+							.item
+								img(src="images/favorite6.png", alt="")
+							.item
+								img(src="images/art1.jpg", alt="")
+						a(href="#").link-tour Отправить ссылку на тур
+
+
+					.description-info
+						.hotel-name
+							h3.info-title Ambassador Tre Rose
+							.raiting.raiting_big
+								span
+								span
+								span
+								span
+								span
+						.country-map
+							span.country-city Italy, Venecia
+							a(href="#").show-map Посмотреть подробную карту
+						p.description-text 
+							mark Ambassador Tre Rose
+							| – уютный и небольшой, окутанный атмосферой непринужденности, в которой каждый гость почувствует…
+							a(href="#").details-link Читать далее
+						.conditions-wrap
+							.condition
+								.condition__img
+									img(src="../images/wifi.svg", alt="")
+								span.condition__name Интернет
+							.condition
+								.condition__img
+									img(src="../images/food.svg", alt="")
+								span.condition__name Все включено
+							.condition
+								.condition__img
+									img(src="../images/bar.svg", alt="")
+								span.condition__name Бар
+							.condition
+								span.condition__distance 200 M
+								span.condition__name Близко к пляжу
+							.condition
+								.condition__img
+									img(src="../images/pool.svg", alt="")
+								span.condition__name Бассейн
+							.condition
+								.condition__img
+									img(src="../images/conditioner.svg", alt="")
+								span.condition__name Кондиционер
+							.condition
+								.condition__img
+									img(src="../images/pebbles.svg", alt="")
+								span.condition__name Галька
+							.condition
+								.condition__img
+									img(src="../images/baby.svg", alt="")
+								span.condition__name Отдых с детьми
+						.details-tout
+							.details
+								span.details-title Детали тура
+								span.data-tour 18.06.2019 - 02.07.2019
+								.small-details
+									.img-details
+										img(src="images/people.svg", alt="")
+									span.sub-details 2 взрослых
+								.small-details
+									.img-details
+										img(src="images/plane.svg", alt="")
+									span.sub-details Вылет из Риги
+							.for-two
+								span.details-title За двоих
+								span.big-price 2260 €
+								span.smal-price Вкл. топл. сбор 200 €
+								a(href="#").order-tour.blue-btn Заказать тур
+		
+		section.tab-tours-section
+			.container
+				h3.info-title Туры в Sea Beach Resort & Aqua Park 4*
+				
+				form.toursForm
+					.toursForm__wrap
+						span.toursForm__city Город вылета
+						.citySelect.citySelect_blue
+							select(name="").citySelect__select
+								option(value="").citySelect__option Riga
+								option(value="").citySelect__option Riga
+								option(value="").citySelect__option Riga
+						.toursForm__foodSelect
+							span.toursForm__select Все типы питания
+							.toursForm__foodWrap
+								input(type="checkbox" id="ro" name="ro" value="ro").toursForm__input
+								label(for="ro").toursForm__label RO - Без питания
+
+								input(type="checkbox" id="hb" name="hb" value="hb").toursForm__input
+								label(for="hb").toursForm__label HB - Завтрак+ужин
+
+								input(type="checkbox" id="fb" name="fb" value="fb").toursForm__input
+								label(for="fb").toursForm__label FB - Завтрак, обед, ужин
+
+								input(type="checkbox" id="bb" name="bb" value="bb").toursForm__input
+								label(for="bb").toursForm__label BB - Завтрак
+
+								input(type="checkbox" id="ai" name="ai" value="ai").toursForm__input
+								label(for="ai").toursForm__label AI - Всё включено
+
+								input(type="checkbox" id="uai" name="uai" value="uai").toursForm__input
+								label(for="uai").toursForm__label UAI - Ультра все включено
+
+								input(type="checkbox" id="all" name="all" value="all").toursForm__input
+								label(for="all").toursForm__label Любой тип питания
+
+
+						.toursFilter
+							button(type="").toursFilter__filterBtn.toursFilter__filterBtn_green Низкая
+							span -
+							button(type="").toursFilter__filterBtn.toursFilter__filterBtn_red Высокая
+
+				.tabsTours.js-tabs
+					ul.tabsTours__list.js-tab-btn
+						li.tabsTours__item.active
+							span.tabsTours__data 18 июля, вс
+							span.tabsTours__data от
+								spab.tabsTours__price.tabsTours__price_red 325 €
+						li.tabsTours__item
+							span.tabsTours__data 19 июля, пн
+							span.tabsTours__data от
+								spab.tabsTours__price.tabsTours__price_green 325 €
+						li.tabsTours__item
+							span.tabsTours__data 20 июля, вт
+							span.tabsTours__data от
+								spab.tabsTours__price.tabsTours__price_orange 325 €
+						li.tabsTours__item
+							span.tabsTours__data 21 июля, ср
+							span.tabsTours__data от
+								spab.tabsTours__price.tabsTours__price_red 325 €
+						li.tabsTours__item
+							span.tabsTours__data 22 июля, чт
+							span.tabsTours__data от
+								spab.tabsTours__price.tabsTours__price_red 325 €
+						li.tabsTours__item
+							span.tabsTours__data 23 июля, пт
+							span.tabsTours__data от
+								spab.tabsTours__price.tabsTours__price_red 325 €
+					
+					.tabsTours__content.js-tab-content.active
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner1.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер с видом на море
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner2.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер с видом на море
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner4.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner5.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner3.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner2.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner3.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур												
+
+					.tabsTours__content.js-tab-content
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner1.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер с видом на море
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+					.tabsTours__content.js-tab-content
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner2.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер с видом на море
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+					.tabsTours__content.js-tab-content
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner4.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+					.tabsTours__content.js-tab-content
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner2.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур
+					.tabsTours__content.js-tab-content
+						.tourCard
+							.tourCard__img-wrap
+								img(src="images/partner3.png", alt="")
+							.tourCard__room
+								a(href="#").tourCard__room-link Стандартный номер
+								span.tourCard__details Все включено, 2 взрослых
+							.tourCard__info-wrap
+								.tourCard__info
+									.tourCard__img
+										img(src="images/plane.svg", alt="")
+									span.tourCard__depart-data 21 июня, ср
+									.tourCard__img
+										img(src="images/plane-back.svg", alt="")
+									span.tourCard__depart-data 1 июля, ср
+								span.tourCard__details На 12 ночей, 
+									a(href="#").tourCard__avia-link уточнить авиакомпанию
+							a(href="#").tourCard__main-link.blue-btn
+								span 150 €
+								span Заказать тур												
+
+		include ../components/pay-slider/pay-slider
+
+		section.sea-beach-section
+			.container
+				h3.info-title Подробнее об отеле Sea Beach Resort & Aqua Park 4*
+				p.info-details В курортном районе Набк Бэй, который находится в северо-восточной части знаменитого Шарм-Эль-Шейха (21,5 км), расположился роскошный отель Sea Beach Resort & Aqua Park (ех. Dessole Sea Beach Resort & Aqua Park; Tropicana Sea Beach). Инфраструктура этого отельного комплекса включает в себя жилую зону, представленную несколькими небольшими корпусами (3 этажа), и развлекательную зону, в которую помимо прочего входит собственный аквапарк в 17 разных горок. Расстояние до Международного аэропорта Шарм-эль-Шейх (Sharm el-Sheikh International Airport) - 12 км, до центра города - 22 км. Примечание: Администрация отеля оставляет за собой право вносить любые изменения в концепцию отеля, в том числе о наборе платных/бесплатных услуг без предварительного уведомления. Мы просим предварительно уточнять интересующую Вас информацию.
+				.images-wrap
+					.img-wrap
+						img(src="../images/sea-beach1.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach2.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach3.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach4.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach5.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach6.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach7.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach8.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach9.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach10.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach11.png", alt="")
+					.img-wrap
+						img(src="../images/sea-beach12.png", alt="")
+
+		section.hotel-services-section
+			.container
+				h3.info-title Услуги, предоставляемые отелем
+				.services-wrap
+					.service
+						.service__img
+							img(src="images/infrastructure.svg", alt="")
+						.service__info
+							span.service__name Инфраструктура отеля
+							p.service__text Магазин сувениров, Магазины в отеле, Пункт обмена валюты, Сад, Бар, Ресторан, Снек-бар, Лобби бар, Открытый бассейн, Аквапарк, Интернет-кафе, Джакузи, Камера хранения багажа, Дайвинг-центр, Парковка, Водные горки, Бар у бассейна, Сейф на ресепшн (нет данных о стоимости)
+					.service
+						.service__img
+							img(src="images/convenience.svg", alt="")
+						.service__info
+							span.service__name Удобства в номерах
+							p.service__text Балкон, Душ, Мини-бар (платно), Сейф (бесплатно), Телевизор, Телефон, Фен, Кондиционер (бесплатно), Терраса, Ванна, Чайник, Интернет в номере (бесплатно), Холодильник
+					.service
+						.service__img
+							img(src="images/services.svg", alt="")
+						.service__info
+							span.service__name Услуги в отеле
+							p.service__text Круглосуточная стойка регистрации, Банкомат, Обслуживание в номерах, Аренда автомобиля, Трансфер, Прачечная, Химчистка, Глажка одежды, Заказ экскурсий, Шезлонги и зонтики у бассейна, Интернет/Wi-Fi на территории (бесплатно)
+					.service
+						.service__img
+							img(src="images/beach.svg", alt="")
+						.service__info
+							span.service__name Пляж
+							p.service__text Шезлонги и зонтики на пляже (бесплатно), Пляжные полотенца (бесплатно), Частный пляж, Песчаный
+					.service
+						.service__img
+							img(src="images/children.svg", alt="")
+						.service__info
+							span.service__name Услуги для детей
+							p.service__text Детская площадка, Детский бассейн, Детский клуб, Няня (платно), Детская анимация, Игровая комната, Кроватка (бесплатно)
+					.service
+						.service__img
+							img(src="images/sports.svg", alt="")
+						.service__info
+							span.service__name Спорт
+							p.service__text Водные виды спорта, Волейбол, Настольный теннис, Теннисный корт, Футбол, Дайвинг, Ныряние с маской и трубкой, Тренажерный зал, Виндсерфинг, Фитнес-центр
+					.service
+						.service__img
+							img(src="images/beauty.svg", alt="")
+						.service__info
+							span.service__name Красота и здоровье
+							p.service__text Вызов доктора (платно), Массаж, Парикмахерская, Салон красоты, Спа и оздоровительный центр, Паровая баня (хаммам), Сауна, Терраса для загара
+					.service
+						.service__img
+							img(src="images/numbers.svg", alt="")
+						.service__info
+							span.service__name Удобства в номерах
+							p.service__text Дартс, Анимация, Бильярд (платно)
+					.service
+						.service__img
+							img(src="images/menus.svg", alt="")
+						.service__info
+							span.service__name Специальное меню
+							p.service__text Шведский стол, Детское меню
+					.service
+						.service__img
+							img(src="images/special.svg", alt="")
+						.service__info
+							span.service__name Специальные номера
+							p.service__text Семейные номера, Для некурящих
+					.service
+						.service__img
+							img(src="images/business.svg", alt="")
+						.service__info
+							span.service__name Бизнес-услуги
+							p.service__text Переговорная, Ксерокс, Факс
+					.service
+						.service__img
+							img(src="images/accommodation.svg", alt="")
+						.service__info
+							span.service__name Размещение
+							p.service__text До аэропорта - 12км., До пляжа - 100м., До центра города - 22км.
+					.service
+						.service__img
+							img(src="images/getbeach.svg", alt="")
+						.service__info
+							span.service__name Как добраться до пляжа
+							p.service__text Пешая доступность
+					.service
+						.service__img
+							img(src="images/position.svg", alt="")
+						.service__info
+							span.service__name Положение относительно пляжа
+							p.service__text 1-я линия, пляж через дорогу
+
+		section.hotel-reviews-section
+			.container
+				h3.info-title Отзывы о Sea Beach Resort & Aqua Park 4*
+				.rating-wrap
+					.rating
+						h3.rating__title Рейтинг отеля:
+						.rating__content
+							.rating__assessment
+								span.rating__value 4,5
+							.rating__sub-rating
+								.rating__line
+									.rating__img
+										img(src="../images/placing.svg", alt="")
+									span.rating__info Размещение -
+									span.rating__count 4,5
+								.rating__line
+									.rating__img
+										img(src="../images/service.svg", alt="")
+									span.rating__info Сервис -
+									span.rating__count 4,5
+								.rating__line
+									.rating__img
+										img(src="../images/rating-food.svg", alt="")
+									span.rating__info Питание -
+									span.rating__count 4,5
+					.rating
+						h3.rating__title Отзывы и рекомендации:
+						.rating__content
+							.rating__assessment.rating__assessment_revirws
+								span.rating__value.rating__value_revirws 2280
+							.rating__sub-rating
+								.rating__line
+									.rating__img
+										img(src="../images/good.svg", alt="")
+									span.rating__info Хороших -
+									span.rating__count 80%
+								.rating__line
+									.rating__img
+										img(src="../images/normal.svg", alt="")
+									span.rating__info Средних -
+									span.rating__count 7%
+								.rating__line
+									.rating__img
+										img(src="../images/bad.svg", alt="")
+									span.rating__info Плохих -
+									span.rating__count 13%
+
+				h3.info-title  Всего отзывов об отеле – 
+					span.reviews-count 2280
+				.reviews-wrap
+					.review
+						.review__photo
+							img(src="images/review1.png", alt="")
+						.review__info
+							.review__data
+								span.review__name James Olesen
+								.raiting
+									span
+									span
+									span
+									span
+									span
+								span.review__day 2 days ago
+							p.review__text Размещение. Итак, приехали мы в этот отель в 8 утра. Заселение, сказали в 14 часов. Завтрак у них не положен. Где-то в 11,30 позвали на рецепшн и предложили заселить нас пораньше за "бесплатный" презент. Мы согласились, в результате заселили нас в общей сложности где-то через час. За шоколадку. Деньги мы не давали. Номер попался хороший ( 3511), просторный, ванная комната тоже была большая.
+
+					.review
+						.review__photo
+							img(src="images/review2.png", alt="")
+						.review__info
+							.review__data
+								span.review__name James Olesen
+								.raiting
+									span
+									span
+									span
+									span
+									span
+								span.review__day 2 days ago
+							p.review__text Отдыхали в этом отеле в период с 19.06.2019 по 30.06.2019. Нас было 2 взрослых и ребенок 5 лет. В целом нам отдых очень понравился. Для ребенка развлечений очень много аквапарк, 4 бассейна, мультики вечером, мороженое, танцы и замечательный детский аниматор Элина, которая стала как вторая мама для нашего ребенка, который был готов вместо аквапарка и моря идти в детский клуб к ней.
+
+					.review
+						.review__photo
+							img(src="images/review1.png", alt="")
+						.review__info
+							.review__data
+								span.review__name James Olesen
+								.raiting
+									span
+									span
+									span
+									span
+									span
+								span.review__day 2 days ago
+							p.review__text Отдыхали с семьёй в период с 21 по 28 июня 2019. Прилетели мы 21 числа, вечером, в 21.30 были в отеле. Сразу нас отправили на ужин, а потом заселили в номер. Номер приличный, с видом на море. Территория отеля большая и чистая. Персонал приветливый. Пляж песчаный, вход в море с понтона. Глубина не большая. Были отливы, приливы. Во время отлива не хватало глубины для купания. Анимация очень хорошая!
+							
+					.review
+						.review__photo
+							img(src="images/review2.png", alt="")
+						.review__info
+							.review__data
+								span.review__name James Olesen
+								.raiting
+									span
+									span
+									span
+									span
+									span
+								span.review__day 2 days ago
+							p.review__text Отдыхали в этом отеле в период с 19.06.2019 по 30.06.2019. Нас было 2 взрослых и ребенок 5 лет. В целом нам отдых очень понравился. Для ребенка развлечений очень много аквапарк, 4 бассейна, мультики вечером, мороженое, танцы и замечательный детский аниматор Элина, которая стала как вторая мама для нашего ребенка, который был готов вместо аквапарка и моря идти в детский клуб к ней.
+					.review
+						.review__photo
+							img(src="images/review1.png", alt="")
+						.review__info
+							.review__data
+								span.review__name James Olesen
+								.raiting
+									span
+									span
+									span
+									span
+									span
+								span.review__day 2 days ago
+							p.review__text Отдыхали с семьёй в период с 21 по 28 июня 2019. Прилетели мы 21 числа, вечером, в 21.30 были в отеле. Сразу нас отправили на ужин, а потом заселили в номер. Номер приличный, с видом на море. Территория отеля большая и чистая. Персонал приветливый. Пляж песчаный, вход в море с понтона. Глубина не большая. Были отливы, приливы. Во время отлива не хватало глубины для купания. Анимация очень хорошая!						
+		
+		section.manager-section
+			.container
+				.manager-wrap
+					.manager-content
+						h3.manager-title Ваш персональный менеджер
+						p.manager-text Бесплатно поможет сделать правильный выбор и ответит на любые вопросы по туру
+						a(href="#").manager-btn.blue-btn Написать менеджеру
+
+		section.map-section
+			.container
+				h3.info-title  Ориентиры поблизости отеля Sea Beach Resort & Aqua Park 4*
+
+				.map-wrap
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12307.259517024147!2d24.015624593025162!3d56.95502601511547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed01064fdaa39%3A0xdd903f76d5abc724!2sOstOrg%E2%84%A2%20baby%20shop!5e0!3m2!1sru!2sua!4v1566744683000!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="")
+
+					.hotel
+						.like-wrap
+							a(href="#").favorites
+						.hotel__img
+							img(src="images/hotel.png", alt="")
+						.hotel__info
+							span.hotel__name Stella hotel
+							.raiting
+								span
+								span
+								span
+								span
+								span
+							span.hotel__place Italy, Venecia
+							a(href="#").hotel__link.blue-btn Туры от 220 €
+					
+					span.map-btn.map-btn_open.blue-btn Развернуть карту
+					span.map-btn.map-btn_hide.blue-btn Скрыть карту
+
+
+				.landmarks-wrap
+					.landmarks
+						span.landmarks__title Ближайшие достопримечательности
+						.landmarks__line
+							span.landmarks__name Бухта Набк-Бей
+							span.landmarks__distance 0,3км
+						.landmarks__line
+							span.landmarks__name La Strada Mall
+							span.landmarks__distance 0,7км
+						.landmarks__line
+							span.landmarks__name Hard Rock Cafe Nabq Bay
+							span.landmarks__distance 1,2км
+						.landmarks__line
+							span.landmarks__name Курорт Порто-Шарм
+							span.landmarks__distance 2,0км
+						.landmarks__line
+							span.landmarks__name Пляжный клуб Pataya
+							span.landmarks__distance 3,3км
+						
+					.landmarks
+						span.landmarks__title Пляжи в окрестностях
+						.landmarks__line
+							span.landmarks__name Nabq Bay Beach
+							span.landmarks__distance 500м
+						.landmarks__line
+							span.landmarks__name Royal Albatros Moderna Beach
+							span.landmarks__distance 700м
+						.landmarks__line
+							span.landmarks__name Steigenberger Alcazar Beach
+							span.landmarks__distance 800м
+						.landmarks__line
+							span.landmarks__name Mousa Bay Beach
+							span.landmarks__distance 1,5км
+						.landmarks__line
+							span.landmarks__name Tantura Bay Beach
+							span.landmarks__distance 1,7км
+
+					.landmarks
+						span.landmarks__title Рестораны, магазины и рынки
+						.landmarks__line
+							span.landmarks__name Бухта Набк-Бей
+							span.landmarks__distance 0,3км
+						.landmarks__line
+							span.landmarks__name La Strada Mall
+							span.landmarks__distance 0,7км
+						.landmarks__line
+							span.landmarks__name Hard Rock Cafe Nabq Bay
+							span.landmarks__distance 1,2км
+						.landmarks__line
+							span.landmarks__name Курорт Порто-Шарм
+							span.landmarks__distance 2,0км
+						.landmarks__line
+							span.landmarks__name Пляжный клуб Pataya
+							span.landmarks__distance 3,3км
+
+					.landmarks
+						span.landmarks__title Самые популярные достопримечательности 
+						.landmarks__line
+							span.landmarks__name Nabq Bay Beach
+							span.landmarks__distance 500м
+						.landmarks__line
+							span.landmarks__name Royal Albatros Moderna Beach
+							span.landmarks__distance 700м
+						.landmarks__line
+							span.landmarks__name Steigenberger Alcazar Beach
+							span.landmarks__distance 800м
+						.landmarks__line
+							span.landmarks__name Mousa Bay Beach
+							span.landmarks__distance 1,5км
+						.landmarks__line
+							span.landmarks__name Tantura Bay Beach
+							span.landmarks__distance 1,7км
+
+		
+block footer
+	include ../blocks/footer/footer

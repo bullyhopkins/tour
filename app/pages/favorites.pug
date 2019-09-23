@@ -1,0 +1,302 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header-lk
+
+	
+block content
+	main.main
+		include ../components/intro-section-blue/intro-section-blue
+
+		section.lk-section
+			.container
+				.lk-wrap
+					.lk-sidebar.lk-sidebar_margin
+						a(href="favorites.html").lk-link.lk-link_favorites.active Фавориты
+							span.lk-link__count 5
+						a(href="lk.html").lk-link.lk-link_settings Настройки
+
+					.lk-content
+						.favorite-tabs.js-tabs
+							ul.favorite-tabs__list.js-tab-btn
+								li.favorite-tabs__item.active Отели (5)
+								li.favorite-tabs__item Страны (1)
+
+							.favorite-tabs__content.js-tab-content.active
+								.hotels-wrap
+									a(href="#").favorite
+										.favorite__img-wrap
+											img(src="images/favorite1.png", alt="")
+										.favorite__info
+											.favorite__name
+												span.favorite__name-hotel Ambassador Tre Rose
+												.raiting.raiting_middle
+													span
+													span
+													span
+													span
+													span
+											.favorite__country
+												span.favorite__country-city Italy, Venecia
+												span.favorite__distance 300 метров до пляжа
+											.favorite__conditions
+												span.favorite__assessment 4,5
+													span.favorite__sub-assessment /5
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/mount.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/water.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/like.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/family.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/condition.svg", alt="")
+											.favorite__to-get
+												.favorite__bg-wrap
+													img(src="images/fb.svg", alt="")
+												span.favorite__plane.get 8 км
+												span.favorite__city.get 3 км
+												span.favorite__price €782
+									a(href="#").favorite
+										.favorite__img-wrap
+											img(src="images/favorite2.png", alt="")
+										.favorite__info
+											.favorite__name
+												span.favorite__name-hotel Ambassador Tre Rose
+												.raiting.raiting_middle
+													span
+													span
+													span
+													span
+													span
+											.favorite__country
+												span.favorite__country-city Italy, Venecia
+												span.favorite__distance 300 метров до пляжа
+											.favorite__conditions
+												span.favorite__assessment 4,5
+													span.favorite__sub-assessment /5
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/mount.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/water.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/like.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/family.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/condition.svg", alt="")
+											.favorite__to-get
+												.favorite__bg-wrap
+													img(src="images/fb.svg", alt="")
+												span.favorite__plane.get 8 км
+												span.favorite__city.get 3 км
+												span.favorite__price €782
+									a(href="#").favorite
+										.favorite__img-wrap
+											img(src="images/favorite3.png", alt="")
+										.favorite__info
+											.favorite__name
+												span.favorite__name-hotel Ambassador Tre Rose
+												.raiting.raiting_middle
+													span
+													span
+													span
+													span
+													span
+											.favorite__country
+												span.favorite__country-city Italy, Venecia
+												span.favorite__distance 300 метров до пляжа
+											.favorite__conditions
+												span.favorite__assessment 4,5
+													span.favorite__sub-assessment /5
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/mount.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/water.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/like.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/family.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/condition.svg", alt="")
+											.favorite__to-get
+												.favorite__bg-wrap
+													img(src="images/fb.svg", alt="")
+												span.favorite__plane.get 8 км
+												span.favorite__city.get 3 км
+												span.favorite__price €782
+									a(href="#").favorite
+										.favorite__img-wrap
+											img(src="images/favorite4.png", alt="")
+										.favorite__info
+											.favorite__name
+												span.favorite__name-hotel Ambassador Tre Rose
+												.raiting.raiting_middle
+													span
+													span
+													span
+													span
+													span
+											.favorite__country
+												span.favorite__country-city Italy, Venecia
+												span.favorite__distance 300 метров до пляжа
+											.favorite__conditions
+												span.favorite__assessment 4,5
+													span.favorite__sub-assessment /5
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/mount.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/water.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/like.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/family.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/condition.svg", alt="")
+											.favorite__to-get
+												.favorite__bg-wrap
+													img(src="images/fb.svg", alt="")
+												span.favorite__plane.get 8 км
+												span.favorite__city.get 3 км
+												span.favorite__price €782
+									a(href="#").favorite
+										.favorite__img-wrap
+											img(src="images/favorite5.png", alt="")
+										.favorite__info
+											.favorite__name
+												span.favorite__name-hotel Ambassador Tre Rose
+												.raiting.raiting_middle
+													span
+													span
+													span
+													span
+													span
+											.favorite__country
+												span.favorite__country-city Italy, Venecia
+												span.favorite__distance 300 метров до пляжа
+											.favorite__conditions
+												span.favorite__assessment 4,5
+													span.favorite__sub-assessment /5
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/mount.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/water.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/like.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/family.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/condition.svg", alt="")
+											.favorite__to-get
+												.favorite__bg-wrap
+													img(src="images/fb.svg", alt="")
+												span.favorite__plane.get 8 км
+												span.favorite__city.get 3 км
+												span.favorite__price €782
+
+							.favorite-tabs__content.js-tab-content
+								.hotels-wrap
+									a(href="#").favorite
+										.favorite__img-wrap
+											img(src="images/favorite1.png", alt="")
+										.favorite__info
+											.favorite__name
+												span.favorite__name-hotel Ambassador Tre Rose
+												.raiting.raiting_middle
+													span
+													span
+													span
+													span
+													span
+											.favorite__country
+												span.favorite__country-city Italy, Venecia
+												span.favorite__distance 300 метров до пляжа
+											.favorite__conditions
+												span.favorite__assessment 4,5
+													span.favorite__sub-assessment /5
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/mount.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/water.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/like.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/family.svg", alt="")
+												.favorite__icon
+													.favorite__icon-info
+														span.favorite__icon-text Есть кондиционер
+													img(src="images/condition.svg", alt="")
+											.favorite__to-get
+												.favorite__bg-wrap
+													img(src="images/fb.svg", alt="")
+												span.favorite__plane.get 8 км
+												span.favorite__city.get 3 км
+												span.favorite__price €782
+
+
+
+
+block footer
+	include ../blocks/footer/footer

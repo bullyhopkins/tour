@@ -1,0 +1,20 @@
+.head-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0 70px;
+
+	&_padding {
+		padding-bottom: 85px;
+	}
+	
+	.info-wrap {
+		display: flex;
+		align-items: center;
+	}
+	
+	.buy-link {
+		width: 206px;
+		height: 46px;
+	}
+}

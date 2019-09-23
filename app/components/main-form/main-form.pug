@@ -1,0 +1,94 @@
+.tabs-wrap
+	.tabs.js-tabs
+		ul.tabs__caption.js-tab-btn
+			li.tabs__item.tabs__item_city.active Город вылета:  Rīga
+			li.tabs__item.tabs__item_hot Горячие предложения
+			li.tabs__item.tabs__item_air Авиа билеты
+		.tabs__content.tabs__content_city.active.js-tab-content
+
+			form(action="#" id="" method="").mainForm
+				.mainForm__fild.mainForm__fild_long
+					input(type="text" placeholder="Страна, курорт или отель").mainForm__input
+
+				.mainForm__fild.mainForm__fild_date
+					input(type="text" placeholder="Дата вылета" autocomplete="off")#datepicker-hereNew.mainForm__input
+
+				.mainForm__fild.mainForm__fild_quantity.calendar
+					input(type="text" placeholder="Кол-во ночей").mainForm__input.js-quantity-input
+					.number
+						span.number__title От
+						.number__wrap
+							span.number__btn.minus -
+							input(type="text" value="1").number__input
+							span.number__btn.plus +
+						span.number__title До
+						.number__wrap
+							span.number__btn.minus -
+							input(type="text" value="18").number__input
+							span.number__btn.plus +
+
+
+				.mainForm__fild.mainForm__fild_tourists
+					input(type="text" placeholder="Туристы").mainForm__input.js-tourists-input
+					.tourists
+						span.tourists__title Взрослые
+						.tourists__fild
+							input(type="radio" id="adult1" value="adult1" name="adult")
+							label(for="adult1") 1
+							input(type="radio" id="adult2" value="adult2" name="adult")
+							label(for="adult2") 2
+							input(type="radio" id="adult3" value="adult3" name="adult")
+							label(for="adult3") 3
+							input(type="radio" id="adult4" value="adult4" name="adult")
+							label(for="adult4") 4
+
+						span.tourists__title Дети от 2 до 11 лет
+						.tourists__fild
+							input(type="radio" id="child0" value="child0" name="child")
+							label(for="child0") нет
+							input(type="radio" id="child1" value="child1" name="child")
+							label(for="child1") 1
+							input(type="radio" id="child2" value="child2" name="child")
+							label(for="child2") 2
+							input(type="radio" id="child3" value="child3" name="child")
+							label(for="child3") 3
+
+						span.tourists__title Младенцы до 2 лет
+						.tourists__fild
+							input(type="radio" id="baby0" value="baby0" name="baby")
+							label(for="baby0") нет
+							input(type="radio" id="baby1" value="baby1" name="baby")
+							label(for="baby1") 1
+							input(type="radio" id="baby2" value="baby2" name="baby")
+							label(for="baby2") 2
+							input(type="radio" id="baby3" value="baby3" name="baby")
+							label(for="baby3") 3
+
+				button(type="submit").mainForm__btn.blue-btn Искать туры
+
+		.tabs__content.tabs__content_hot.js-tab-content
+			form(action="#" id="" method="").mainForm
+				.mainForm__fild.mainForm__fild_date
+					input(type="text" placeholder="Дата вылета").mainForm__input
+				.mainForm__fild.mainForm__fild_long
+					input(type="text" placeholder="Страна, курорт или отель").mainForm__input
+				.mainForm__fild.mainForm__fild_quantity
+					input(type="text" placeholder="Кол-во ночей").mainForm__input
+				.mainForm__fild.mainForm__fild_tourists
+					input(type="text" placeholder="Туристы").mainForm__input
+				button(type="submit").mainForm__btn.blue-btn Искать туры
+		
+		.tabs__content.tabs__content_air.js-tab-content
+			form(action="#" id="" method="").mainForm
+				.mainForm__fild.mainForm__fild_date
+					input(type="text" placeholder="Дата вылета").mainForm__input
+				.mainForm__fild.mainForm__fild_quantity
+					input(type="text" placeholder="Кол-во ночей").mainForm__input
+				.mainForm__fild.mainForm__fild_long
+					input(type="text" placeholder="Страна, курорт или отель").mainForm__input
+				.mainForm__fild.mainForm__fild_tourists
+					input(type="text" placeholder="Туристы").mainForm__input
+				button(type="submit").mainForm__btn.blue-btn Искать туры
+
+.questions-wrap
+	a(href="#").questions-link Частые вопросы

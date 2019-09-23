@@ -1,0 +1,54 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		section(style='background-image: url(images/intro-bg-blue.png);').intro-section.intro-section_height
+			.container
+				.head-wrap.head-wrap_padding
+					a(href="#").logo
+					.info-wrap
+						a(href="tel:67320372").info-link.tel-link 67 320 372
+						a(href="mailto:info@sofiture.lv").info-link.mail-link info@sofiture.lv
+						a(href="#").buy-link.red-btn Купить тур в офисе
+				h2.intro-title Обратная связь
+				.questions-wrap
+					a(href="#").questions-link.scroll-link Частые вопросы
+
+		section.feedback-section
+			.container
+				h2.feedback-title Связаться с нами
+				p.sub-text Ex quem dicta delicata usu, zril vocibus maiestatis in qui.
+				.feedback-wrap
+					form(action="#").feedbackForm
+						.feedbackForm__inputs-wrap
+							.feedbackForm__filds
+								span.feedbackForm__title Введите ваш эмайл
+								input(type="text").feedbackForm__input
+							.feedbackForm__filds
+								span.feedbackForm__title Введите ваш эмайл
+								input(type="text").feedbackForm__input
+							.feedbackForm__filds
+								span.feedbackForm__title Введите ваш телефон
+								input(type="text").feedbackForm__input
+						.feedbackForm__textarea-wrap
+								span.feedbackForm__title Сообщение
+								textarea.feedbackForm__textarea
+						.feedbackForm__nav
+							.feedbackForm__capcha
+								img(src="images/cap.png", alt="")
+							button.feedbackForm__btn.blue-btn Отправить
+
+
+
+
+
+
+
+block footer
+	include ../blocks/footer/footer

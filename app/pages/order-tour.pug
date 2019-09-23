@@ -1,0 +1,83 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+	
+block content
+	main.main
+		include ../components/intro-section-blue/intro-section-blue
+		
+		section.order-section
+			.container
+				.time-data
+					p У вас  11:57 чтобы оформить заказ
+				.order-wrap
+					form(action="#" id="" method="").order-form
+
+						span.order-form__title Данные о туристах
+						span.order-form__sub-title Взрослый
+						.order-form__filds
+							.order-form__select-wrap
+								select(name="" id="" placeholder="Ваш пол").order-form__select
+									option(value="").order-form__option Ваш пол
+									option(value="").order-form__option Мужской
+									option(value="").order-form__option Женский
+							.order-form__input-wrap
+								input(type="text" placeholder="Имя*").order-form__input
+								input(type="text" placeholder="Персональный код").order-form__input
+								input(type="text" placeholder="Дата рождения").order-form__input
+								input(type="text" placeholder="Фамилия*").order-form__input
+								input(type="text" placeholder="Номер паспорта").order-form__input
+								input(type="text" placeholder="Паспорт действителен до").order-form__input
+
+						span.order-form__sub-title Взрослый
+						.order-form__filds
+							.order-form__select-wrap
+								select(name="" id="" placeholder="Ваш пол").order-form__select
+									option(value="").order-form__option Ваш пол
+									option(value="").order-form__option Мужской
+									option(value="").order-form__option Женский
+							.order-form__input-wrap
+								input(type="text" placeholder="Имя*").order-form__input
+								input(type="text" placeholder="Персональный код").order-form__input
+								input(type="text" placeholder="Дата рождения").order-form__input
+								input(type="text" placeholder="Фамилия*").order-form__input
+								input(type="text" placeholder="Номер паспорта").order-form__input
+								input(type="text" placeholder="Паспорт действителен до").order-form__input
+
+						span.order-form__sub-title Дети
+						.order-form__filds
+							.order-form__select-wrap
+								select(name="" id="" placeholder="Ваш пол").order-form__select
+									option(value="").order-form__option Пол
+									option(value="").order-form__option Мужской
+									option(value="").order-form__option Женский
+							.order-form__input-wrap
+								input(type="text" placeholder="Имя*").order-form__input
+								input(type="text" placeholder="Персональный код").order-form__input
+								input(type="text" placeholder="Дата рождения").order-form__input
+								input(type="text" placeholder="Фамилия*").order-form__input
+								input(type="text" placeholder="Номер паспорта").order-form__input
+								input(type="text" placeholder="Паспорт действителен до").order-form__input
+						
+						span.order-form__sub-title Контактные данные
+						.order-form__contacts
+							.order-form__filds.order-form__filds_contact
+								input(type="text" placeholder="Email*").order-form__input
+								input(type="text" placeholder="Номер мобильного телефона*").order-form__input
+
+								input(type="checkbox" name="rules" id="rules").order-form__input-checbox
+								label(for="rules").order-form__label Я прочитал и согласился с 
+									a(href="#") правилами пользования.
+
+								input(type="checkbox" name="distribution" id="distribution").order-form__input-checbox
+								label(for="distribution").order-form__label Подписаться на рассылку
+
+							button(type="submit").order-form__btn.red-btn Продолжить
+				
+		
+block footer
+	include ../blocks/footer/footer

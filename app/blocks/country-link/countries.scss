@@ -1,0 +1,37 @@
+.country {
+	position: relative;
+	margin-bottom: 33px;
+	display: flex;
+	align-items: center;
+
+
+	&__img {
+		width: 27px;
+		height: 27px;
+		margin-right: 18px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; 
+		}
+	}
+
+	&__name {
+		font-size: 20px;
+		font-weight: 500;
+		color: #4094d6;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 3px;
+		height: 3px;
+		left: 35px;
+		top: 50%;
+		transform: translateY(-50%);
+		background: #000;
+		border-radius: 50%;
+		background-color: #4094d6;
+	}
+}
